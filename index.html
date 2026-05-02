@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resistenza Rimini</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <nav id="navbarr">
+    <a href="index.html" class="nav-logo"><em>Resistenza</em> Rimini</a>
+<button class="nav-hamburger" id="hamburger" onclick="this.classList.toggle('open'); this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="storia.html">Storia</a></li>
+      <li><a href="mappa.html">Mappa</a></li>
+      <li><a href="partigiani.html">Partigiani</a></li>
+      <li><a href="podcast.html">Podcast</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-left"></div>
+    <div class="hero-right"></div>
+    <div class="hero-content">
+      <h1>La Resistenza a Rimini</h1>
+      <p>Da METTERE FRAEE</p>
+      <a href="#sezioni" class="hero-btn">Esplora</a>
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="intro-box">
+      <h2>Chi siamo</h2>
+      <p>
+        Questo sito racconta la Resistenza a Rimini attraverso eventi storici,
+        luoghi simbolo e protagonisti che hanno lottato per la libertà.
+      </p>
+    </div>
+  </section>
+
+    <section class="timeline-preview">
+  <div class="timeline-header">
+    <h2>La storia della <em>Resistenza</em></h2>
+    <a href="storia.html" class="partigiani-more">
+      Vai alla storia <span class="arrow">→</span>
+    </a>
+  </div>
+
+  <div class="timeline-line"></div>
+
+  <div class="timeline-events">
+
+    <div class="timeline-event">
+      <img src="img1.jpg" class="timeline-img">
+      <div class="timeline-date">1943</div>
+      <div class="timeline-text">Inizio della Resistenza dopo l’8 settembre</div>
+    </div>
+
+    <div class="timeline-event">
+      <img src="img1.jpg" class="timeline-img">
+      <div class="timeline-date">1944</div>
+      <div class="timeline-text">Battaglia di Rimini e liberazione</div>
+    </div>
+
+    <div class="timeline-event">
+      <img src="img1.jpg" class="timeline-img">
+      <div class="timeline-date">1945</div>
+      <div class="timeline-text">Fine della guerra in Italia</div>
+    </div>
+
+  </div>
+</section>
+
+  <section class="partigiani-preview">
+    <div class="partigiani-header">
+      <h2>I <em>Protagonisti</em><br>della Resistenza</h2>
+      <a href="partigiani.html" class="partigiani-more">Tutti i partigiani →</a>
+    </div>
+    <div class="partigiani-grid">
+
+      <div class="part-card">
+        <img src="img1.jpg" alt="Nome Partigiano" class="part-img">
+        <div class="part-info">
+          <div class="part-name">Nome Partigiano</div>
+          <a href="partigiani.html" class="part-btn">Scopri la storia</a>
+        </div>
+      </div>
+
+      <div class="part-card">
+        <img src="img1.jpg" alt="Nome Partigiano" class="part-img">
+        <div class="part-info">
+          <div class="part-name">Nome Partigiano</div>
+          <a href="partigiani.html" class="part-btn">Scopri la storia</a>
+        </div>
+      </div>
+
+      <div class="part-card">
+        <img src="img1.jpg" alt="Nome Partigiano" class="part-img">
+        <div class="part-info">
+          <div class="part-name">Nome Partigiano</div>
+          <a href="partigiani.html" class="part-btn">Scopri la storia</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+  <div class="footer-top">
+    <span class="footer-top-text">XIII Premio "Vincenzo Mascia" — ANPI Rimini</span>
+    <span class="footer-top-text">A.S. 2025/2026</span>
+  </div>
+  <div class="footer-body">
+    <div class="footer-col">
+      <div class="footer-logo"><em>Resistenza</em> Rimini</div>
+      <div class="footer-sub">ITTS Belluzzi–Da Vinci di Rimini</div>
+      <div class="footer-credits">Realizzato da Nome1, Nome2, Nome3</div>
+    </div>
+    <div class="footer-col">
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="storia.html">Storia</a>
+        <a href="mappa.html">Mappa</a>
+        <a href="partigiani.html">Partigiani</a>
+        <a href="podcast.html">Podcast</a>
+      </nav>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    XIII Premio "Vincenzo Mascia" · Progetto realizzato per il bando ANPI Sezione di Rimini
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,373 @@
+/* HERO PARTIGIANI */
+
+.partigiani-hero {
+  background: #1E1810;
+  padding: 5rem 2.5rem 4rem;
+  text-align: center;
+  border-bottom: 2px solid #8B6914;
+}
+
+.partigiani-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  color: #EDE5D0;
+  margin-bottom: 0.8rem;
+}
+
+.partigiani-hero h1 em {
+  color: #C9392C;
+  font-style: italic;
+}
+
+.partigiani-hero p {
+  font-size: 0.95rem;
+  color: #C4A882;
+  letter-spacing: 0.05em;
+}
+
+
+/* LISTA PARTIGIANI */
+
+.partigiani-list {
+  background: #1E1810;
+  padding: 4rem 2.5rem 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.partigiano-row {
+  width: 100%;
+  max-width: 1250px;
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  background: linear-gradient(135deg, #2a1e0e, #1b140c);
+  border: 1px solid rgba(139,105,20,0.75);
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.22);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.partigiano-row::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: #C9392C;
+  z-index: 3;
+}
+
+.partigiano-row:hover {
+  transform: translateY(-6px);
+  border-color: #C4A882;
+  box-shadow: 0 24px 50px rgba(0,0,0,0.35);
+}
+
+.partigiano-row.reverse {
+  grid-template-columns: 1fr 360px;
+}
+
+.partigiano-row.reverse::before {
+  left: auto;
+  right: 0;
+}
+
+.partigiano-row.reverse img {
+  order: 2;
+}
+
+.partigiano-row img {
+  width: 100%;
+  height: 100%;
+  min-height: 310px;
+  object-fit: cover;
+  display: block;
+  filter: sepia(18%) brightness(0.85);
+}
+
+.partigiano-text {
+  padding: 2.4rem 2.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.partigiano-label {
+  color: #C9392C;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 0.7rem;
+  font-weight: 600;
+}
+
+.partigiano-text h2 {
+  font-family: 'Playfair Display', serif;
+  color: #EDE5D0;
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+}
+
+.partigiano-text p {
+  color: #A08860;
+  line-height: 1.7;
+  font-size: 1rem;
+  max-width: 760px;
+}
+
+
+/* HAMBURGER */
+
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+
+.nav-hamburger span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #C4A882;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.nav-hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-hamburger.open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.nav-hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .partigiano-row,
+  .partigiano-row.reverse {
+    grid-template-columns: 300px 1fr;
+  }
+
+  .partigiano-row.reverse {
+    grid-template-columns: 1fr 300px;
+  }
+
+  .partigiano-text {
+    padding: 2rem;
+  }
+
+  .partigiano-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .partigiano-text p {
+    font-size: 0.93rem;
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  /* NAVBAR MOBILE */
+
+  #navbarr {
+    padding: 0 1.2rem;
+    position: relative;
+  }
+
+  .nav-hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: #1E1810;
+    border-top: 1px solid #8B6914;
+    z-index: 99;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    opacity: 0;
+  }
+
+  .nav-links.open {
+    max-height: 260px;
+    opacity: 1;
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 0.75rem 1.4rem;
+    border-bottom: 1px solid rgba(139,105,20,0.2);
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+  }
+
+  .nav-links li a:hover,
+  .nav-links li a:active {
+    color: #C4A882;
+    border-left-color: #C9392C;
+    padding-left: 1.8rem;
+  }
+
+
+  /* HERO MOBILE */
+
+  .partigiani-hero {
+    padding: 3rem 1rem 2.5rem;
+  }
+
+  .partigiani-hero h1 {
+    font-size: 2rem;
+    line-height: 1.15;
+  }
+
+  .partigiani-hero p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+
+  /* LISTA MOBILE */
+
+  .partigiani-list {
+    padding: 3rem 1rem 4rem;
+    gap: 2.2rem;
+  }
+
+  .partigiano-row,
+  .partigiano-row.reverse {
+    width: 92%;
+    max-width: 350px;
+    grid-template-columns: 1fr;
+    border-radius: 16px;
+  }
+
+  .partigiano-row.reverse img {
+    order: 0;
+  }
+
+  .partigiano-row::before,
+  .partigiano-row.reverse::before {
+    left: 0;
+    right: auto;
+    width: 4px;
+  }
+
+  .partigiano-row img {
+    height: 170px;
+    min-height: 170px;
+  }
+
+  .partigiano-text {
+    padding: 1.15rem 1.15rem 1.35rem;
+  }
+
+  .partigiano-label {
+    font-size: 0.62rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5rem;
+  }
+
+  .partigiano-text h2 {
+    font-size: 1.35rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .partigiano-text p {
+    font-size: 0.84rem;
+    line-height: 1.55;
+  }
+
+
+  /* FOOTER MOBILE */
+
+  .footer-top {
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .footer-top-text {
+    font-size: 0.6rem;
+  }
+
+  .footer-body {
+    grid-template-columns: 1fr;
+    background: #111008 !important;
+  }
+
+  .footer-col {
+    padding: 0.8rem 1rem;
+    background: #111008 !important;
+  }
+
+  .footer-col:first-child {
+    border-right: none;
+    border-bottom: 1px solid rgba(139,105,20,0.2);
+  }
+
+  .footer-logo {
+    font-size: 0.95rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .footer-sub,
+  .footer-credits {
+    font-size: 0.68rem;
+  }
+
+  .footer-nav a {
+    font-size: 0.65rem;
+  }
+
+  .footer-bottom {
+    padding: 0.5rem 1rem;
+    font-size: 0.62rem;
+  }
+}
+
+
+/* FIX FOOTER */
+
+footer,
+.footer-body,
+.footer-col {
+  background: #111008 !important;
+}
+
+.footer-col:nth-child(2) {
+  background: #111008 !important;
+}
+
+.footer-nav {
+  background: transparent !important;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storia — Resistenza Rimini</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="storia.css">
+</head>
+<body>
+
+  <nav id="navbarr">
+    <a href="index.html" class="nav-logo"><em>Resistenza</em> Rimini</a>
+
+    <button class="nav-hamburger" id="hamburger" onclick="this.classList.toggle('open'); this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="storia.html" class="active">Storia</a></li>
+      <li><a href="mappa.html">Mappa</a></li>
+      <li><a href="partigiani.html">Partigiani</a></li>
+      <li><a href="podcast.html">Podcast</a></li>
+    </ul>
+  </nav>
+
+  <section class="storia-hero">
+    <h1>La storia della <em>Resistenza</em> a Rimini</h1>
+    <p>Una cronologia degli eventi che hanno segnato la città</p>
+  </section>
+
+  <section class="tl-wrap">
+    <div class="tl-container">
+      <div class="tl-line"></div>
+      <div class="tl-arrow"></div>
+
+      <!-- EVENTO 1 — sinistra -->
+      <div class="tl-event">
+        <div class="tl-card">
+          <div class="tl-date">8 settembre 1943</div>
+          <div class="tl-text">Armistizio tra l'Italia e gli Alleati. L'esercito tedesco occupa Rimini. Nasce la Resistenza partigiana nella provincia.</div>
+          <img src="img_1943.jpg" class="tl-img" alt="1943">
+          <a href="evento_1943.html" class="tl-more">Approfondisci →</a>
+        </div>
+        <div class="tl-dot"></div>
+        <div class="tl-empty"></div>
+      </div>
+
+      <!-- EVENTO 2 — destra -->
+      <div class="tl-event">
+        <div class="tl-empty"></div>
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-date">Autunno 1943</div>
+          <div class="tl-text">Prime formazioni partigiane sulle colline riminesi. I giovani fuggono dalla leva della Repubblica di Salò e si uniscono alla Resistenza.</div>
+          <img src="img_autunno1943.jpg" class="tl-img" alt="Autunno 1943">
+          <a href="evento_autunno1943.html" class="tl-more">Approfondisci →</a>
+        </div>
+      </div>
+
+      <!-- EVENTO 3 — sinistra -->
+      <div class="tl-event">
+        <div class="tl-card">
+          <div class="tl-date">Inverno 1943–44</div>
+          <div class="tl-text">Azioni di sabotaggio alle linee ferroviarie e telefoniche tedesche. I partigiani operano di notte per non essere scoperti.</div>
+          <img src="img_inverno1943.jpg" class="tl-img" alt="Inverno 1943-44">
+          <a href="evento_inverno1943.html" class="tl-more">Approfondisci →</a>
+        </div>
+        <div class="tl-dot"></div>
+        <div class="tl-empty"></div>
+      </div>
+
+      <!-- EVENTO 4 — destra -->
+      <div class="tl-event">
+        <div class="tl-empty"></div>
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-date">Primavera 1944</div>
+          <div class="tl-text">Intensificazione dei bombardamenti alleati su Rimini. La popolazione civile è costretta a rifugiarsi nelle campagne e nelle grotte.</div>
+          <img src="img_primavera1944.jpg" class="tl-img" alt="Primavera 1944">
+          <a href="evento_primavera1944.html" class="tl-more">Approfondisci →</a>
+        </div>
+      </div>
+
+      <!-- EVENTO 5 — sinistra -->
+      <div class="tl-event">
+        <div class="tl-card">
+          <div class="tl-date">Estate 1944</div>
+          <div class="tl-text">La Linea Gotica attraversa il territorio riminese. Rimini diventa uno dei punti più contesi del fronte italiano tra tedeschi e Alleati.</div>
+          <img src="img_estate1944.jpg" class="tl-img" alt="Estate 1944">
+          <a href="evento_estate1944.html" class="tl-more">Approfondisci →</a>
+        </div>
+        <div class="tl-dot"></div>
+        <div class="tl-empty"></div>
+      </div>
+
+      <!-- EVENTO 6 — destra -->
+      <div class="tl-event">
+        <div class="tl-empty"></div>
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-date">Agosto 1944</div>
+          <div class="tl-text">Operazione Olive: gli Alleati sfondano la Linea Gotica. Violentissimi combattimenti nei dintorni di Rimini.</div>
+          <img src="img_agosto1944.jpg" class="tl-img" alt="Agosto 1944">
+          <a href="evento_agosto1944.html" class="tl-more">Approfondisci →</a>
+        </div>
+      </div>
+
+      <!-- EVENTO 7 — sinistra -->
+      <div class="tl-event">
+        <div class="tl-card">
+          <div class="tl-date">21 settembre 1944</div>
+          <div class="tl-text">Liberazione di Rimini. Le truppe alleate e i partigiani entrano in città. Fine dell'occupazione nazifascista dopo oltre un anno.</div>
+          <img src="img_liberazione.jpg" class="tl-img" alt="Liberazione Rimini">
+          <a href="evento_liberazione.html" class="tl-more">Approfondisci →</a>
+        </div>
+        <div class="tl-dot"></div>
+        <div class="tl-empty"></div>
+      </div>
+
+      <!-- EVENTO 8 — destra -->
+      <div class="tl-event">
+        <div class="tl-empty"></div>
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-date">Autunno 1944</div>
+          <div class="tl-text">Rimini liberata diventa base logistica degli Alleati. I partigiani continuano a operare nelle zone ancora occupate della provincia.</div>
+          <img src="img_autunno1944.jpg" class="tl-img" alt="Autunno 1944">
+          <a href="evento_autunno1944.html" class="tl-more">Approfondisci →</a>
+        </div>
+      </div>
+
+      <!-- EVENTO 9 — sinistra -->
+      <div class="tl-event">
+        <div class="tl-card">
+          <div class="tl-date">25 aprile 1945</div>
+          <div class="tl-text">Liberazione dell'Italia. Fine della guerra e della dittatura fascista. La Resistenza aveva vinto. Rimini celebra la libertà ritrovata.</div>
+          <img src="img_25aprile.jpg" class="tl-img" alt="25 aprile 1945">
+          <a href="evento_25aprile.html" class="tl-more">Approfondisci →</a>
+        </div>
+        <div class="tl-dot"></div>
+        <div class="tl-empty"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <span class="footer-top-text">XIII Premio "Vincenzo Mascia" — ANPI Rimini</span>
+      <span class="footer-top-text">A.S. 2025/2026</span>
+    </div>
+    <div class="footer-body">
+      <div class="footer-col">
+        <div class="footer-logo"><em>Resistenza</em> Rimini</div>
+        <div class="footer-sub">ITTS Belluzzi–Da Vinci di Rimini</div>
+        <div class="footer-credits">Realizzato da Nome1, Nome2, Nome3</div>
+      </div>
+      <div class="footer-col">
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="storia.html">Storia</a>
+          <a href="mappa.html">Mappa</a>
+          <a href="partigiani.html">Partigiani</a>
+          <a href="podcast.html">Podcast</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      XIII Premio "Vincenzo Mascia" · Progetto realizzato per il bando ANPI Sezione di Rimini
+    </div>
+  </footer>
+
+</body>
+</html>
