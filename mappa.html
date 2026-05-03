@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mappa — Resistenza Rimini</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Leaflet CSS -->
+  <link 
+    rel="stylesheet" 
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  >
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mappa.css">
+</head>
+
+<body>
+
+  <nav id="navbarr">
+    <a href="index.html" class="nav-logo"><em>Resistenza</em> Rimini</a>
+
+    <button class="nav-hamburger" id="hamburger" onclick="this.classList.toggle('open'); this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="storia.html">Storia</a></li>
+      <li><a href="mappa.html" class="active">Mappa</a></li>
+      <li><a href="partigiani.html">Partigiani</a></li>
+      <li><a href="podcast.html">Podcast</a></li>
+    </ul>
+  </nav>
+
+  <section class="mappa-hero">
+    <h1>I luoghi della <em>memoria</em></h1>
+    <p>Una mappa interattiva dei luoghi legati alla Resistenza, alla guerra e alla Liberazione di Rimini.</p>
+  </section>
+
+  <section class="mappa-section">
+
+    <div class="mappa-layout">
+
+      <div class="map-box">
+        <div id="map"></div>
+      </div>
+
+      <aside class="luoghi-panel">
+        <span class="panel-label">Mappa interattiva</span>
+        <h2>Luoghi selezionati</h2>
+        <p>
+          Clicca sui punti della mappa oppure scegli un luogo dalla lista.
+          Ogni punto può rimandare a una pagina di approfondimento.
+        </p>
+
+        <div class="luoghi-list">
+
+          <a href="piazza-tre-martiri.html">
+            <strong>Piazza Tre Martiri</strong>
+            <span>Luogo simbolo della memoria cittadina.</span>
+          </a>
+
+          <a href="piazza-cavour.html">
+            <strong>Piazza Cavour</strong>
+            <span>Centro storico e spazio della vita pubblica.</span>
+          </a>
+
+          <a href="arco-augusto.html">
+            <strong>Arco d’Augusto</strong>
+            <span>Ingresso storico della città.</span>
+          </a>
+
+          <a href="ponte-tiberio.html">
+            <strong>Ponte di Tiberio</strong>
+            <span>Uno dei simboli più riconoscibili di Rimini.</span>
+          </a>
+
+          <a href="borgo-san-giuliano.html">
+            <strong>Borgo San Giuliano</strong>
+            <span>Zona storica legata alla memoria urbana.</span>
+          </a>
+
+          <a href="stazione-rimini.html">
+            <strong>Stazione di Rimini</strong>
+            <span>Area importante per collegamenti e bombardamenti.</span>
+          </a>
+
+          <a href="cimitero-monumentale.html">
+            <strong>Cimitero Monumentale</strong>
+            <span>Luogo di ricordo e commemorazione.</span>
+          </a>
+
+          <a href="tempio-malatestiano.html">
+            <strong>Tempio Malatestiano</strong>
+            <span>Monumento storico danneggiato dalla guerra.</span>
+          </a>
+
+          <a href="castel-sismondo.html">
+            <strong>Castel Sismondo</strong>
+            <span>Luogo storico del centro cittadino.</span>
+          </a>
+
+          <a href="anfiteatro-romano.html">
+            <strong>Anfiteatro Romano</strong>
+            <span>Area storica nel tessuto urbano riminese.</span>
+          </a>
+
+          <a href="porto-canale.html">
+            <strong>Porto Canale</strong>
+            <span>Zona strategica e simbolica della città.</span>
+          </a>
+
+          <a href="parco-cervi.html">
+            <strong>Parco Cervi</strong>
+            <span>Area urbana vicina al centro storico.</span>
+          </a>
+
+        </div>
+      </aside>
+
+    </div>
+
+  </section>
+
+  <section class="luoghi-cards-section">
+    <div class="luoghi-header">
+      <h2>Esplora i luoghi</h2>
+      <p>Una selezione di monumenti, piazze e spazi urbani da collegare alla memoria della città.</p>
+    </div>
+
+    <div class="luoghi-grid">
+
+    <article class="luogo-card">
+        <img src="img1.jpg" alt="Piazza Tre Martiri">
+        <div class="luogo-card-content">
+        <h3>Piazza Tre Martiri</h3>
+        <p>Uno dei luoghi più importanti della memoria storica riminese.</p>
+        <a href="piazza-tre-martiri.html">Approfondisci →</a>
+        </div>
+    </article>
+
+    <article class="luogo-card">
+        <img src="img1.jpg" alt="Piazza Cavour">
+        <div class="luogo-card-content">
+        <h3>Piazza Cavour</h3>
+        <p>Centro della vita cittadina e punto storico del centro di Rimini.</p>
+        <a href="piazza-cavour.html">Approfondisci →</a>
+        </div>
+    </article>
+
+    <article class="luogo-card">
+        <img src="img1.jpg" alt="Arco d’Augusto">
+        <div class="luogo-card-content">
+        <h3>Arco d’Augusto</h3>
+        <p>Monumento antico e simbolo dell’ingresso nella città storica.</p>
+        <a href="arco-augusto.html">Approfondisci →</a>
+        </div>
+    </article>
+
+    <article class="luogo-card">
+        <img src="img1.jpg" alt="Ponte di Tiberio">
+        <div class="luogo-card-content">
+        <h3>Ponte di Tiberio</h3>
+        <p>Uno dei simboli più riconoscibili di Rimini e del suo territorio.</p>
+        <a href="ponte-tiberio.html">Approfondisci →</a>
+        </div>
+    </article>
+
+    <article class="luogo-card">
+        <img src="img1.jpg" alt="Borgo San Giuliano">
+        <div class="luogo-card-content">
+        <h3>Borgo San Giuliano</h3>
+        <p>Zona storica della città, utile per raccontare memoria e territorio.</p>
+        <a href="borgo-san-giuliano.html">Approfondisci →</a>
+        </div>
+    </article>
+
+    <article class="luogo-card">
+        <img src="img1.jpg" alt="Stazione di Rimini">
+        <div class="luogo-card-content">
+        <h3>Stazione di Rimini</h3>
+        <p>Area importante durante la guerra per collegamenti e bombardamenti.</p>
+        <a href="stazione-rimini.html">Approfondisci →</a>
+        </div>
+    </article>
+
+    <article class="luogo-card">
+        <img src="img1.jpg" alt="Cimitero Monumentale">
+        <div class="luogo-card-content">
+        <h3>Cimitero Monumentale</h3>
+        <p>Spazio dedicato al ricordo dei caduti e delle vittime del periodo bellico.</p>
+        <a href="cimitero-monumentale.html">Approfondisci →</a>
+        </div>
+    </article>
+
+    <article class="luogo-card">
+        <img src="img1.jpg" alt="Tempio Malatestiano">
+        <div class="luogo-card-content">
+        <h3>Tempio Malatestiano</h3>
+        <p>Monumento storico della città, colpito dagli eventi della guerra.</p>
+        <a href="tempio-malatestiano.html">Approfondisci →</a>
+        </div>
+    </article>
+
+    <article class="luogo-card">
+        <img src="img1.jpg" alt="Castel Sismondo">
+        <div class="luogo-card-content">
+        <h3>Castel Sismondo</h3>
+        <p>Luogo storico del centro cittadino e parte della memoria urbana.</p>
+        <a href="castel-sismondo.html">Approfondisci →</a>
+        </div>
+    </article>
+
+    <article class="luogo-card">
+        <img src="img1.jpg" alt="Anfiteatro Romano">
+        <div class="luogo-card-content">
+        <h3>Anfiteatro Romano</h3>
+        <p>Area storica vicina al centro, utile per collegare passato e città moderna.</p>
+        <a href="anfiteatro-romano.html">Approfondisci →</a>
+        </div>
+    </article>
+
+    <article class="luogo-card">
+        <img src="img1.jpg" alt="Porto Canale">
+        <div class="luogo-card-content">
+        <h3>Porto Canale</h3>
+        <p>Zona della città collegata al mare, ai collegamenti e alla vita urbana.</p>
+        <a href="porto-canale.html">Approfondisci →</a>
+        </div>
+    </article>
+
+    <article class="luogo-card">
+        <img src="img1.jpg" alt="Parco Cervi">
+        <div class="luogo-card-content">
+        <h3>Parco Cervi</h3>
+        <p>Area urbana vicina al centro, da collegare al percorso della memoria.</p>
+        <a href="parco-cervi.html">Approfondisci →</a>
+        </div>
+    </article>
+
+    </div>
+  </section>
+
+  <section class="mappa-note">
+    <p>
+      Ogni luogo racconta una parte della memoria collettiva di Rimini:
+      piazze, monumenti e spazi urbani diventano punti da cui rileggere la storia della città.
+    </p>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <span class="footer-top-text">XIII Premio "Vincenzo Mascia" — ANPI Rimini</span>
+      <span class="footer-top-text">A.S. 2025/2026</span>
+    </div>
+
+    <div class="footer-body">
+      <div class="footer-col">
+        <div class="footer-logo"><em>Resistenza</em> Rimini</div>
+        <div class="footer-sub">ITTS Belluzzi–Da Vinci di Rimini</div>
+        <div class="footer-credits">Realizzato da Nome1, Nome2, Nome3</div>
+      </div>
+
+      <div class="footer-col">
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="storia.html">Storia</a>
+          <a href="mappa.html">Mappa</a>
+          <a href="partigiani.html">Partigiani</a>
+          <a href="podcast.html">Podcast</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      XIII Premio "Vincenzo Mascia" · Progetto realizzato per il bando ANPI Sezione di Rimini
+    </div>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <script>
+    const map = L.map('map').setView([44.0590, 12.5683], 14);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    const luoghi = [
+      {
+        nome: "Piazza Tre Martiri",
+        descrizione: "Luogo simbolo della memoria cittadina.",
+        coords: [44.05933, 12.56839],
+        link: "piazza-tre-martiri.html"
+      },
+      {
+        nome: "Piazza Cavour",
+        descrizione: "Centro storico e spazio della vita pubblica.",
+        coords: [44.06072, 12.56568],
+        link: "piazza-cavour.html"
+      },
+      {
+        nome: "Arco d’Augusto",
+        descrizione: "Ingresso storico della città.",
+        coords: [44.05836, 12.57005],
+        link: "arco-augusto.html"
+      },
+      {
+        nome: "Ponte di Tiberio",
+        descrizione: "Uno dei simboli più riconoscibili di Rimini.",
+        coords: [44.06325, 12.56365],
+        link: "ponte-tiberio.html"
+      },
+      {
+        nome: "Borgo San Giuliano",
+        descrizione: "Zona storica legata alla memoria urbana.",
+        coords: [44.06522, 12.56253],
+        link: "borgo-san-giuliano.html"
+      },
+      {
+        nome: "Stazione di Rimini",
+        descrizione: "Area importante per collegamenti e bombardamenti.",
+        coords: [44.06420, 12.57416],
+        link: "stazione-rimini.html"
+      },
+      {
+        nome: "Cimitero Monumentale",
+        descrizione: "Luogo di ricordo e commemorazione.",
+        coords: [44.04550, 12.57680],
+        link: "cimitero-monumentale.html"
+      },
+      {
+        nome: "Tempio Malatestiano",
+        descrizione: "Monumento storico danneggiato dalla guerra.",
+        coords: [44.05911, 12.57095],
+        link: "tempio-malatestiano.html"
+      },
+      {
+        nome: "Castel Sismondo",
+        descrizione: "Luogo storico del centro cittadino.",
+        coords: [44.06189, 12.56370],
+        link: "castel-sismondo.html"
+      },
+      {
+        nome: "Anfiteatro Romano",
+        descrizione: "Area storica nel tessuto urbano riminese.",
+        coords: [44.05747, 12.57407],
+        link: "anfiteatro-romano.html"
+      },
+      {
+        nome: "Porto Canale",
+        descrizione: "Zona strategica e simbolica della città.",
+        coords: [44.07020, 12.57790],
+        link: "porto-canale.html"
+      },
+      {
+        nome: "Parco Cervi",
+        descrizione: "Area urbana vicina al centro storico.",
+        coords: [44.05620, 12.57350],
+        link: "parco-cervi.html"
+      }
+    ];
+
+    luoghi.forEach(luogo => {
+      L.marker(luogo.coords).addTo(map)
+        .bindPopup(`
+          <div class="map-popup">
+            <h3>${luogo.nome}</h3>
+            <p>${luogo.descrizione}</p>
+            <a href="${luogo.link}">Approfondisci →</a>
+          </div>
+        `);
+    });
+  </script>
+
+</body>
+</html>
