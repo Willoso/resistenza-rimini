@@ -63,6 +63,28 @@
 }
 
 
+/* FIX MAPPA SOTTO NAVBAR */
+
+#navbarr {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.nav-links {
+  z-index: 10000;
+}
+
+.map-box,
+#map,
+.leaflet-container,
+.leaflet-pane,
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 1 !important;
+}
+
+
 /* ATTRIBUZIONE MAPPA */
 
 .leaflet-control-attribution {
@@ -386,7 +408,9 @@
 
   #navbarr {
     padding: 0 1.2rem;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
   }
 
   .nav-hamburger {
@@ -403,7 +427,7 @@
     right: 0;
     background: #1E1810;
     border-top: 1px solid #8B6914;
-    z-index: 99;
+    z-index: 10000;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease, opacity 0.3s ease;
