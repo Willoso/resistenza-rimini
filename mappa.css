@@ -1,17 +1,54 @@
 /* HERO MAPPA */
 
 .mappa-hero {
-  background: #1E1810;
+  background:
+    linear-gradient(rgba(30,24,16,0.78), rgba(30,24,16,0.9)),
+    url("img1.jpg") center center / cover no-repeat;
+  min-height: 340px;
   padding: 5rem 2.5rem 4rem;
   text-align: center;
   border-bottom: 2px solid #8B6914;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.mappa-hero::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 150px;
+  height: 3px;
+  background: #C9392C;
+  transform: translateX(-50%);
+}
+
+.mappa-hero-inner {
+  max-width: 900px;
+  position: relative;
+  z-index: 2;
+  animation: mappaHeroEnter 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero-label,
+.section-label {
+  display: inline-block;
+  color: #C9392C;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
 }
 
 .mappa-hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.8rem;
+  font-size: 2.9rem;
   color: #EDE5D0;
   margin-bottom: 0.8rem;
+  text-shadow: 0 6px 24px rgba(0,0,0,0.55);
 }
 
 .mappa-hero h1 em {
@@ -22,10 +59,24 @@
 .mappa-hero p {
   max-width: 780px;
   margin: 0 auto;
-  font-size: 0.95rem;
+  font-size: 0.98rem;
   color: #C4A882;
   letter-spacing: 0.04em;
-  line-height: 1.5;
+  line-height: 1.55;
+}
+
+@keyframes mappaHeroEnter {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+    filter: blur(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
 }
 
 
@@ -33,7 +84,19 @@
 
 .mappa-section {
   background: #1E1810;
-  padding: 4rem 2.5rem;
+  padding: 4.5rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.mappa-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(139,105,20,0.12), transparent 30%),
+    radial-gradient(circle at 85% 60%, rgba(201,57,44,0.08), transparent 28%);
+  pointer-events: none;
 }
 
 .mappa-layout {
@@ -43,6 +106,8 @@
   grid-template-columns: 2fr 0.9fr;
   gap: 3.5rem;
   align-items: start;
+  position: relative;
+  z-index: 2;
 }
 
 
@@ -53,7 +118,7 @@
   border: 1px solid rgba(139,105,20,0.75);
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+  box-shadow: 0 22px 48px rgba(0,0,0,0.32);
   height: 620px;
 }
 
@@ -112,7 +177,9 @@
   border: 1px solid rgba(139,105,20,0.75);
   border-radius: 18px;
   padding: 1.6rem;
-  box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+  box-shadow: 0 22px 48px rgba(0,0,0,0.32);
+  position: sticky;
+  top: 92px;
 }
 
 .panel-label {
@@ -157,12 +224,13 @@
   border: 1px solid rgba(139,105,20,0.45);
   border-radius: 12px;
   background: rgba(30,24,16,0.6);
-  transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+  transition: border-color 0.25s ease, transform 0.25s ease, background 0.25s ease;
 }
 
 .luoghi-list a:hover {
   border-color: #C4A882;
   background: rgba(139,105,20,0.12);
+  transform: translateX(4px);
 }
 
 .luoghi-list strong {
@@ -222,12 +290,24 @@
 
 .luoghi-cards-section {
   background: #1E1810;
-  padding: 3rem 2.5rem 5rem;
+  padding: 3.5rem 2.5rem 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.luoghi-cards-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #1E1810;
+  pointer-events: none;
 }
 
 .luoghi-header {
   max-width: 1250px;
   margin: 0 auto 2rem;
+  position: relative;
+  z-index: 2;
 }
 
 .luoghi-header h2 {
@@ -247,7 +327,9 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.6rem;
+  gap: 2.4rem;
+  position: relative;
+  z-index: 2;
 }
 
 .luogo-card {
@@ -255,14 +337,14 @@
   border: 1px solid rgba(139,105,20,0.75);
   border-radius: 18px;
   overflow: hidden;
-  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
   box-shadow: 0 14px 30px rgba(0,0,0,0.20);
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
 }
 
 .luogo-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-7px);
   border-color: #C4A882;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.32);
+  box-shadow: 0 22px 44px rgba(0,0,0,0.34);
 }
 
 .luogo-card img {
@@ -271,7 +353,13 @@
   object-fit: cover;
   display: block;
   border-bottom: 1px solid rgba(139,105,20,0.35);
-  filter: brightness(0.85) sepia(12%);
+  filter: brightness(0.85) sepia(8%);
+  transition: transform 0.7s ease, filter 0.35s ease;
+}
+
+.luogo-card:hover img {
+  transform: scale(1.04);
+  filter: brightness(0.9) sepia(5%);
 }
 
 .luogo-card-content {
@@ -338,6 +426,59 @@
 }
 
 
+/* ANIMAZIONI MAPPA */
+
+.reveal-map,
+.reveal-panel,
+.reveal-soft,
+.reveal-card {
+  opacity: 0;
+  filter: blur(7px);
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform, filter;
+}
+
+.reveal-map {
+  transform: translateX(-36px) translateY(20px) scale(0.985);
+}
+
+.reveal-panel {
+  transform: translateX(36px) translateY(20px) scale(0.985);
+}
+
+.reveal-soft {
+  transform: translateY(28px);
+}
+
+.reveal-card {
+  transform: translateY(42px) scale(0.97);
+}
+
+.reveal-map.show,
+.reveal-panel.show,
+.reveal-soft.show,
+.reveal-card.show {
+  opacity: 1;
+  transform: translateX(0) translateY(0) scale(1);
+  filter: blur(0);
+}
+
+.delay-1 {
+  transition-delay: 0.05s;
+}
+
+.delay-2 {
+  transition-delay: 0.16s;
+}
+
+.delay-3 {
+  transition-delay: 0.27s;
+}
+
+
 /* HAMBURGER */
 
 .nav-hamburger {
@@ -389,6 +530,11 @@
     height: 100%;
   }
 
+  .luoghi-panel {
+    position: relative;
+    top: auto;
+  }
+
   .luoghi-list {
     max-height: none;
     overflow: visible;
@@ -396,6 +542,12 @@
 
   .luoghi-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .reveal-map,
+  .reveal-panel {
+    transform: translateY(34px) scale(0.985);
   }
 }
 
@@ -460,7 +612,13 @@
   /* HERO MOBILE */
 
   .mappa-hero {
+    min-height: 300px;
     padding: 3rem 1rem 2.5rem;
+  }
+
+  .hero-label,
+  .section-label {
+    font-size: 0.65rem;
   }
 
   .mappa-hero h1 {
@@ -518,7 +676,7 @@
 
   .luoghi-grid {
     grid-template-columns: 1fr;
-    gap: 1.2rem;
+    gap: 1.6rem;
   }
 
   .luogo-card {
@@ -556,6 +714,20 @@
 
   .mappa-note p {
     font-size: 0.86rem;
+  }
+
+  .reveal-map,
+  .reveal-panel,
+  .reveal-soft,
+  .reveal-card {
+    transform: translateY(30px) scale(0.98);
+  }
+
+  .reveal-map.show,
+  .reveal-panel.show,
+  .reveal-soft.show,
+  .reveal-card.show {
+    transform: translateY(0) scale(1);
   }
 
 
@@ -628,4 +800,21 @@ footer,
 
 .footer-nav {
   background: transparent !important;
+}
+
+
+/* ACCESSIBILITÀ */
+
+@media (prefers-reduced-motion: reduce) {
+  .mappa-hero-inner,
+  .reveal-map,
+  .reveal-panel,
+  .reveal-soft,
+  .reveal-card {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
 }
