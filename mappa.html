@@ -43,12 +43,14 @@
     <div class="mappa-hero-inner">
       <span class="hero-label">Luoghi della memoria</span>
       <h1>I luoghi della <em>memoria</em></h1>
-      <p>Una mappa interattiva dei luoghi legati alla Resistenza, alla guerra e alla Liberazione di Rimini.</p>
+      <p>
+        Una mappa interattiva dei luoghi legati alla Resistenza, alla guerra e alla Liberazione di Rimini.
+      </p>
     </div>
   </section>
 
 
-  <section class="mappa-section">
+  <section class="mappa-section" id="mappa">
 
     <div class="mappa-layout">
 
@@ -61,67 +63,67 @@
         <h2>Luoghi selezionati</h2>
         <p>
           Clicca sui punti della mappa oppure scegli un luogo dalla lista.
-          Ogni punto può rimandare a una pagina di approfondimento.
+          La pagina scorrerà fino alla descrizione completa del monumento.
         </p>
 
         <div class="luoghi-list">
 
-          <a href="piazza-tre-martiri.html">
+          <a href="#piazza-tre-martiri">
             <strong>Piazza Tre Martiri</strong>
             <span>Luogo simbolo della memoria cittadina.</span>
           </a>
 
-          <a href="piazza-cavour.html">
+          <a href="#piazza-cavour">
             <strong>Piazza Cavour</strong>
             <span>Centro storico e spazio della vita pubblica.</span>
           </a>
 
-          <a href="arco-augusto.html">
+          <a href="#arco-augusto">
             <strong>Arco d’Augusto</strong>
             <span>Ingresso storico della città.</span>
           </a>
 
-          <a href="ponte-tiberio.html">
+          <a href="#ponte-tiberio">
             <strong>Ponte di Tiberio</strong>
             <span>Uno dei simboli più riconoscibili di Rimini.</span>
           </a>
 
-          <a href="borgo-san-giuliano.html">
+          <a href="#borgo-san-giuliano">
             <strong>Borgo San Giuliano</strong>
             <span>Zona storica legata alla memoria urbana.</span>
           </a>
 
-          <a href="stazione-rimini.html">
+          <a href="#stazione-rimini">
             <strong>Stazione di Rimini</strong>
             <span>Area importante per collegamenti e bombardamenti.</span>
           </a>
 
-          <a href="cimitero-monumentale.html">
+          <a href="#cimitero-monumentale">
             <strong>Cimitero Monumentale</strong>
             <span>Luogo di ricordo e commemorazione.</span>
           </a>
 
-          <a href="tempio-malatestiano.html">
+          <a href="#tempio-malatestiano">
             <strong>Tempio Malatestiano</strong>
             <span>Monumento storico danneggiato dalla guerra.</span>
           </a>
 
-          <a href="castel-sismondo.html">
+          <a href="#castel-sismondo">
             <strong>Castel Sismondo</strong>
             <span>Luogo storico del centro cittadino.</span>
           </a>
 
-          <a href="anfiteatro-romano.html">
+          <a href="#anfiteatro-romano">
             <strong>Anfiteatro Romano</strong>
             <span>Area storica nel tessuto urbano riminese.</span>
           </a>
 
-          <a href="porto-canale.html">
+          <a href="#porto-canale">
             <strong>Porto Canale</strong>
             <span>Zona strategica e simbolica della città.</span>
           </a>
 
-          <a href="parco-cervi.html">
+          <a href="#parco-cervi">
             <strong>Parco Cervi</strong>
             <span>Area urbana vicina al centro storico.</span>
           </a>
@@ -134,124 +136,282 @@
   </section>
 
 
-  <section class="luoghi-cards-section">
-    <div class="luoghi-header reveal-soft">
-      <span class="section-label">Percorso urbano</span>
-      <h2>Esplora i luoghi</h2>
-      <p>Una selezione di monumenti, piazze e spazi urbani da collegare alla memoria della città.</p>
+  <section class="monumenti-section">
+
+    <div class="monumenti-header reveal-soft">
+      <span class="section-label">Approfondimenti</span>
+      <h2>Descrizione dei luoghi</h2>
+      <p>
+        Ogni monumento e ogni spazio urbano raccontano una parte della memoria collettiva di Rimini.
+      </p>
     </div>
 
-    <div class="luoghi-grid">
 
-      <article class="luogo-card reveal-card delay-1">
+    <article class="monumento-detail reveal-detail" id="piazza-tre-martiri">
+      <div class="monumento-img">
         <img src="img1.jpg" alt="Piazza Tre Martiri">
-        <div class="luogo-card-content">
-          <h3>Piazza Tre Martiri</h3>
-          <p>Uno dei luoghi più importanti della memoria storica riminese.</p>
-          <a href="piazza-tre-martiri.html">Approfondisci →</a>
-        </div>
-      </article>
+      </div>
 
-      <article class="luogo-card reveal-card delay-2">
+      <div class="monumento-text">
+        <span>Piazza Tre Martiri</span>
+        <h2>Un luogo centrale della memoria cittadina</h2>
+        <p>
+          Piazza Tre Martiri è uno dei luoghi simbolo della memoria storica di Rimini.
+          Nel tempo è stata uno spazio centrale della vita pubblica cittadina e viene
+          collegata al ricordo della guerra, della Resistenza e delle persone che
+          pagarono con la vita la scelta di opporsi al nazifascismo.
+        </p>
+        <p>
+          Inserire questo luogo nel percorso significa ricordare come la città non sia
+          fatta solo di edifici, ma anche di spazi che conservano storie, nomi e
+          testimonianze importanti.
+        </p>
+        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reverse reveal-detail" id="piazza-cavour">
+      <div class="monumento-img">
         <img src="img1.jpg" alt="Piazza Cavour">
-        <div class="luogo-card-content">
-          <h3>Piazza Cavour</h3>
-          <p>Centro della vita cittadina e punto storico del centro di Rimini.</p>
-          <a href="piazza-cavour.html">Approfondisci →</a>
-        </div>
-      </article>
+      </div>
 
-      <article class="luogo-card reveal-card delay-3">
+      <div class="monumento-text">
+        <span>Piazza Cavour</span>
+        <h2>Centro storico e vita pubblica</h2>
+        <p>
+          Piazza Cavour rappresenta uno dei punti principali del centro storico di Rimini.
+          Durante il periodo della guerra, gli spazi cittadini furono attraversati da paura,
+          incertezza e difficoltà quotidiane.
+        </p>
+        <p>
+          Oggi questo luogo può essere letto come parte di un percorso che unisce la storia
+          urbana alla memoria collettiva, ricordando il ruolo delle piazze nella vita della città.
+        </p>
+        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reveal-detail" id="arco-augusto">
+      <div class="monumento-img">
         <img src="img1.jpg" alt="Arco d’Augusto">
-        <div class="luogo-card-content">
-          <h3>Arco d’Augusto</h3>
-          <p>Monumento antico e simbolo dell’ingresso nella città storica.</p>
-          <a href="arco-augusto.html">Approfondisci →</a>
-        </div>
-      </article>
+      </div>
 
-      <article class="luogo-card reveal-card delay-1">
+      <div class="monumento-text">
+        <span>Arco d’Augusto</span>
+        <h2>Il passato antico dentro la città moderna</h2>
+        <p>
+          L’Arco d’Augusto è uno dei monumenti più riconoscibili di Rimini. Anche se
+          appartiene alla storia antica della città, durante il Novecento ha continuato
+          a essere parte del paesaggio urbano vissuto dalla popolazione.
+        </p>
+        <p>
+          Nel percorso della memoria può rappresentare il legame tra epoche diverse:
+          la Rimini romana, la città della guerra e la città che oggi conserva i propri luoghi simbolo.
+        </p>
+        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reverse reveal-detail" id="ponte-tiberio">
+      <div class="monumento-img">
         <img src="img1.jpg" alt="Ponte di Tiberio">
-        <div class="luogo-card-content">
-          <h3>Ponte di Tiberio</h3>
-          <p>Uno dei simboli più riconoscibili di Rimini e del suo territorio.</p>
-          <a href="ponte-tiberio.html">Approfondisci →</a>
-        </div>
-      </article>
+      </div>
 
-      <article class="luogo-card reveal-card delay-2">
+      <div class="monumento-text">
+        <span>Ponte di Tiberio</span>
+        <h2>Un simbolo resistente della città</h2>
+        <p>
+          Il Ponte di Tiberio è uno dei simboli più forti di Rimini. La sua presenza
+          racconta la continuità della città attraverso i secoli e permette di collegare
+          il tema della memoria storica al paesaggio urbano.
+        </p>
+        <p>
+          Anche in un percorso dedicato alla Resistenza, monumenti come questo aiutano
+          a capire quanto la città sia stata segnata dalla guerra e dalla ricostruzione.
+        </p>
+        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reveal-detail" id="borgo-san-giuliano">
+      <div class="monumento-img">
         <img src="img1.jpg" alt="Borgo San Giuliano">
-        <div class="luogo-card-content">
-          <h3>Borgo San Giuliano</h3>
-          <p>Zona storica della città, utile per raccontare memoria e territorio.</p>
-          <a href="borgo-san-giuliano.html">Approfondisci →</a>
-        </div>
-      </article>
+      </div>
 
-      <article class="luogo-card reveal-card delay-3">
+      <div class="monumento-text">
+        <span>Borgo San Giuliano</span>
+        <h2>Memoria urbana e vita quotidiana</h2>
+        <p>
+          Borgo San Giuliano è una zona storica della città, legata alla vita quotidiana
+          e alla memoria urbana. Durante la guerra, anche i quartieri e le zone abitate
+          furono coinvolti nelle difficoltà dell’occupazione e dei bombardamenti.
+        </p>
+        <p>
+          Raccontare il borgo significa dare spazio non solo ai grandi monumenti,
+          ma anche ai luoghi vissuti dalle persone comuni.
+        </p>
+        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reverse reveal-detail" id="stazione-rimini">
+      <div class="monumento-img">
         <img src="img1.jpg" alt="Stazione di Rimini">
-        <div class="luogo-card-content">
-          <h3>Stazione di Rimini</h3>
-          <p>Area importante durante la guerra per collegamenti e bombardamenti.</p>
-          <a href="stazione-rimini.html">Approfondisci →</a>
-        </div>
-      </article>
+      </div>
 
-      <article class="luogo-card reveal-card delay-1">
+      <div class="monumento-text">
+        <span>Stazione di Rimini</span>
+        <h2>Collegamenti, guerra e bombardamenti</h2>
+        <p>
+          La stazione di Rimini fu un luogo importante per i collegamenti e per la vita
+          della città. Durante il periodo bellico, le infrastrutture e le aree legate
+          ai trasporti ebbero un ruolo strategico.
+        </p>
+        <p>
+          Nel percorso della memoria, la stazione permette di ricordare anche l’impatto
+          materiale della guerra sul territorio e sulla popolazione civile.
+        </p>
+        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reveal-detail" id="cimitero-monumentale">
+      <div class="monumento-img">
         <img src="img1.jpg" alt="Cimitero Monumentale">
-        <div class="luogo-card-content">
-          <h3>Cimitero Monumentale</h3>
-          <p>Spazio dedicato al ricordo dei caduti e delle vittime del periodo bellico.</p>
-          <a href="cimitero-monumentale.html">Approfondisci →</a>
-        </div>
-      </article>
+      </div>
 
-      <article class="luogo-card reveal-card delay-2">
+      <div class="monumento-text">
+        <span>Cimitero Monumentale</span>
+        <h2>Un luogo di ricordo e commemorazione</h2>
+        <p>
+          Il Cimitero Monumentale è uno spazio dedicato al ricordo dei caduti e delle
+          vittime del periodo bellico. Luoghi come questo hanno un valore particolare
+          perché mantengono viva la memoria delle persone e delle famiglie colpite dalla guerra.
+        </p>
+        <p>
+          Visitare o raccontare questi spazi significa riflettere sul costo umano del conflitto
+          e sull’importanza della memoria.
+        </p>
+        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reverse reveal-detail" id="tempio-malatestiano">
+      <div class="monumento-img">
         <img src="img1.jpg" alt="Tempio Malatestiano">
-        <div class="luogo-card-content">
-          <h3>Tempio Malatestiano</h3>
-          <p>Monumento storico della città, colpito dagli eventi della guerra.</p>
-          <a href="tempio-malatestiano.html">Approfondisci →</a>
-        </div>
-      </article>
+      </div>
 
-      <article class="luogo-card reveal-card delay-3">
+      <div class="monumento-text">
+        <span>Tempio Malatestiano</span>
+        <h2>Arte, storia e ferite della guerra</h2>
+        <p>
+          Il Tempio Malatestiano è uno dei monumenti più importanti della città.
+          Durante la guerra anche il patrimonio artistico e architettonico venne
+          colpito e danneggiato, lasciando segni visibili nella memoria urbana.
+        </p>
+        <p>
+          Questo luogo permette di collegare la storia della Resistenza alla distruzione
+          subita dalla città e al successivo percorso di ricostruzione.
+        </p>
+        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reveal-detail" id="castel-sismondo">
+      <div class="monumento-img">
         <img src="img1.jpg" alt="Castel Sismondo">
-        <div class="luogo-card-content">
-          <h3>Castel Sismondo</h3>
-          <p>Luogo storico del centro cittadino e parte della memoria urbana.</p>
-          <a href="castel-sismondo.html">Approfondisci →</a>
-        </div>
-      </article>
+      </div>
 
-      <article class="luogo-card reveal-card delay-1">
+      <div class="monumento-text">
+        <span>Castel Sismondo</span>
+        <h2>Un riferimento storico del centro cittadino</h2>
+        <p>
+          Castel Sismondo è un luogo storico del centro di Rimini e fa parte
+          dell’identità urbana della città. Nel percorso della memoria può essere
+          collegato alla trasformazione del centro storico durante e dopo la guerra.
+        </p>
+        <p>
+          La presenza di monumenti storici permette di raccontare la città come
+          uno spazio che conserva tracce di epoche e vicende diverse.
+        </p>
+        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reverse reveal-detail" id="anfiteatro-romano">
+      <div class="monumento-img">
         <img src="img1.jpg" alt="Anfiteatro Romano">
-        <div class="luogo-card-content">
-          <h3>Anfiteatro Romano</h3>
-          <p>Area storica vicina al centro, utile per collegare passato e città moderna.</p>
-          <a href="anfiteatro-romano.html">Approfondisci →</a>
-        </div>
-      </article>
+      </div>
 
-      <article class="luogo-card reveal-card delay-2">
+      <div class="monumento-text">
+        <span>Anfiteatro Romano</span>
+        <h2>Il passato nel tessuto urbano</h2>
+        <p>
+          L’Anfiteatro Romano è un’area storica vicina al centro cittadino.
+          Raccontarlo all’interno del percorso significa mettere in relazione
+          la memoria antica con la storia più recente della città.
+        </p>
+        <p>
+          Anche i resti archeologici contribuiscono a costruire il racconto di Rimini,
+          mostrando come il territorio custodisca molti livelli di memoria.
+        </p>
+        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reveal-detail" id="porto-canale">
+      <div class="monumento-img">
         <img src="img1.jpg" alt="Porto Canale">
-        <div class="luogo-card-content">
-          <h3>Porto Canale</h3>
-          <p>Zona della città collegata al mare, ai collegamenti e alla vita urbana.</p>
-          <a href="porto-canale.html">Approfondisci →</a>
-        </div>
-      </article>
+      </div>
 
-      <article class="luogo-card reveal-card delay-3">
+      <div class="monumento-text">
+        <span>Porto Canale</span>
+        <h2>Il rapporto tra città, mare e territorio</h2>
+        <p>
+          Il Porto Canale è una zona collegata al mare, agli scambi e alla vita urbana.
+          Durante la guerra, le aree strategiche del territorio ebbero un ruolo importante
+          e furono coinvolte nelle trasformazioni della città.
+        </p>
+        <p>
+          Inserirlo nella mappa permette di allargare il percorso della memoria oltre
+          il centro storico, includendo anche il rapporto tra Rimini e il mare.
+        </p>
+        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reverse reveal-detail" id="parco-cervi">
+      <div class="monumento-img">
         <img src="img1.jpg" alt="Parco Cervi">
-        <div class="luogo-card-content">
-          <h3>Parco Cervi</h3>
-          <p>Area urbana vicina al centro, da collegare al percorso della memoria.</p>
-          <a href="parco-cervi.html">Approfondisci →</a>
-        </div>
-      </article>
+      </div>
 
-    </div>
+      <div class="monumento-text">
+        <span>Parco Cervi</span>
+        <h2>Uno spazio urbano per ricordare</h2>
+        <p>
+          Parco Cervi è un’area urbana vicina al centro storico. Anche gli spazi verdi
+          possono diventare parte di un percorso della memoria, perché sono luoghi
+          attraversati ogni giorno dai cittadini.
+        </p>
+        <p>
+          Collegare questi spazi alla storia aiuta a rendere la memoria più vicina
+          alla vita quotidiana e al presente.
+        </p>
+        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
   </section>
 
 
@@ -308,73 +468,73 @@
         nome: "Piazza Tre Martiri",
         descrizione: "Luogo simbolo della memoria cittadina.",
         coords: [44.05933, 12.56839],
-        link: "piazza-tre-martiri.html"
+        link: "#piazza-tre-martiri"
       },
       {
         nome: "Piazza Cavour",
         descrizione: "Centro storico e spazio della vita pubblica.",
         coords: [44.06072, 12.56568],
-        link: "piazza-cavour.html"
+        link: "#piazza-cavour"
       },
       {
         nome: "Arco d’Augusto",
         descrizione: "Ingresso storico della città.",
         coords: [44.05836, 12.57005],
-        link: "arco-augusto.html"
+        link: "#arco-augusto"
       },
       {
         nome: "Ponte di Tiberio",
         descrizione: "Uno dei simboli più riconoscibili di Rimini.",
         coords: [44.06325, 12.56365],
-        link: "ponte-tiberio.html"
+        link: "#ponte-tiberio"
       },
       {
         nome: "Borgo San Giuliano",
         descrizione: "Zona storica legata alla memoria urbana.",
         coords: [44.06522, 12.56253],
-        link: "borgo-san-giuliano.html"
+        link: "#borgo-san-giuliano"
       },
       {
         nome: "Stazione di Rimini",
         descrizione: "Area importante per collegamenti e bombardamenti.",
         coords: [44.06420, 12.57416],
-        link: "stazione-rimini.html"
+        link: "#stazione-rimini"
       },
       {
         nome: "Cimitero Monumentale",
         descrizione: "Luogo di ricordo e commemorazione.",
         coords: [44.04550, 12.57680],
-        link: "cimitero-monumentale.html"
+        link: "#cimitero-monumentale"
       },
       {
         nome: "Tempio Malatestiano",
         descrizione: "Monumento storico danneggiato dalla guerra.",
         coords: [44.05911, 12.57095],
-        link: "tempio-malatestiano.html"
+        link: "#tempio-malatestiano"
       },
       {
         nome: "Castel Sismondo",
         descrizione: "Luogo storico del centro cittadino.",
         coords: [44.06189, 12.56370],
-        link: "castel-sismondo.html"
+        link: "#castel-sismondo"
       },
       {
         nome: "Anfiteatro Romano",
         descrizione: "Area storica nel tessuto urbano riminese.",
         coords: [44.05747, 12.57407],
-        link: "anfiteatro-romano.html"
+        link: "#anfiteatro-romano"
       },
       {
         nome: "Porto Canale",
         descrizione: "Zona strategica e simbolica della città.",
         coords: [44.07020, 12.57790],
-        link: "porto-canale.html"
+        link: "#porto-canale"
       },
       {
         nome: "Parco Cervi",
         descrizione: "Area urbana vicina al centro storico.",
         coords: [44.05620, 12.57350],
-        link: "parco-cervi.html"
+        link: "#parco-cervi"
       }
     ];
 
@@ -384,13 +544,13 @@
           <div class="map-popup">
             <h3>${luogo.nome}</h3>
             <p>${luogo.descrizione}</p>
-            <a href="${luogo.link}">Approfondisci →</a>
+            <a href="${luogo.link}">Vai alla descrizione →</a>
           </div>
         `);
     });
 
     const elementiAnimati = document.querySelectorAll(
-      ".reveal-map, .reveal-panel, .reveal-soft, .reveal-card"
+      ".reveal-map, .reveal-panel, .reveal-soft, .reveal-detail"
     );
 
     const observerMappa = new IntersectionObserver((entries) => {

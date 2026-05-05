@@ -1,3 +1,9 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+
 /* HERO MAPPA */
 
 .mappa-hero {
@@ -93,9 +99,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(circle at 20% 0%, rgba(139,105,20,0.12), transparent 30%),
-    radial-gradient(circle at 85% 60%, rgba(201,57,44,0.08), transparent 28%);
+  background:#1E1810;
   pointer-events: none;
 }
 
@@ -230,7 +234,6 @@
 .luoghi-list a:hover {
   border-color: #C4A882;
   background: rgba(139,105,20,0.12);
-  transform: translateX(4px);
 }
 
 .luoghi-list strong {
@@ -286,124 +289,156 @@
 }
 
 
-/* SEZIONE CARD LUOGHI */
+/* SEZIONE DESCRIZIONI MONUMENTI */
 
-.luoghi-cards-section {
+.monumenti-section {
   background: #1E1810;
-  padding: 3.5rem 2.5rem 5rem;
+  padding: 4rem 2.5rem 5rem;
   position: relative;
   overflow: hidden;
 }
 
-.luoghi-cards-section::before {
+.monumenti-section::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: #1E1810;
+  background:#1E1810;
   pointer-events: none;
 }
 
-.luoghi-header {
-  max-width: 1250px;
-  margin: 0 auto 2rem;
+.monumenti-header {
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+  text-align: center;
   position: relative;
   z-index: 2;
 }
 
-.luoghi-header h2 {
+.monumenti-header h2 {
   font-family: 'Playfair Display', serif;
   color: #EDE5D0;
-  font-size: 2.1rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+  margin-bottom: 0.7rem;
 }
 
-.luoghi-header p {
+.monumenti-header p {
   color: #A08860;
-  font-size: 0.95rem;
+  line-height: 1.6;
+  font-size: 0.96rem;
 }
 
-.luoghi-grid {
+.monumento-detail {
   max-width: 1250px;
-  margin: 0 auto;
+  margin: 0 auto 4rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.4rem;
+  grid-template-columns: 420px 1fr;
+  background: linear-gradient(145deg, #2a1e0e, #171109);
+  border: 1px solid rgba(139,105,20,0.75);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 22px 48px rgba(0,0,0,0.3);
   position: relative;
   z-index: 2;
 }
 
-.luogo-card {
-  background: linear-gradient(145deg, #2a1e0e, #171109);
-  border: 1px solid rgba(139,105,20,0.75);
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 14px 30px rgba(0,0,0,0.20);
-  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+.monumento-detail:last-child {
+  margin-bottom: 0;
 }
 
-.luogo-card:hover {
-  transform: translateY(-7px);
-  border-color: #C4A882;
-  box-shadow: 0 22px 44px rgba(0,0,0,0.34);
+.monumento-detail.reverse {
+  grid-template-columns: 1fr 420px;
 }
 
-.luogo-card img {
+.monumento-detail.reverse .monumento-img {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.monumento-detail.reverse .monumento-text {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.monumento-img {
   width: 100%;
-  height: 190px;
+  height: 100%;
+  min-height: 360px;
+  overflow: hidden;
+}
+
+.monumento-img img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
-  border-bottom: 1px solid rgba(139,105,20,0.35);
-  filter: brightness(0.85) sepia(8%);
-  transition: transform 0.7s ease, filter 0.35s ease;
+  filter: brightness(0.84) sepia(8%);
+  transition: transform 0.7s ease, filter 0.4s ease;
 }
 
-.luogo-card:hover img {
+.monumento-detail:hover .monumento-img img {
   transform: scale(1.04);
-  filter: brightness(0.9) sepia(5%);
+  filter: brightness(0.9) sepia(4%);
 }
 
-.luogo-card-content {
-  padding: 1.2rem 1.25rem 1.4rem;
+.monumento-text {
+  padding: 2.4rem 2.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
 }
 
-.luogo-card-content::before {
+.monumento-text::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 1.25rem;
-  width: 52px;
+  left: 2.6rem;
+  width: 62px;
   height: 3px;
   background: #C9392C;
 }
 
-.luogo-card h3 {
-  font-family: 'Playfair Display', serif;
-  color: #EDE5D0;
-  font-size: 1.45rem;
-  margin: 0.85rem 0 0.55rem;
-  line-height: 1.2;
-}
-
-.luogo-card p {
-  color: #A08860;
-  line-height: 1.5;
-  font-size: 0.92rem;
-  margin-bottom: 1rem;
-  min-height: 68px;
-}
-
-.luogo-card a {
-  color: #C4A882;
-  text-decoration: none;
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
+.monumento-text span {
+  color: #C9392C;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   font-weight: 600;
+  margin-bottom: 0.7rem;
 }
 
-.luogo-card a:hover {
+.monumento-text h2 {
+  font-family: 'Playfair Display', serif;
   color: #EDE5D0;
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+  line-height: 1.15;
+}
+
+.monumento-text p {
+  color: #A08860;
+  line-height: 1.7;
+  font-size: 0.98rem;
+  margin-bottom: 0.9rem;
+}
+
+.back-map {
+  width: fit-content;
+  margin-top: 0.8rem;
+  color: #C4A882;
+  text-decoration: none;
+  border: 1px solid #C4A882;
+  padding: 0.55rem 1rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.back-map:hover {
+  background: #C4A882;
+  color: #1E1810;
 }
 
 
@@ -431,7 +466,7 @@
 .reveal-map,
 .reveal-panel,
 .reveal-soft,
-.reveal-card {
+.reveal-detail {
   opacity: 0;
   filter: blur(7px);
   transition:
@@ -453,14 +488,14 @@
   transform: translateY(28px);
 }
 
-.reveal-card {
-  transform: translateY(42px) scale(0.97);
+.reveal-detail {
+  transform: translateY(46px) scale(0.985);
 }
 
 .reveal-map.show,
 .reveal-panel.show,
 .reveal-soft.show,
-.reveal-card.show {
+.reveal-detail.show {
   opacity: 1;
   transform: translateX(0) translateY(0) scale(1);
   filter: blur(0);
@@ -540,9 +575,19 @@
     overflow: visible;
   }
 
-  .luoghi-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+  .monumento-detail,
+  .monumento-detail.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .monumento-detail.reverse .monumento-img,
+  .monumento-detail.reverse .monumento-text {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .monumento-img {
+    min-height: 280px;
   }
 
   .reveal-map,
@@ -660,53 +705,66 @@
   }
 
 
-  /* CARD MOBILE */
+  /* MONUMENTI MOBILE */
 
-  .luoghi-cards-section {
-    padding: 2.5rem 1rem 4rem;
+  .monumenti-section {
+    padding: 3rem 1rem 4rem;
   }
 
-  .luoghi-header h2 {
+  .monumenti-header {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  .monumenti-header h2 {
     font-size: 1.7rem;
   }
 
-  .luoghi-header p {
+  .monumenti-header p {
     font-size: 0.86rem;
   }
 
-  .luoghi-grid {
+  .monumento-detail,
+  .monumento-detail.reverse {
     grid-template-columns: 1fr;
-    gap: 1.6rem;
-  }
-
-  .luogo-card {
-    padding: 0;
     border-radius: 16px;
+    margin-bottom: 2.5rem;
   }
 
-  .luogo-card img {
-    width: 100%;
-    height: 170px;
-    object-fit: cover;
-    display: block;
+  .monumento-img {
+    min-height: 190px;
+    height: 190px;
   }
 
-  .luogo-card-content {
-    padding: 1rem 1rem 1.2rem;
+  .monumento-text {
+    padding: 1.4rem 1.1rem 1.6rem;
   }
 
-  .luogo-card-content::before {
-    left: 1rem;
+  .monumento-text::before {
+    left: 1.1rem;
+    width: 48px;
   }
 
-  .luogo-card h3 {
-    font-size: 1.3rem;
+  .monumento-text span {
+    font-size: 0.62rem;
   }
 
-  .luogo-card p {
+  .monumento-text h2 {
+    font-size: 1.35rem;
+  }
+
+  .monumento-text p {
     font-size: 0.84rem;
-    min-height: auto;
+    line-height: 1.58;
   }
+
+  .back-map {
+    font-size: 0.64rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+
+  /* FRASE FINALE MOBILE */
 
   .mappa-note {
     padding: 0 1rem 3rem;
@@ -719,14 +777,14 @@
   .reveal-map,
   .reveal-panel,
   .reveal-soft,
-  .reveal-card {
+  .reveal-detail {
     transform: translateY(30px) scale(0.98);
   }
 
   .reveal-map.show,
   .reveal-panel.show,
   .reveal-soft.show,
-  .reveal-card.show {
+  .reveal-detail.show {
     transform: translateY(0) scale(1);
   }
 
@@ -783,7 +841,7 @@
 
 body,
 .mappa-section,
-.luoghi-cards-section,
+.monumenti-section,
 .mappa-note {
   background: #1E1810 !important;
 }
@@ -810,7 +868,7 @@ footer,
   .reveal-map,
   .reveal-panel,
   .reveal-soft,
-  .reveal-card {
+  .reveal-detail {
     animation: none !important;
     transition: none !important;
     opacity: 1 !important;
