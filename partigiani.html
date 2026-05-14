@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Partigiani — Resistenza Rimini</title>
+  <title data-i18n="partigiani.page.title">Partigiani — Resistenza Rimini</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 <body>
 
   <nav id="navbarr">
-    <a href="index.html" class="nav-logo"><em>Resistenza</em> Rimini</a>
+    <a href="index.html" class="nav-logo" data-i18n-html="site.logo"><em>Resistenza</em> Rimini</a>
 
     <button class="nav-hamburger" id="hamburger" onclick="this.classList.toggle('open'); this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
       <span></span>
@@ -24,29 +24,39 @@
     </button>
 
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="storia.html">Storia</a></li>
-      <li><a href="mappa.html">Mappa</a></li>
-      <li><a href="partigiani.html" class="active">Partigiani</a></li>
-      <li><a href="podcast.html">Podcast</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="storia.html" data-i18n="nav.storia">Storia</a></li>
+      <li><a href="mappa.html" data-i18n="nav.mappa">Mappa</a></li>
+      <li><a href="partigiani.html" class="active" data-i18n="nav.partigiani">Partigiani</a></li>
+      <li><a href="podcast.html" data-i18n="nav.podcast">Podcast</a></li>
     </ul>
+
+    <button class="language-btn" id="languageBtn" aria-label="Cambia lingua">
+      <img id="languageFlag" src="Immagini_Bandiere/uk.png" alt="English">
+    </button>
   </nav>
 
 
   <section class="partigiani-hero">
     <div class="partigiani-hero-inner">
-      <span class="hero-label">Volti della memoria</span>
-      <h1>I <em>Partigiani</em> di Rimini</h1>
-      <p>Storie di uomini e giovani che scelsero di opporsi al nazifascismo, pagando spesso con la libertà o con la vita.</p>
+      <span class="hero-label" data-i18n="partigiani.hero.label">Volti della memoria</span>
+
+      <h1 data-i18n-html="partigiani.hero.title">I <em>Partigiani</em> di Rimini</h1>
+
+      <p data-i18n="partigiani.hero.text">
+        Storie di uomini e giovani che scelsero di opporsi al nazifascismo, pagando spesso con la libertà o con la vita.
+      </p>
     </div>
   </section>
 
 
   <section class="partigiani-intro">
     <div class="partigiani-intro-box reveal-soft">
-      <span>Volti della Resistenza</span>
-      <h2>Biografie di coraggio</h2>
-      <p>
+      <span data-i18n="partigiani.intro.label">Volti della Resistenza</span>
+
+      <h2 data-i18n="partigiani.intro.title">Biografie di coraggio</h2>
+
+      <p data-i18n="partigiani.intro.text">
         Questa sezione raccoglie le biografie di alcuni protagonisti della Resistenza riminese.
         Le loro storie raccontano scelte difficili, persecuzioni, lotta clandestina e sacrifici
         compiuti per difendere la libertà della città e del Paese.
@@ -61,18 +71,21 @@
       <img src="Immagini_Partigiani/GuglielmoMarconi.jpg" alt="Guglielmo Marconi">
 
       <div class="partigiano-text">
-        <span class="partigiano-label">Biografia</span>
-        <h2>Guglielmo Marconi</h2>
+        <span class="partigiano-label" data-i18n="partigiani.bio.label">Biografia</span>
+
+        <h2 data-i18n="partigiani.marconi.title">Guglielmo Marconi</h2>
 
         <div class="partigiano-scroll">
-          <p>
-            Guglielmo Marconi non era solo un nome tra le fila del movimento partigiano, ma un uomo che scelse di fare della propria vita un atto di coerenza assoluta. Immaginiamo questo ragazzo, arrivato a Rimini da Pedaso ancora giovanissimo, che già nel 1921 sentiva bruciare dentro il desiderio di giustizia, diventando uno dei pionieri del partito comunista locale. Quella scelta, coraggiosa e precoce, gli costò la tranquillità: divenne subito un bersaglio, conoscendo la durezza del carcere e, nel 1926, l’isolamento del confino a Ventotene. Eppure, proprio tra i silenzi forzati di quell'isola, Marconi non si spezzò; trasformò la solitudine in un’accademia dello spirito, forgiando una resistenza morale che lo avrebbe accompagnato per sempre.
+          <p data-i18n="partigiani.marconi.p1">
+            Guglielmo Marconi non era solo un nome tra le file del movimento partigiano, ma un uomo che scelse di fare della propria vita un atto di coerenza assoluta. Immaginiamo questo ragazzo che già nel 1921 sentiva bruciare dentro il desiderio di giustizia, divenuto uno dei pionieri del partito comunista locale. Quella scelta gli costò la tranquillità eppure Marconi non si spezzò; trasformò la solitudine in un’accademia dello spirito, forgiando una resistenza morale che lo avrebbe accompagnato per sempre.
           </p>
-          <p>
-            Quando nel 1936 la Spagna chiamò, Guglielmo non esitò. Partì per combattere nel battaglione Garibaldi, dove come commissario politico imparò che guidare gli uomini significa innanzitutto capirne le paure e le speranze. Fu quell'esperienza internazionale a prepararlo al ritorno in una patria ferita. Dopo l’8 settembre, con il nome di battaglia "Paolo", divenne il cuore pulsante della Resistenza riminese. Tra le colline dell’Appennino, al comando della II Zona dell’8ª Brigata Garibaldi, Marconi non fu un ufficiale distaccato, ma un uomo che sentiva su di sé il peso di ogni singola vita dei suoi partigiani, guidando azioni di guerriglia con la saggezza di chi sa che ogni sabotaggio è un passo verso la pace.
+
+          <p data-i18n="partigiani.marconi.p2">
+            Quando nel 1936 partì per combattere nel battaglione Garibaldi, dove imparò che guidare gli uomini significa capirne le paure e le speranze. Dopo l’8 settembre, con il nome di battaglia "Paolo", divenne il cuore pulsante della Resistenza riminese. Tra le colline dell’Appennino, al comando della II Zona dell’8ª Brigata Garibaldi, Marconi fu un uomo che sentiva su di sé il peso di ogni singola vita dei suoi partigiani, guidando azioni di guerriglia con la saggezza di chi sa che ogni sabotaggio è un passo verso la pace.
           </p>
-          <p>
-            Con la liberazione di Rimini nel 1944, la sua battaglia cambiò forma ma non sostanza. Deposte le armi, indossò l'abito del servitore civile come assessore e vicesindaco nella prima giunta del Comitato di Liberazione Nazionale. Anche dietro una scrivania, conservò quell'umiltà e quell'integrità cristallina che lo avevano reso un capo rispettato tra le montagne. Guglielmo Marconi si spense il 1° giugno 1968, lasciando il ricordo di un "costruttore di libertà" capace di trasformare l'astrattezza dell'ideale politico in gesti concreti di servizio per la sua comunità. La sua storia ci insegna che i grandi cambiamenti nascono da chi, con sacrificio e dignità, sa far coincidere i propri sogni con il proprio agire quotidiano.
+
+          <p data-i18n="partigiani.marconi.p3">
+            Con la liberazione di Rimini nel 1944, la sua battaglia cambiò forma ma non sostanza. Deposte le armi, indossò l'abito del servitore civile come assessore. Anche dietro una scrivania, conservò quella umiltà e quell'integrità cristallina che lo avevano reso un capo rispettato. Guglielmo Marconi si spense il 1° giugno 1968, lasciando il ricordo di un "costruttore di libertà".
           </p>
         </div>
       </div>
@@ -83,72 +96,90 @@
       <img src="Immagini_Partigiani/Fossoli.jpg" alt="Tre martiri di Fossoli">
 
       <div class="partigiano-text">
-        <span class="partigiano-label">Walter Ghelfi - Rino Molari - Renato Mancini</span>
-        <h2>Tre martiri di Fossoli</h2>
+        <span class="partigiano-label" data-i18n="partigiani.fossoli.label">Walter Ghelfi - Rino Molari - Renato Mancini</span>
+
+        <h2 data-i18n="partigiani.fossoli.title">Tre martiri di Fossoli</h2>
 
         <div class="partigiano-scroll">
-          <p>
+          <p data-i18n="partigiani.fossoli.p1">
             Nel cuore di rimini, i nomi di Walter Ghelfi, Rino Molari e Renato Mancini risuonano come un monito di libertà. Sebbene la memoria cittadina sia legata ai "Tre Martiri" dell'omonima piazza, questi tre figli della terra romagnola rappresentano un’altra pagina.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.fossoli.p2">
             Il destino dei Tre Martiri si compì il 12 luglio 1944 nel fango del poligono di tiro di Cibeno dove le SS (abbreviazione di Schutzstaffeln, "squadre di protezione") stroncarono le loro vite.
           </p>
 
-          <h3>Rino Molari</h3>
-          <p>
-            Immaginiamolo come un uomo di pensiero e fede. Nato a Santarcangelo di Romagna il 9 maggio 1911, fu l’anima intellettuale e il punto di riferimento morale della resistenza cattolica riminese. Professore di lettere stimato, scelse di tradurre i suoi valori in azione civile entrando nel Comitato di Liberazione Nazionale (CLN).
-          </p>
-          <p>
-            Fu il coordinatore tra i contatti più difficili a proteggere i perseguitati. Il suo impegno lo portò a essere catturato dai fascisti il 28 aprile 1944.
-          </p>
-          <p>
-            Ciò che seguì fu un calvario di prigionia tra Rimini, Forlì. Rino mantenne una dignità che traspariva dalle sue lettere.
-          </p>
-          <p>
-            Il suo viaggio terminò tragicamente il 5 settembre 1944, nel campo di Fossoli non ne scalfì la dignità; il suo corpo, fu riconosciuto solo grazie a una licenza di matrimonio che portava con sé.
+          <h3 data-i18n="partigiani.fossoli.rino.title">Rino Molari</h3>
+
+          <p data-i18n="partigiani.fossoli.rino.p1">
+            Immaginiamolo come un uomo di pensiero e fede.Nato a Santarcangelo di Romagna il 9 maggio 1911, fu l’anima intellettuale e il punto di riferimento morale della resistenza cattolica riminese. Professore di lettere stimato, scelse di tradurre i suoi valori in azione civile entrando nel Comitato di Liberazione Nazionale (CLN).
           </p>
 
-          <h3>Walter Ghelfi</h3>
-          <p>
+          <p data-i18n="partigiani.fossoli.rino.p2">
+            Fu il coordinatore tra i contatti più difficili a proteggere i perseguitati. Il suo impegno lo portò a essere catturato dai fascisti il 28 aprile 1944.
+          </p>
+
+          <p data-i18n="partigiani.fossoli.rino.p3">
+            Ciò che seguì fu un calvario di prigionia tra Rimini, Forlì. Rino mantenne una dignità che traspariva dalle sue lettere.
+          </p>
+
+          <p data-i18n="partigiani.fossoli.rino.p4">
+            Il suo viaggio terminò tragicamente il 5 settembre 1944, nel campo di Fossoli non ne scalfì la dignità; il suo corpo, fu riconosciuto solo grazie a una licenza di matrimonio che portava con sé .
+          </p>
+
+          <h3 data-i18n="partigiani.fossoli.walter.title">Walter Ghelfi</h3>
+
+          <p data-i18n="partigiani.fossoli.walter.p1">
             Immaginiamo un ragazzo nel pieno della sua giovinezza, uno di quelli che avrebbe dovuto sognare il futuro e invece dovette difenderlo.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.fossoli.walter.p2">
             Nato a Rimini il 3 agosto 1922, rappresentò l’ardore e l’altruismo della gioventù partigiana in armi.
           </p>
-          <p>
-            La sua umanità risiedeva nella sua capacità di restare fedele ai legami, per Walter il compagno di lotta era come un fratello.
+
+          <p data-i18n="partigiani.fossoli.walter.p3">
+            la sua umanità risiedeva nella sua capacità di restare fedele ai legami, per walter il compagno di lotta era come un fratello.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.fossoli.walter.p4">
             La sua grandezza umana emerse proprio nel momento più buio, durante la prigionia: in quelle ore, Walter scelse deliberatamente di soffrire da solo per salvare gli altri.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.fossoli.walter.p5">
             Ogni suo silenzio sotto i colpi degli aguzzini era un atto di protezione verso la sua comunità, un modo per dire che l'amicizia e la lealtà valevano più della sua stessa vita.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.fossoli.walter.p6">
             Morire a vent'anni, a pochi giorni dal vedere la propria piazza liberata, è una ferita che ancora parla alla nostra coscienza.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.fossoli.walter.p7">
             Walter Ghelfi ci insegna che il coraggio non è l'assenza di timore, ma la capacità di restare umani anche quando tutto intorno sembra spingere verso la brutalità.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.fossoli.walter.p8">
             Ricordarlo oggi significa onorare quel ragazzo che ha camminato nel buio per regalarci la luce, un giovane che ha saputo farsi scudo per il domani di tutti noi.
           </p>
 
-          <h3>Renato Mancini</h3>
-          <p>
+          <h3 data-i18n="partigiani.fossoli.renato.title">Renato Mancini</h3>
+
+          <p data-i18n="partigiani.fossoli.renato.p1">
             Immaginiamolo come un marito che aveva visto troppo orrore nelle pianure ucraine per permettere che la stessa brutalità soffocasse la sua terra.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.fossoli.renato.p2">
             Nato a Saludecio il 26 maggio 1914, completò l’ideale "fronte comune".
           </p>
-          <p>
+
+          <p data-i18n="partigiani.fossoli.renato.p3">
             Renato era un uomo di saludecio che avrebbe voluto solo tornare a casa, veder crescere sua figlia e godersi la pace della sua Romagna, invece, scelse di rischiare tutto.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.fossoli.renato.p4">
             Il suo destino si compì il 12 luglio 1944 a Fossoli nel poligono di tiro. Le testimonianze raccontano di un uomo che non si arrese nemmeno alla fine: il suo gruppo tentò una disperata ribellione contro le SS proprio sul luogo dell'esecuzione, ma il suo tentativo di fuga fu stroncato dai proiettili nazisti.
           </p>
 
-          <p>
+          <p data-i18n="partigiani.fossoli.final">
             Il martirio dei tre riminesi a Fossoli rimane una delle ferite più profonde per il territorio malatestiano. La loro fucilazione non fu un atto di guerra ma una brutale rappresaglia politica. Oggi, il loro esempio continua a vivere nelle scuole e nelle piazze della provincia, ricordando che la democrazia italiana affonda le sue radici nel coraggio di chi seppe restare uomo anche laddove l'umanità sembrava scomparsa.
           </p>
         </div>
@@ -160,20 +191,20 @@
       <img src="Immagini_Partigiani/SilvioCenci.jpg" alt="Silvio Cenci">
 
       <div class="partigiano-text">
-        <span class="partigiano-label">Cippo Silvio Cenci</span>
-        <h2>Silvio Cenci</h2>
+        <span class="partigiano-label" data-i18n="partigiani.bio.label">Biografia</span>
+
+        <h2 data-i18n="partigiani.cenci.title">Silvio Cenci</h2>
 
         <div class="partigiano-scroll">
-          <p>
+          <p data-i18n="partigiani.cenci.p1">
             La storia della Resistenza riminese è tessuta con i fili di un coraggio silenzioso e ostinato, e tra questi il nome di Silvio Cenci brilla per la sua struggente umanità. Silvio non era un soldato di professione, ma un ragazzo del 1924 che scelse di non restare a guardare mentre la sua città veniva soffocata dall'oppressione. A soli diciannove anni, divenne uno dei cuori pulsanti dei Gruppi d’Azione Partigiana, trasformando la sua giovinezza in uno scudo per la libertà di tutti.
           </p>
-          <p>
-            Militando nella XXIX Brigata GAP "Gastone Sozzi", Silvio si muoveva tra le strade che amava come un’ombra necessaria, portando ordini e speranze dove il pericolo era più alto. La sua non era una cieca ricerca dello scontro, ma un’affermazione disperata di dignità civile: un modo per dire che la sua generazione non si sarebbe piegata. Si distinse subito per una dedizione assoluta, diventando quel legame invisibile ma d'acciaio che permetteva alla Resistenza di respirare nel cuore urbano di Rimini.
+
+          <p data-i18n="partigiani.cenci.p2">
+            Tutto si fermò in un tardo pomeriggio di maggio, nel 1944, vicino all'Arco d’Augusto insieme al compagno Ivo Lotti; Un improvviso incrocio con una pattuglia nemica trasformò la città in un campo di battaglia. In quel caos di spari, la vita di silvio viene strappata via per colpa della sua bici.
           </p>
-          <p>
-            Tutto si fermò in un tardo pomeriggio di maggio, nel 1944. Immaginiamolo vicino all'Arco d’Augusto, sotto lo sguardo millenario di quelle pietre, insieme al compagno Ivo Lotti. L'improvviso incrocio con una pattuglia nemica trasformò la città in un campo di battaglia. In quel caos di spari e adrenalina, la differenza tra la vita e la morte fu dettata da un dettaglio di una banalità atroce: mentre il compagno riusciva a dileguarsi, la bicicletta di Silvio lo tradì. Forse una catena che salta, forse il bordo dei pantaloni che si impiglia tra gli ingranaggi proprio nel momento del disperato slancio verso la salvezza. In quell'istante, il destino si fece immobile.
-          </p>
-          <p>
+
+          <p data-i18n="partigiani.cenci.p3">
             Silvio cadde lì, a pochi passi dai simboli della storia della sua città, a soli 19 anni. Ricordarlo oggi significa spogliare la cronaca dalla freddezza dei numeri per ritrovare il battito di un ragazzo che ha rinunciato a tutti i suoi domani. Il suo sacrificio ci parla della fragilità umana che si fa eroismo, ricordandoci che la democrazia in cui viviamo è nata anche dal guasto di una bicicletta e dal sangue di chi, in un momento buio, ha scelto di sognare per noi.
           </p>
         </div>
@@ -185,18 +216,17 @@
       <img src="Immagini_Partigiani/VitoNicoletti.jpg" alt="Vito Nicoletti">
 
       <div class="partigiano-text">
-        <span class="partigiano-label">Biografia</span>
-        <h2>Vito Nicoletti</h2>
+        <span class="partigiano-label" data-i18n="partigiani.bio.label">Biografia</span>
+
+        <h2 data-i18n="partigiani.nicoletti.title">Vito Nicoletti</h2>
 
         <div class="partigiano-scroll">
-          <p>
-            Vito Nicoletti non è stato soltanto un protagonista della politica riminese, ma l’anima stessa di una comunità che cercava faticosamente di rimettersi in piedi. Nato a Coriano il 1° giugno 1909, la sua vita è la testimonianza di come un uomo comune possa trasformarsi in un pilastro per gli altri. Tutto ebbe inizio tra le rotaie e i vagoni, nel mondo dei ferrovieri, dove Vito imparò che la dignità non è un privilegio, ma un diritto da difendere. Scegliere di essere comunista in quegli anni significava accettare il rischio del buio, e per lui quel buio arrivò con l'arresto e il carcere. Eppure, tra quelle mura, il suo spirito non si spense; al contrario, si fece più lucido, preparandolo a diventare la guida di cui la sua terra avrebbe avuto disperatamente bisogno.
+          <p data-i18n="partigiani.nicoletti.p1">
+            Vito Nicoletti non è stato solo un nome sui manifesti o un dirigente dietro una scrivania; è stato un uomo che ha scelto di non abbassare mai la testa. Nato a Coriano il 7 marzo 1909, Nicoletti è un ragazzo di quindici anni che, nel pieno del fascismo, trova il coraggio di protestare per un’ingiustizia: quella scintilla non si è mai spenta in ottant'anni di vita. Ha conosciuto il buio delle celle e il peso del silenzio forzato, ma ha saputo trasformare quella sofferenza in un’energia costruttiva per la sua Rimini.
           </p>
-          <p>
-            Durante i mesi della Resistenza, come esponente del Comitato di Liberazione Nazionale, Vito si mosse nell'ombra della clandestinità con un coraggio raro, fatto di ascolto e diplomazia. La sua grandezza umana risiedeva nella capacità di unire: in un tempo di divisioni feroci, lui seppe essere il ponte tra cattolici, socialisti, azionisti e comunisti. Non cercava lo scontro tra ideologie, ma l'incontro tra persone che sognavano la stessa libertà. Questa sua dote di tessitore sociale divenne fondamentale nel settembre del 1944, quando, tra le macerie di una Rimini ferita a morte, ci fu bisogno di qualcuno che desse voce a chi non l'aveva più.
-          </p>
-          <p>
-            Fondando la Camera del Lavoro, Vito Nicoletti divenne il porto sicuro per migliaia di lavoratori stremati dalla fame e dalla disoccupazione. Non era solo un segretario sindacale, ma un uomo che si rimboccava le maniche accanto ai suoi concittadini, lottando affinché la fine della guerra non fosse solo un silenzio delle armi, ma l'inizio di una vita più equa. Si è spento il 27 marzo 1996, lasciando l'immagine di un "padre" gentile e risoluto. Ricordarlo oggi significa onorare un uomo che ha saputo tradurre il coraggio della battaglia nella pazienza della ricostruzione, insegnandoci che la democrazia si cura ogni giorno, con la solidarietà e l'impegno verso gli ultimi.
+
+          <p data-i18n="partigiani.nicoletti.p2">
+            Chi lo ha conosciuto lo ricorda come un uomo tutto d'un pezzo, capace di ascoltare l'ultimo degli operai con la stessa attenzione riservata ai grandi leader politici. La sua biografia racconta di scioperi e riunioni notturne, ma parla soprattutto di una coerenza rara, fatta di sacrifici personali e di una fede incrollabile nel fatto che, insieme, si potesse costruire un futuro più giusto. Vito ha attraversato il "secolo breve" con il passo di chi sa dove sta andando, lasciandoci un insegnamento semplice ma potente: la libertà va difesa ogni giorno, con coraggio e gentilezza.
           </p>
         </div>
       </div>
@@ -207,36 +237,44 @@
       <img src="Immagini_Partigiani/AlfredoClementi_EnricoPetrucci.jpg" alt="Alfredo Clementi ed Enrico Petrucci">
 
       <div class="partigiano-text">
-        <span class="partigiano-label">Biografia</span>
-        <h2>Alfredo Clementi ed Enrico Petrucci</h2>
+        <span class="partigiano-label" data-i18n="partigiani.bio.label">Biografia</span>
+
+        <h2 data-i18n="partigiani.clementi_petrucci.title">Alfredo Clementi ed Enrico Petrucci</h2>
 
         <div class="partigiano-scroll">
-          <p>
+          <p data-i18n="partigiani.clementi_petrucci.p1">
             Nella geografia del dolore e del coraggio che disegna la Resistenza riminese, i nomi di Alfredo Clementi ed Enrico Petrucci brillano di una luce tragica e fraterna. La loro storia è quella di una giovinezza offerta con estrema generosità alla causa della libertà, stroncata barbaramente dai nazifascisti proprio mentre i cannoni alleati già annunciavano la fine dell'oppressione. Il loro sacrificio, avvenuto nel settembre del 1944.
           </p>
 
-          <h3>Alfredo Clementi</h3>
-          <p>
+          <h3 data-i18n="partigiani.clementi.title">Alfredo Clementi</h3>
+
+          <p data-i18n="partigiani.clementi.p1">
             La storia di Alfredo Clementi è il racconto di una scelta fatta col cuore, prima ancora che con la politica. Nato a Rimini il 1° giugno 1914, Alfredo era un uomo della terra, un agricoltore che conosceva il ritmo lento delle stagioni e la fatica che serve per far nascere la vita dal fango. La sua Resistenza non fu fatta di grandi proclami, ma di quella solidarietà contadina, silenziosa e istintiva, che non chiede il passaporto a chi ha bisogno di aiuto.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.clementi.p2">
             Militante della 29ª Brigata GAP, Alfredo viveva i giorni sospesi del settembre 1944 con l'ansia di chi vede la libertà a un passo, ma sa che l'ombra del pericolo è ancora lunga. Il 18 settembre, nelle campagne di Osteria del Bagno, si trovò davanti a un bivio: un aviatore alleato, caduto dal cielo, cercava scampo dai pattugliamenti tedeschi. In quel momento, Alfredo non vide una divisa o una strategia militare, ma un uomo solo e ferito che gli chiedeva protezione. Senza esitare, scelse l'umanità sopra la prudenza, offrendogli rifugio e salvezza.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.clementi.p3">
             Quel gesto di fratellanza gli fu fatale. Catturato dai tedeschi insieme al compagno Enrico Petrucci, venne fucilato sul posto, a soli tre giorni dalla liberazione della sua Rimini. Alfredo cadde a trent'anni, lasciando il ricordo di un uomo semplice che ha saputo restare umano nel momento più disumano della storia. Oggi la sua memoria non è solo un nome su un marmo, ma il simbolo di un coraggio senza armi, che ci insegna come la libertà sia un seme prezioso che va protetto con la vita.
           </p>
 
-          <h3>Enrico Petrucci</h3>
-          <p>
+          <h3 data-i18n="partigiani.petrucci.title">Enrico Petrucci</h3>
+
+          <p data-i18n="partigiani.petrucci.p1">
             Nato il 15 ottobre 1923, Enrico portava addosso tutta l'energia e i sogni dei suoi vent'anni, condivisi profondamente con l'amico Alfredo in un legame che andava oltre la semplice militanza. Appartenevano a quella generazione cresciuta all'ombra di un unico regime, ragazzi che non avevano mai conosciuto la libertà ma che, quasi per istinto, avevano saputo riconoscerne il richiamo, trovando nel rifiuto della dittatura il senso più vero della propria giovinezza.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.petrucci.p2">
             Il loro destino si compì l'8 settembre 1944, tra i colli riminesi avvolti in un’atmosfera carica di paura, mentre le truppe occupanti, nervose e ormai prossime alla ritirata, stringevano la loro morsa. Immaginiamo Enrico in quegli istanti terribili: la pressione degli interrogatori, la minaccia della fine imminente e, nonostante tutto, la scelta consapevole di tacere. Non era un silenzio ostinato, ma un ultimo, immenso atto d’amore verso i compagni e verso quella povera gente che li aveva protetti rischiando tutto.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.petrucci.p3">
             Caddero insieme, fucilati sul posto, trasformando quelle alture nel loro ultimo, tragico presidio di libertà. Enrico morì a un passo dal domani che aveva sognato, lasciando la sua vita su quelle colline che, solo pochi giorni dopo, avrebbero finalmente visto sorgere il sole della Liberazione.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.petrucci.p4">
             Oggi, i nomi di Clementi e Petrucci sono nella coscienza di una città che riconosce nel loro sangue versato il fondamento della propria democrazia. La loro biografia comune ci ricorda che la Liberazione fu il risultato di scelte individuali coraggiose, compiute da ragazzi poco più che ventenni. Onorare la loro memoria significa custodire il valore di quel "NO" pronunciato contro la tirannia, affinché il loro sacrificio continui a parlare alle generazioni presenti e future.
           </p>
         </div>
@@ -248,21 +286,25 @@
       <img src="Immagini_Partigiani/LuigiPlatania.jpg" alt="Luigi Platania">
 
       <div class="partigiano-text">
-        <span class="partigiano-label">Biografia</span>
-        <h2>Luigi Platania</h2>
+        <span class="partigiano-label" data-i18n="partigiani.bio.label">Biografia</span>
+
+        <h2 data-i18n="partigiani.platania.title">Luigi Platania</h2>
 
         <div class="partigiano-scroll">
-          <p>
-            Nel mosaico della Resistenza riminese, Luigi Platania è il volto di una giovinezza che ha scelto di non piegarsi, mossa da una rettitudine che non ha vacillato neppure davanti al buio più profondo. Nato il 10 gennaio 1922, Luigi era un ragazzo che, nel bivio tra la sottomissione e la giustizia, imboccò senza esitazioni la strada più difficile, quella che portava alla libertà di tutti.
+          <p data-i18n="partigiani.platania.p1">
+            Nel mosaico della Resistenza riminese, Luigi Platania è il volto di una giovinezza che ha scelto di non piegarsi, mossa da una rettitudine che non ha vacillato neppure davanti al buio più profondo. Nato il 25 luglio 1888, Luigi era un ragazzo che imboccò senza esitazioni la strada più difficile, quella che portava alla libertà di tutti.
           </p>
-          <p>
-            Più che un soldato, Luigi era un’anima instancabile: un organizzatore che sapeva tessere legami, un punto di riferimento per chiunque vivesse nell'ombra della clandestinità. Lo si vedeva rischiare tutto nelle missioni di sabotaggio o nell'assicurare che i compagni impegnati tra le colline avessero ciò che serviva per resistere. Il suo non era un freddo calcolo militare, ma un atto di amore puro verso un'Italia che sognava di vedere rinascere, un impegno che sentiva addosso come un dovere personale e urgente.
+
+          <p data-i18n="partigiani.platania.p2">
+            Più che un soldato, Luigi era un’anima instancabile: un organizzatore che sapeva tessere legami. Lo si vedeva rischiare tutto nelle missioni di sabotaggio o nell'assicurare che i compagni impegnati tra le colline avessero ciò che serviva per resistere. Il suo non era un freddo calcolo militare, ma un atto di amore puro verso un'Italia che sognava di vedere rinascere.
           </p>
-          <p>
-            Il suo cammino si spezzò nell'estate del 1944, mentre la violenza nazifascista stringeva la sua morsa in attesa dello scontro finale sulla Linea Gotica. Catturato durante un'azione rischiosa, Luigi conobbe l'orrore delle torture e degli interrogatori. Gli chiedevano nomi, cercavano i nascondigli delle armi, volevano spezzare la sua volontà. Ma Luigi rispose con un silenzio che è diventato leggenda: un silenzio eroico che fece da scudo alla vita di decine di altri partigiani. Fu fucilato il 14 agosto 1944, a soli ventidue anni, proprio nello stesso giorno in cui venivano catturati i Tre Martiri.
+
+          <p data-i18n="partigiani.platania.p3">
+            Il suo cammino si spezzò nell'estate del 1944, venne catturato durante un'azione rischiosa, Luigi conobbe l'orrore delle torture e degli interrogatori. Gli chiedevano nomi, cercavano i nascondigli delle armi, volevano spezzare la sua volontà. Ma egli rispose con un silenzio che è diventato leggenda: un silenzio eroico. Fu fucilato il 14 agosto 1944, a soli ventidue anni, proprio nello stesso giorno in cui venivano catturati i Tre Martiri.
           </p>
-          <p>
-            Morire così, a un soffio dal vedere la propria città libera, rende il suo sacrificio ancora più struggente. Luigi Platania ci ricorda che la nostra democrazia affonda le radici nel coraggio di giovani che hanno messo il bene degli altri davanti alla propria salvezza. Il suo nome non è solo un’incisione sul marmo, ma un esempio vivo di integrità e amore per la libertà, un promemoria costante affinché quei valori restino, oggi come allora, le fondamenta della nostra vita civile.
+
+          <p data-i18n="partigiani.platania.p4">
+            Luigi Platania ci ricorda che la nostra democrazia affonda le radici nel coraggio di giovani che hanno messo il bene degli altri davanti alla propria salvezza. Il suo nome non è solo un incisione sul marmo, ma un esempio vivo di integrità e amore per la libertà.
           </p>
         </div>
       </div>
@@ -270,24 +312,28 @@
 
 
     <article class="partigiano-row reveal-row">
-      <img src="Immagini_Partigiani/Pietro_Barbieri.jpg" alt="Pietro Barbieri">
+      <img src="Immagini_Partigiani/Pietro_Barbieri.jpg" alt="Pietro Barberi">
 
       <div class="partigiano-text">
-        <span class="partigiano-label">Biografia</span>
-        <h2>Pietro Barbieri</h2>
+        <span class="partigiano-label" data-i18n="partigiani.bio.label">Biografia</span>
+
+        <h2 data-i18n="partigiani.barberi.title">Pietro Barberi</h2>
 
         <div class="partigiano-scroll">
-          <p>
-            Nella memoria di Rimini, il nome di Pietro Barbieri brilla per quella forza silenziosa e quella schiena dritta con cui scelse di non piegarsi mai davanti all'oppressione. Nato il 22 giugno 1915, Pietro era un uomo guidato da principi solidi, uno di quelli che dopo l’8 settembre 1943 non ebbe bisogno di troppi calcoli per capire da che parte stare: si schierò subito con la Resistenza, diventando un pilastro della 29ª Brigata GAP "Gastone Sozzi".
+          <p data-i18n="partigiani.barberi.p1">
+            Nella memoria di Rimini, il nome di Pietro Barberi brilla per quella forza silenziosa e quella schiena dritta con cui scelse di non piegarsi mai davanti all'oppressione. Nato il 22 giugno 1898, Pietro era un uomo guidato da principi solidi.
           </p>
-          <p>
-            Vivere la clandestinità in una città ferita e sorvegliata a vista non era un’impresa da poco, ma Pietro si muoveva tra le strade di Rimini con un coraggio che nasceva da un profondo senso del dovere verso la sua gente. Era un uomo d'azione e di pensiero, un punto di riferimento capace di tessere collegamenti rischiosi e organizzare sabotaggi, portando avanti la propaganda della libertà proprio sotto gli occhi del nemico. Per lui, la lotta non era solo una strategia militare, ma un impegno quotidiano fatto di pericoli accettati per il bene comune.
+
+          <p data-i18n="partigiani.barberi.p2">
+            Vivere la clandestinità in una città ferita e sorvegliata a vista non era un’impresa da poco, ma Pietro era un uomo di azione e pensiero, si muoveva tra le strade di Rimini con un coraggio che nasceva da un profondo senso del dovere verso la sua gente, un punto di riferimento capace di tessere collegamenti che portando avanti la propaganda della libertà proprio sotto gli occhi del nemico. ù
           </p>
-          <p>
-            Il suo cammino si spezzò nell'estate di fuoco del 1944, mentre il fronte della Linea Gotica si avvicinava minaccioso. Catturato durante una delicata missione di collegamento tra la città e i partigiani in montagna, Pietro conobbe la brutalità cieca della repressione. In quelle ore drammatiche, la sua umanità divenne eroica: nonostante le torture subite per fargli tradire i compagni e smantellare la rete dei GAP, scelse il silenzio. Fu un silenzio d'amore, uno scudo alzato per proteggere altre vite a costo della propria.
+
+          <p data-i18n="partigiani.barberi.p3">
+            Il suo cammino si spezzò nell'estate di fuoco del 1944, venne catturato durante una delicata missione di collegamento tra la città, Pietro conobbe la brutalità cieca della repressione. In quelle ore drammatiche, la sua umanità divenne eroica: nonostante le torture subite scelse il silenzio. Fu un silenzio d'amore, uno scudo alzato per proteggere altre vite a costo della propria.
           </p>
-          <p>
-            Venne fucilato il 14 agosto 1944, cadendo insieme all'amico Luigi Platania, proprio mentre Rimini si avviava verso i giorni più bui e gloriosi della sua liberazione. Ricordare Pietro Barbieri oggi non significa solo celebrare un caduto, ma onorare un uomo che ha saputo trasformare il sogno della libertà in un sacrificio concreto. La sua vita è una delle pietre angolari della nostra democrazia, un esempio di come la dignità di un singolo possa diventare la salvezza di un’intera comunità.
+
+          <p data-i18n="partigiani.barberi.p4">
+            Venne fucilato il 14 agosto 1944, cadendo insieme all'amico Luigi Platania, proprio mentre Rimini si avviava verso i giorni più bui e dolorosi della sua liberazione. Ricordare Pietro Barberi oggi non significa solo celebrare un caduto, ma onorare un uomo che ha saputo trasformare il sogno della libertà in un sacrificio concreto.
           </p>
         </div>
       </div>
@@ -298,96 +344,212 @@
       <img src="Immagini_Partigiani/TreMartiri.jpg" alt="Mario Capelli, Luigi Nicolò e Adelio Pagliarani">
 
       <div class="partigiano-text">
-        <span class="partigiano-label">Mario Capelli - Luigi Nicolò - Adelio Pagliarani</span>
-        <h2>L’Alba di un Sacrificio</h2>
+        <span class="partigiano-label" data-i18n="partigiani.bio.label">Biografia</span>
+
+        <h2 data-i18n="partigiani.tre_martiri.title">Mario Capelli - Luigi Nicolò - Adelio Pagliarani</h2>
 
         <div class="partigiano-scroll">
-          <p>
+          <p data-i18n="partigiani.tre_martiri.p1">
             Nel cuore di Rimini un’intera piazza e un’intera comunità onorano la memoria di tre giovani che il 16 agosto 1944 sacrificarono la propria vita per la libertà. La loro storia non è solo un atto di eroismo ma anche simbolo del dolore e dignità di una città ferita dalla guerra.
           </p>
 
-          <h3>Mario Capelli</h3>
-          <p>
+          <h3 data-i18n="partigiani.capelli.title">Mario Capelli</h3>
+
+          <p data-i18n="partigiani.capelli.p1">
             Per raccontare l'uomo dietro il partigiano, dobbiamo immaginare Mario Capelli non come una figura epica, ma come un ragazzo che amava l'odore del legno appena lavorato.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.capelli.p2">
             Nato a Rimini il 21 aprile 1921,secondo di tre figli di una famiglia che conosceva bene il valore del sacrificio. Mario non era un teorico della politica; era un giovane, di 23 anni, che amava il suo mestiere di lucidatore.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.capelli.p3">
             L'11 novembre 1943 lasciò la sicurezza della bottega per unirsi alla Resistenza.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.capelli.p4">
             Capelli era un partigiano molto stimato, in lui risiedeva quella serietà, dai modi pacati, di chi sente il peso della responsabilità verso i compagni più giovani.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.capelli.p5">
             L'estate del 1944 lo vide impegnato in azioni di sabotaggio cruciali per indebolire le linee di rifornimento tedesche lungo la via Emilia ed il 14 agosto, i soldati tedeschi fecero irruzione nel rifugio.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.capelli.p6">
             Quello che successe dopo è una cosa impensabile; Capelli con i suoi compagni venne torturato, ma essi non dissero nulla, proteggendo i propri compagni con il silenzio.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.capelli.p7">
             Negli ultimi istanti, la sua preoccupazione non era per la propria vita, ma per la madre e per il vuoto che avrebbe lasciato. Era il pilastro silenzioso, quello a cui tutti guardavano quando la paura si faceva troppo forte.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.capelli.p8">
             Oggi, quella piazza porta il suo nome insieme a quello dei suoi compagni, ma per chi lo ha conosciuto, Mario resta il ragazzo con le mani sporche di lucido per mobili che scelse di dare la vita affinché altri potessero respirare la libertà.
           </p>
 
-          <h3>Luigi Nicolò</h3>
-          <p>
+          <h3 data-i18n="partigiani.nicolo.title">Luigi Nicolò</h3>
+
+          <p data-i18n="partigiani.nicolo.p1">
             Per capire chi fosse davvero Luigi Nicolò, dobbiamo immaginarlo nella sua bottega, con i vestiti intrisi dell'odore pungente della segatura e delle colle.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.nicolo.p2">
             Nato a Rimini l'8 giugno 1922, Luigi era un falegname.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.nicolo.p3">
             In quel mestiere antico aveva imparato che ogni incastro deve essere perfetto perché una struttura regga il peso del tempo.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.nicolo.p4">
             Questa stessa precisione la portò con sé quando la guerra gli chiese di smettere di piallare legno e iniziare a ricostruire la dignità di un Paese.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.nicolo.p5">
             Chi lo ha conosciuto in quei giorni terribili del 1944 ricorda il suo sguardo: fermo, ma capace di lampi di estrema dolcezza.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.nicolo.p6">
             Era l’amico su cui potevi contare, quello che nel rifugio di via Ducale 3 trovava sempre il modo di rassicurare il più giovane Adelio o di scambiare un’occhiata d’intesa con Mario.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.nicolo.p7">
             Non si sentiva un eroe da copertina; si sentiva un operaio che stava facendo il suo turno di guardia affinché il domani fosse diverso.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.nicolo.p8">
             Il momento della cattura e le torture successive al Convento delle Grazie non spezzarono l'uomo, ma ne rivelarono la tempra più pura.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.nicolo.p9">
             Immaginiamo i suoi pensieri in quella cella: il desiderio di rivedere i propri cari, la paura naturale di chi sa che non vedrà la fine dell'estate, eppure la scelta consapevole di tacere.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.nicolo.p10">
             Il suo silenzio non fu un atto di freddezza, ma un gesto di altruismo supremo: ogni nome che non pronunciava era un compagno che poteva tornare a casa, un padre che avrebbe riabbracciato i figli.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.nicolo.p11">
             Il 16 agosto 1944, non morì un soldato, ma un ragazzo che avrebbe voluto solo continuare a lavorare il legno, ma che scelse di diventarlo lui stesso, duro e resistente, su cui è stata edificata la nostra libertà.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.nicolo.p12">
             Oggi, Luigi ci parla attraverso il silenzio della sua piazza, ricordandoci che non serve essere giganti per fare la storia: basta restare umani quando tutto intorno sembra sprofondare nell'orrore.
           </p>
 
-          <h3>Adelio Pagliarani</h3>
-          <p>
+          <h3 data-i18n="partigiani.pagliarani.title">Adelio Pagliarani</h3>
+
+          <p data-i18n="partigiani.pagliarani.p1">
             Per raccontare davvero Adelio Pagliarani, immaginiamoci un ragazzo di diciannove anni che cammina per le strade di rimini.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.pagliarani.p2">
+            Nato a Rimini il 28 aprile 1925, Per raccontare davvero Adelio Pagliarani, immaginiamoci un ragazzo di diciannove anni che cammina per le strade di rimini.
+          </p>
+
+          <p data-i18n="partigiani.pagliarani.p3">
             Nato a Rimini il 28 aprile 1925, Adelio era quello che oggi definiremmo "uno di noi": un giovane con la vita ancora tutta da scrivere.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.pagliarani.p4">
             La sua "umanità" stava nel contrasto tra la fragilità della sua età e la grandezza della sua scelta.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.pagliarani.p5">
             Non era un eroe d'acciaio; era un ragazzo che provava paura, che sentiva il peso del buio nelle celle del Convento delle Grazie, ma che trovava il coraggio nel non voler deludere gli amici, Mario e Luigi, che per lui erano diventati come fratelli.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.pagliarani.p6">
             La sua parabola si interruppe il 14 agosto 1944 nel rifugio in via Ducale 3 a San Vito, insieme ai suoi compagni venne trascinato al comando militare presso il convento delle Grazie.
           </p>
-          <p>
+
+          <p data-i18n="partigiani.pagliarani.p7">
             Fu condannato al patibolo il 16 agosto 1944 alle ore 7:00, scosse profondamente la popolazione vedere un ragazzo di diciannove anni affrontare la forca con tale dignità.Oggi, il suo nome è sinonimo di una giovinezza donata interamente alla causa della libertà.
+          </p>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="partigiano-row reveal-row">
+      <img src="Immagini_Partigiani/AdriaNeri.png" alt="Adria Neri">
+
+      <div class="partigiano-text">
+        <span class="partigiano-label" data-i18n="partigiani.bio.label">Biografia</span>
+
+        <h2 data-i18n-html="partigiani.adria.title">Adria Neri <em>"Marga"</em></h2>
+
+        <div class="partigiano-scroll">
+          <p data-i18n="partigiani.adria.p1">
+            Dietro il nome di battaglia "Marga" c’era una donna animata da una forza straordinaria, capace di sfidare l'orrore della guerra con la sola forza di una bicicletta e di una determinazione incrollabile. Essere una staffetta significava viaggiare nell'ombra, nascondendo tra i vestiti i segreti di un'intera rivoluzione e affrontando i posti di blocco nemici con la calma di chi sa di essere dalla parte giusta della storia. Nata il 27 settembre 1917, Adria non cercava la gloria, ma agiva spinta da un profondo senso del dovere verso la propria comunità.
+          </p>
+
+          <p data-i18n="partigiani.adria.p2">
+            La sua casa non era solo un rifugio, ma un approdo sicuro dove l'umanità riusciva a prevalere sulla violenza; lì, Marga accoglieva e proteggeva, trasformando la paura in speranza. La sua storia ci racconta di un coraggio silenzioso e concreto, fatto di pedalate chilometriche e di sguardi d'intesa. Adria Neri è scomparsa nel 1964, a soli 47 anni, a causa di una morte prematura avvenuta per cause naturali.
+          </p>
+
+          <p data-i18n="partigiani.adria.p3">
+            Ricordare Adria oggi significa onorare tutte quelle donne che, lontano dai grandi palcoscenici, hanno costruito con le proprie mani e i propri sacrifici il terreno fertile su cui è nata la nostra libertà.
+          </p>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="partigiano-row reverse reveal-row">
+      <img src="Immagini_Partigiani/OlgaBondi.jpg" alt="Olga Bondi">
+
+      <div class="partigiano-text">
+        <span class="partigiano-label" data-i18n="partigiani.bio.label">Biografia</span>
+
+        <h2 data-i18n="partigiani.olga.title">Olga Bondi</h2>
+
+        <div class="partigiano-scroll">
+          <h3 data-i18n="partigiani.olga.subtitle">Olga, vent’anni e un sogno di libertà</h3>
+
+          <p data-i18n="partigiani.olga.p1">
+            Nata a Rimini nel 1901, ragazza di vent’anni, fa la sarta e vive nel cuore del Borgo San Giovanni.
+          </p>
+
+          <p data-i18n="partigiani.olga.p2">
+            In quegli anni, Olga, oltre a fare la sarta, è una giovane donna che crede in un mondo più giusto.
+          </p>
+
+          <p data-i18n="partigiani.olga.p3">
+            Insieme al fratello Alieto frequenta i circoli della gioventù comunista, in una città dove parlare di libertà sta diventando sempre più pericoloso.
+          </p>
+
+          <p data-i18n="partigiani.olga.p4">
+            La sera del 24 luglio 1922, Olga e il suo ragazzo Nello passeggia vicino al Palazzo Ghetti quando improvvisamente un gruppo di squadristi sbuca dal nulla: cercano Nello ma i proglietrili non guardano in faccia a nessuno. Olga crolla a terra. Muore poche ore dopo, il 25 luglio in ospedale.
+          </p>
+
+          <p data-i18n="partigiani.olga.p5">
+            Olga Bondi non è stata una soldatessa, ma una civile che ha pagato con la vita l'odio di quegli anni, ben prima che iniziasse la vera e propria Resistenza.
+          </p>
+
+          <p data-i18n="partigiani.olga.p6">
+            Oggi Olga è diventata il primo, fragile e coraggioso argine contro la dittatura.
+          </p>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="partigiano-row reveal-row">
+      <img src="Immagini_Partigiani/AdolfoSaponi.png" alt="Adolfo Saponi Brasile">
+
+      <div class="partigiano-text">
+        <span class="partigiano-label" data-i18n="partigiani.bio.label">Biografia</span>
+
+        <h2 data-i18n-html="partigiani.saponi.title">Adolfo Saponi <em>"Brasile"</em></h2>
+
+        <div class="partigiano-scroll">
+          <p data-i18n="partigiani.saponi.p1">
+            il nome di Adolfo Saponi "Brasile" risuona come quello di un eroe d'altri tempi, ma con radici profondissime nella nostra terra. Era l'uomo dei due mondi: un romagnolo che aveva imparato a difendere la libertà nelle trincee spagnole e nei boschi francesi, portando quella saggezza antica e ribelle tra i vicoli della nostra città e le pendenze delle nostre colline.
+          </p>
+
+          <p data-i18n="partigiani.saponi.p2">
+            Adolfo non era solo un combattente esperto; era la prova vivente che la libertà non ha confini e che vale la pena lottare per essa ovunque sia minacciata. La sua figura umanizza le mappe della Resistenza riminese, trasformando un semplice punto sulla carta in una storia di fratellanza e sacrificio. Ricordare "Brasile" oggi significa camminare per le vie di Rimini con una consapevolezza nuova, sentendo sotto i propri passi il peso e l'orgoglio di una storia che ha saputo guardare lontano senza mai dimenticare casa.
           </p>
         </div>
       </div>
@@ -397,7 +559,7 @@
 
 
   <section class="partigiani-note">
-    <p class="reveal-soft">
+    <p class="reveal-soft" data-i18n="partigiani.note.text">
       Ricordare questi nomi significa dare valore alla memoria collettiva:
       ogni storia diventa una testimonianza di libertà, responsabilità e coraggio civile.
     </p>
@@ -406,29 +568,29 @@
 
   <footer>
     <div class="footer-top">
-      <span class="footer-top-text">XIII Premio "Vincenzo Mascia" — ANPI Rimini</span>
-      <span class="footer-top-text">A.S. 2025/2026</span>
+      <span class="footer-top-text" data-i18n="footer.top.left">XIII Premio "Vincenzo Mascia" — ANPI Rimini</span>
+      <span class="footer-top-text" data-i18n="footer.top.right">A.S. 2025/2026</span>
     </div>
 
     <div class="footer-body">
       <div class="footer-col">
-        <div class="footer-logo"><em>Resistenza</em> Rimini</div>
-        <div class="footer-sub">ITTS Belluzzi–Da Vinci di Rimini</div>
-        <div class="footer-credits">Realizzato da Nome1, Nome2, Nome3</div>
+        <div class="footer-logo" data-i18n-html="site.logo"><em>Resistenza</em> Rimini</div>
+        <div class="footer-sub" data-i18n="footer.school">ITTS Belluzzi–Da Vinci di Rimini</div>
+        <div class="footer-credits" data-i18n="footer.credits">Realizzato da Santopaolo William, Clementi Matteo, Punzo Christian</div>
       </div>
 
       <div class="footer-col">
         <nav class="footer-nav">
-          <a href="index.html">Home</a>
-          <a href="storia.html">Storia</a>
-          <a href="mappa.html">Mappa</a>
-          <a href="partigiani.html">Partigiani</a>
-          <a href="podcast.html">Podcast</a>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="storia.html" data-i18n="nav.storia">Storia</a>
+          <a href="mappa.html" data-i18n="nav.mappa">Mappa</a>
+          <a href="partigiani.html" data-i18n="nav.partigiani">Partigiani</a>
+          <a href="podcast.html" data-i18n="nav.podcast">Podcast</a>
         </nav>
       </div>
     </div>
 
-    <div class="footer-bottom">
+    <div class="footer-bottom" data-i18n="footer.bottom">
       XIII Premio "Vincenzo Mascia" · Progetto realizzato per il bando ANPI Sezione di Rimini
     </div>
   </footer>
@@ -456,5 +618,6 @@
     });
   </script>
 
+<script src="language.js"></script>
 </body>
 </html>

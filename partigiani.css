@@ -520,7 +520,7 @@
   .partigiano-row.reverse {
     width: 92%;
     max-width: 350px;
-    height: 560px;
+    height: 620px;
     grid-template-columns: 1fr;
     border-radius: 16px;
   }
@@ -537,10 +537,20 @@
   }
 
   .partigiano-row img {
-    height: 170px;
-    min-height: 170px;
-    max-height: 170px;
+    height: 240px;
+    min-height: 240px;
+    max-height: 240px;
+    object-fit: cover;
+    object-position: center top;
     transform: scale(1);
+  }
+
+  .partigiano-row img[src*="GuglielmoMarconi.jpg"] {
+    object-position: center 22%;
+  }
+
+  .partigiano-row img[src*="OlgaBondi.jpg"] {
+    object-position: center 20%;
   }
 
   .partigiano-row:hover img {
@@ -549,7 +559,7 @@
 
   .partigiano-text {
     padding: 1.15rem 1.15rem 1.35rem;
-    height: calc(560px - 170px);
+    height: calc(620px - 240px);
   }
 
   .partigiano-label {

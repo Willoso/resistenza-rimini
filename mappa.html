@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mappa — Resistenza Rimini</title>
+  <title data-i18n="mappa.page.title">Mappa — Resistenza Rimini</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- Leaflet CSS -->
   <link 
     rel="stylesheet" 
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -21,7 +20,7 @@
 <body>
 
   <nav id="navbarr">
-    <a href="index.html" class="nav-logo"><em>Resistenza</em> Rimini</a>
+    <a href="index.html" class="nav-logo" data-i18n-html="site.logo"><em>Resistenza</em> Rimini</a>
 
     <button class="nav-hamburger" id="hamburger" onclick="this.classList.toggle('open'); this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
       <span></span>
@@ -30,21 +29,28 @@
     </button>
 
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="storia.html">Storia</a></li>
-      <li><a href="mappa.html" class="active">Mappa</a></li>
-      <li><a href="partigiani.html">Partigiani</a></li>
-      <li><a href="podcast.html">Podcast</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="storia.html" data-i18n="nav.storia">Storia</a></li>
+      <li><a href="mappa.html" class="active" data-i18n="nav.mappa">Mappa</a></li>
+      <li><a href="partigiani.html" data-i18n="nav.partigiani">Partigiani</a></li>
+      <li><a href="podcast.html" data-i18n="nav.podcast">Podcast</a></li>
     </ul>
+
+    <button class="language-btn" id="languageBtn" aria-label="Cambia lingua">
+      <img id="languageFlag" src="Immagini_Bandiere/uk.png" alt="English">
+    </button>
   </nav>
 
 
   <section class="mappa-hero">
     <div class="mappa-hero-inner">
-      <span class="hero-label">Luoghi della memoria</span>
-      <h1>I luoghi della <em>memoria</em></h1>
-      <p>
-        Una mappa interattiva dei luoghi legati alla Resistenza, alla guerra e alla Liberazione di Rimini.
+      <span class="hero-label" data-i18n="mappa.hero.label">Luoghi della memoria</span>
+
+      <h1 data-i18n-html="mappa.hero.title">I luoghi della <em>memoria</em></h1>
+
+      <p data-i18n="mappa.hero.text">
+        Una mappa interattiva dei monumenti, delle targhe, dei cippi e dei luoghi legati alla Resistenza,
+        alla guerra e alla Liberazione nel territorio riminese.
       </p>
     </div>
   </section>
@@ -59,73 +65,190 @@
       </div>
 
       <aside class="luoghi-panel reveal-panel">
-        <span class="panel-label">Mappa interattiva</span>
-        <h2>Luoghi selezionati</h2>
-        <p>
+        <span class="panel-label" data-i18n="mappa.panel.label">Mappa interattiva</span>
+
+        <h2 data-i18n="mappa.panel.title">Luoghi della memoria</h2>
+
+        <p data-i18n="mappa.panel.text">
           Clicca sui punti della mappa oppure scegli un luogo dalla lista.
           La pagina scorrerà fino alla descrizione completa del monumento.
         </p>
 
         <div class="luoghi-list">
 
-          <a href="#piazza-tre-martiri">
-            <strong>Piazza Tre Martiri</strong>
-            <span>Luogo simbolo della memoria cittadina.</span>
+          <a href="#monumento-caduti-miramare">
+            <strong data-i18n="mappa.place1.name">Monumento ai Caduti di Guerra di Miramare</strong>
+            <span data-i18n="mappa.place1.short">Monumento nel parco Spina Verde.</span>
           </a>
 
-          <a href="#piazza-cavour">
-            <strong>Piazza Cavour</strong>
-            <span>Centro storico e spazio della vita pubblica.</span>
+          <a href="#parco-sandro-pertini">
+            <strong data-i18n="mappa.place2.name">Parco Sandro Pertini</strong>
+            <span data-i18n="mappa.place2.short">Monumento al partigiano Presidente.</span>
+          </a>
+
+          <a href="#parco-caduti-lager">
+            <strong data-i18n="mappa.place3.name">Parco “Ai Caduti dei Lager 1943-1945”</strong>
+            <span data-i18n="mappa.place3.short">Luogo del Giorno della Memoria.</span>
+          </a>
+
+          <a href="#augusto-innocenti-stella-baschetti">
+            <strong data-i18n="mappa.place4.name">Augusto Innocenti e Stella Baschetti</strong>
+            <span data-i18n="mappa.place4.short">Memoria dei coniugi trucidati a Rivazzurra.</span>
+          </a>
+
+          <a href="#celletta-bellariva">
+            <strong data-i18n="mappa.place5.name">La Celletta di Bellariva</strong>
+            <span data-i18n="mappa.place5.short">Celletta commemorativa della comunità del Comasco.</span>
+          </a>
+
+          <a href="#franco-tassinari-domenico-gallegati">
+            <strong data-i18n="mappa.place6.name">Franco Tassinari e Domenico Gallegati</strong>
+            <span data-i18n="mappa.place6.short">Giovani partigiani fucilati a Bellariva.</span>
+          </a>
+
+          <a href="#officina-locomotive">
+            <strong data-i18n="mappa.place7.name">Officina Locomotive</strong>
+            <span data-i18n="mappa.place7.short">Centro ferroviario e luogo della Resistenza.</span>
+          </a>
+
+          <a href="#piazzale-gramsci">
+            <strong data-i18n="mappa.place8.name">Piazzale Gramsci</strong>
+            <span data-i18n="mappa.place8.short">Spazio urbano dedicato ad Antonio Gramsci.</span>
+          </a>
+
+          <a href="#sede-ceis">
+            <strong data-i18n="mappa.place9.name">Sede CEIS</strong>
+            <span data-i18n="mappa.place9.short">Segno della rinascita di Rimini dopo la guerra.</span>
+          </a>
+
+          <a href="#monumento-resistenza">
+            <strong data-i18n="mappa.place10.name">Monumento alla Resistenza</strong>
+            <span data-i18n="mappa.place10.short">Opera di Elio Morri nel Parco Cervi.</span>
+          </a>
+
+          <a href="#elisa-mini-imola">
+            <strong data-i18n="mappa.place11.name">Elisa Mini Imola</strong>
+            <span data-i18n="mappa.place11.short">Partigiana combattente della 29ª Brigata GAP.</span>
+          </a>
+
+          <a href="#targa-olga-bondi">
+            <strong data-i18n="mappa.place12.name">Targa Olga Bondi</strong>
+            <span data-i18n="mappa.place12.short">Memoria della giovane antifascista riminese.</span>
+          </a>
+
+          <a href="#adria-neri-marga">
+            <strong data-i18n="mappa.place13.name">Adria Neri “Marga”</strong>
+            <span data-i18n="mappa.place13.short">Staffetta partigiana della 29ª Brigata GAP.</span>
+          </a>
+
+          <a href="#rosina-donini">
+            <strong data-i18n="mappa.place14.name">Rosina Donini “Margherita”</strong>
+            <span data-i18n="mappa.place14.short">Staffetta partigiana ricordata nel Parco Cervi.</span>
           </a>
 
           <a href="#arco-augusto">
-            <strong>Arco d’Augusto</strong>
-            <span>Ingresso storico della città.</span>
+            <strong data-i18n="mappa.place15.name">Arco d’Augusto</strong>
+            <span data-i18n="mappa.place15.short">Luogo legato alla morte di Silvio Cenci.</span>
           </a>
 
-          <a href="#ponte-tiberio">
-            <strong>Ponte di Tiberio</strong>
-            <span>Uno dei simboli più riconoscibili di Rimini.</span>
+          <a href="#rifugi-antiaerei">
+            <strong data-i18n="mappa.place16.name">Rifugi Antiaerei</strong>
+            <span data-i18n="mappa.place16.short">Memoria dei bombardamenti su Rimini.</span>
           </a>
 
-          <a href="#borgo-san-giuliano">
-            <strong>Borgo San Giuliano</strong>
-            <span>Zona storica legata alla memoria urbana.</span>
+          <a href="#piazza-tre-martiri">
+            <strong data-i18n="mappa.place17.name">Piazza Tre Martiri</strong>
+            <span data-i18n="mappa.place17.short">Luogo simbolo della memoria cittadina.</span>
           </a>
 
-          <a href="#stazione-rimini">
-            <strong>Stazione di Rimini</strong>
-            <span>Area importante per collegamenti e bombardamenti.</span>
+          <a href="#albo-oro-caduti">
+            <strong data-i18n="mappa.place18.name">Albo d’Oro Caduti Riminesi 1943-1945</strong>
+            <span data-i18n="mappa.place18.short">Memoria dei caduti custodita nel Duomo.</span>
           </a>
 
-          <a href="#cimitero-monumentale">
-            <strong>Cimitero Monumentale</strong>
-            <span>Luogo di ricordo e commemorazione.</span>
+          <a href="#via-cairoli">
+            <strong data-i18n="mappa.place19.name">Via Cairoli</strong>
+            <span data-i18n="mappa.place19.short">Luogo della morte di Enrico Battarra e Igino Chesi.</span>
           </a>
 
-          <a href="#tempio-malatestiano">
-            <strong>Tempio Malatestiano</strong>
-            <span>Monumento storico danneggiato dalla guerra.</span>
+          <a href="#via-ducale">
+            <strong data-i18n="mappa.place20.name">Via Ducale</strong>
+            <span data-i18n="mappa.place20.short">Base partigiana legata ai Tre Martiri.</span>
           </a>
 
-          <a href="#castel-sismondo">
-            <strong>Castel Sismondo</strong>
-            <span>Luogo storico del centro cittadino.</span>
+          <a href="#piazza-cavour">
+            <strong data-i18n="mappa.place21.name">Piazza Cavour</strong>
+            <span data-i18n="mappa.place21.short">Custodia della Medaglia d’oro al Valor Civile.</span>
           </a>
 
-          <a href="#anfiteatro-romano">
-            <strong>Anfiteatro Romano</strong>
-            <span>Area storica nel tessuto urbano riminese.</span>
+          <a href="#rotonda-vito-nicoletti">
+            <strong data-i18n="mappa.place22.name">Rotonda Vito Nicoletti</strong>
+            <span data-i18n="mappa.place22.short">Rotatoria dedicata all’antifascista riminese.</span>
           </a>
 
-          <a href="#porto-canale">
-            <strong>Porto Canale</strong>
-            <span>Zona strategica e simbolica della città.</span>
+          <a href="#piazzale-caduti-cefalonia">
+            <strong data-i18n="mappa.place23.name">Piazzale Caduti di Cefalonia</strong>
+            <span data-i18n="mappa.place23.short">Memoria della strage della Divisione Acqui.</span>
           </a>
 
-          <a href="#parco-cervi">
-            <strong>Parco Cervi</strong>
-            <span>Area urbana vicina al centro storico.</span>
+          <a href="#giardino-giusti">
+            <strong data-i18n="mappa.place24.name">Giardino dei Giusti</strong>
+            <span data-i18n="mappa.place24.short">Memoria di Ezio Giorgetti e Osman Carugno.</span>
+          </a>
+
+          <a href="#cappella-martiri-liberta">
+            <strong data-i18n="mappa.place25.name">Cappella dei Martiri per la Libertà</strong>
+            <span data-i18n="mappa.place25.short">Luogo di memoria nel Cimitero Monumentale.</span>
+          </a>
+
+          <a href="#guglielmo-marconi-paolo">
+            <strong data-i18n="mappa.place26.name">Guglielmo Marconi “Paolo”</strong>
+            <span data-i18n="mappa.place26.short">Sepoltura del partigiano nel Cimitero Monumentale.</span>
+          </a>
+
+          <a href="#lapide-sminatori">
+            <strong data-i18n="mappa.place27.name">Lapide Sminatori</strong>
+            <span data-i18n="mappa.place27.short">Ricordo delle vittime dello sminamento.</span>
+          </a>
+
+          <a href="#diapason-viserba">
+            <strong data-i18n="mappa.place28.name">Il “Diapason” di Viserba</strong>
+            <span data-i18n="mappa.place28.short">Monumento ai caduti delle guerre mondiali.</span>
+          </a>
+
+          <a href="#alfredo-clementi-enrico-petrucci">
+            <strong data-i18n="mappa.place29.name">Alfredo Clementi ed Enrico Petrucci</strong>
+            <span data-i18n="mappa.place29.short">Cippo in località San Giovanni in Bagno.</span>
+          </a>
+
+          <a href="#targa-eccidio-santa-giustina">
+            <strong data-i18n="mappa.place30.name">Targa Eccidio di Santa Giustina</strong>
+            <span data-i18n="mappa.place30.short">Lapide dell’eccidio del 22 maggio 1921.</span>
+          </a>
+
+          <a href="#giardino-silvano-lisi-valter-vallicelli">
+            <strong data-i18n="mappa.place31.name">Giardino Silvano Lisi e murales Valter Vallicelli</strong>
+            <span data-i18n="mappa.place31.short">Memoria partigiana alla Grotta Rossa.</span>
+          </a>
+
+          <a href="#cimitero-gurkha-indiano">
+            <strong data-i18n="mappa.place32.name">Cimitero Gurkha e Indiano</strong>
+            <span data-i18n="mappa.place32.short">Cimitero di guerra del circuito britannico.</span>
+          </a>
+
+          <a href="#monte-cieco">
+            <strong data-i18n="mappa.place33.name">Monte Cieco</strong>
+            <span data-i18n="mappa.place33.short">Luogo della battaglia del settembre 1944.</span>
+          </a>
+
+          <a href="#cippo-aristodemo-ciavatti">
+            <strong data-i18n="mappa.place34.name">Cippo Aristodemo Ciavatti</strong>
+            <span data-i18n="mappa.place34.short">Ricordo del giovane combattente ucciso a Cerasolo.</span>
+          </a>
+
+          <a href="#pietro-barberini">
+            <strong data-i18n="mappa.place35.name">Pietro Barberini</strong>
+            <span data-i18n="mappa.place35.short">Lapide commemorativa a Vergiano.</span>
           </a>
 
         </div>
@@ -139,276 +262,721 @@
   <section class="monumenti-section">
 
     <div class="monumenti-header reveal-soft">
-      <span class="section-label">Approfondimenti</span>
-      <h2>Descrizione dei luoghi</h2>
-      <p>
+      <span class="section-label" data-i18n="mappa.details.label">Approfondimenti</span>
+
+      <h2 data-i18n="mappa.details.title">Descrizione dei luoghi</h2>
+
+      <p data-i18n="mappa.details.text">
         Ogni monumento e ogni spazio urbano raccontano una parte della memoria collettiva di Rimini.
       </p>
     </div>
 
 
-    <article class="monumento-detail reveal-detail" id="piazza-tre-martiri">
+    <article class="monumento-detail reveal-detail" id="monumento-caduti-miramare">
       <div class="monumento-img">
-        <img src="img1.jpg" alt="Piazza Tre Martiri">
+        <img src="Immagini_Monumenti/MonumentoAiCadutiDiGuerraMiramare.png" alt="Monumento ai Caduti di Guerra di Miramare">
       </div>
 
       <div class="monumento-text">
-        <span>Piazza Tre Martiri</span>
-        <h2>Un luogo centrale della memoria cittadina</h2>
-        <p>
-          Piazza Tre Martiri è uno dei luoghi simbolo della memoria storica di Rimini.
-          Nel tempo è stata uno spazio centrale della vita pubblica cittadina e viene
-          collegata al ricordo della guerra, della Resistenza e delle persone che
-          pagarono con la vita la scelta di opporsi al nazifascismo.
+        <span data-i18n="mappa.detail1.label">Monumento ai Caduti di Guerra di Miramare</span>
+
+        <h2 data-i18n="mappa.detail1.title">Il monumento del parco Spina Verde</h2>
+
+        <p data-i18n="mappa.detail1.text1">
+          Sito in viale Mosca all’interno del parco “Spina Verde” (il più grande parco pubblico di Rimini Sud, 17500 m2) è composto da un monolite in marmo cuneiforme preceduto da un libro stilizzato aperto nella pagina contenente l’elenco dei nomi delle persone commemorate.
         </p>
-        <p>
-          Inserire questo luogo nel percorso significa ricordare come la città non sia
-          fatta solo di edifici, ma anche di spazi che conservano storie, nomi e
-          testimonianze importanti.
+
+        <p data-i18n="mappa.detail1.text2">
+          I nomi sono stati proposti direttamente dai cittadini di Miramare che avevano un congiunto caduto al Comitato di Quartiere tramite un modulo. Vi troviamo diversi caduti o dispersi tra guerre mondiali e coloniali, tra cui militari, marinai, ma anche civili e partigiani, in particolare è presente Giosuè Frisoni , partigiano fucilato dalle truppe naziste.
         </p>
-        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
       </div>
     </article>
 
 
-    <article class="monumento-detail reverse reveal-detail" id="piazza-cavour">
+    <article class="monumento-detail reverse reveal-detail" id="parco-sandro-pertini">
       <div class="monumento-img">
-        <img src="img1.jpg" alt="Piazza Cavour">
+        <img src="Immagini_Monumenti/MonumentoSandroPertini.png" alt="Parco Sandro Pertini">
       </div>
 
       <div class="monumento-text">
-        <span>Piazza Cavour</span>
-        <h2>Centro storico e vita pubblica</h2>
-        <p>
-          Piazza Cavour rappresenta uno dei punti principali del centro storico di Rimini.
-          Durante il periodo della guerra, gli spazi cittadini furono attraversati da paura,
-          incertezza e difficoltà quotidiane.
+        <span data-i18n="mappa.detail2.label">Parco Sandro Pertini</span>
+
+        <h2 data-i18n="mappa.detail2.title">Il monumento al partigiano Presidente</h2>
+
+        <p data-i18n="mappa.detail2.text1">
+          Il monumento a Sandro Pertini, il grande partigiano Presidente, è stato eretto l’8-5-2005 nella vasta area verde e attrezzata, divenuta un centro pulsante di attività sportive, ricreative, culturali. La cerimonia di inaugurazione vide la partecipazione della vedova di Sandro, Carla Voltolina, l’orazione fu tenuta da Veniero Accreman, bandiera dell’antifascismo e della Resistenza riminese. Sandro Pertini, socialista, è stato il settimo Presidente della Repubblica italiana, dal 1978 al 1985. Fin dal discorso di insediamento (si svuotino gli arsenali, si colmino i granai) seppe esprimere una carica straordinaria che gli valse l’ammirazione e l’affetto del popolo.
         </p>
-        <p>
-          Oggi questo luogo può essere letto come parte di un percorso che unisce la storia
-          urbana alla memoria collettiva, ricordando il ruolo delle piazze nella vita della città.
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reveal-detail" id="parco-caduti-lager">
+      <div class="monumento-img">
+        <img src="Immagini_Monumenti/MonumentoVittimeLager.jpg" alt="Parco ai Caduti dei Lager">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail3.label">Parco “Ai Caduti dei Lager 1943-1945”</span>
+
+        <h2 data-i18n="mappa.detail3.title">Il luogo del Giorno della Memoria</h2>
+
+        <p data-i18n="mappa.detail3.text1">
+          Ogni anno nel Parco ai Caduti nei Lager, il 27 gennaio si svolge una cerimonia molto sentita e partecipata nel corso della quale vengono consegnate onorificenze ai deportati nei campi di concentramento. Ogni anno la cerimonia si avvale della partecipazione attiva di una scolaresca che esprime con creatività l’impegno a ravvivare la memoria.
         </p>
-        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reverse reveal-detail" id="augusto-innocenti-stella-baschetti">
+      <div class="monumento-img">
+        <img src="Immagini_Monumenti/PiazzettaStellaAugusto.jpg" alt="Augusto Innocenti e Stella Baschetti">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail4.label">Augusto Innocenti e Stella Baschetti</span>
+
+        <h2 data-i18n="mappa.detail4.title">I coniugi trucidati a Rivazzurra</h2>
+
+        <p data-i18n="mappa.detail4.text1">
+          La via dei Martiri, dalla via Flaminia alla Ferrovia, è dedicata alla memoria dei coniugi Augusto Innocenti, nato il 29/07/1906, e Stella Baschetti, nata il 10/11/1909, trucidati dai nazifascisti il 9 settembre 1944. Secondo il racconto di testimoni i coniugi furono massacrati dai tedeschi perché si rifiutarono di fare i nomi dei partigiani che operavano nella zona.
+        </p>
+
+        <p data-i18n="mappa.detail4.text2">
+          Ad Augusto Innocenti e Stella Baschetti è stata dedicata una piazzetta e compaiono inoltre anche nella lapide del Monumento ai Caduti per la Libertà in Piazza Tre Martiri.
+        </p>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reveal-detail" id="celletta-bellariva">
+      <div class="monumento-img">
+        <img src="Immagini_Monumenti/CellettaBellariva.JPG" alt="La Celletta di Bellariva">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail5.label">La Celletta di Bellariva</span>
+
+        <h2 data-i18n="mappa.detail5.title">La memoria della comunità del Comasco</h2>
+
+        <p data-i18n="mappa.detail5.text1">
+          La celletta fu costruita presso la comunità di ortolani del “Comasco” per commemorare i propri figli caduti a servizio della patria durante la Grande Guerra.
+        </p>
+
+        <p data-i18n="mappa.detail5.text2">
+          La zlenia (celletta) venne realizzata subito a monte del tracciato ferroviario, ai lati del viale che porta verso mare; costruita con materiali poveri e magri, riportò gravi danneggiamenti durante le operazioni di smontaggio svolte nel 2006 da tecnici e operatori per consentire la realizzazione del nuovo sottopassaggio carrabile e ciclopedonale, ma venne restaurata nel 2015 ricostruendo con tecniche simili le parti mancanti.
+        </p>
+
+        <p data-i18n="mappa.detail5.text3">
+          La posizione in cui si trova ora non coincide con l’originaria, a causa delle sopraggiunte necessità di ingombro delle nuove infrastrutture installate: è ora accessibile da via Urbino, ed è sita sul sovra-passo multifunzionale di viale Rimembranze.
+        </p>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reverse reveal-detail" id="franco-tassinari-domenico-gallegati">
+      <div class="monumento-img">
+        <img src="Immagini_Monumenti/ColoniaDeOrchi.png" alt="Franco Tassinari e Domenico Gallegati">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail6.label">Franco Tassinari e Domenico Gallegati</span>
+
+        <h2 data-i18n="mappa.detail6.title">La fucilazione alla colonia De Orchi</h2>
+
+        <p data-i18n="mappa.detail6.text1">
+          Il 3 marzo 1944 nell’area della colonia De Orchi di Bellariva vengono fucilati due giovani partigiani di 19 anni, Domenico Gallegati e Franco Tassinari.
+        </p>
+
+        <p data-i18n="mappa.detail6.text2">
+          Gallegati apparteneva alla ventottesima Brigata Garibaldi “Mario Gordini” mentre Tassinari era nel Gruppo faentino in montagna. Grazie alla ricerca attenta e appassionata di Daniele Celli è stato possibile recuperare questi importanti elementi.
+        </p>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reveal-detail" id="officina-locomotive">
+      <div class="monumento-img">
+        <img src="Immagini_Monumenti/OfficinaLocomotive.jpg" alt="Officina Locomotive">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail7.label">Officina Locomotive</span>
+
+        <h2 data-i18n="mappa.detail7.title">Il cuore ferroviario della Resistenza riminese</h2>
+
+        <p data-i18n="mappa.detail7.text1">
+          L’Officina Locomotive può essere definita come il “cuore pulsante” di Rimini e lo fu particolarmente durante la Seconda guerra mondiale, quando subì insieme alla città spaventosi bombardamenti che ne intaccarono le strutture e stroncarono la vita di numerosi ferrovieri. L’officina fu un centro nevralgico della Resistenza ai nazifascisti contrastando con azioni di sabotaggio le produzioni e le linee di comunicazione e impedendo il trafugamento in Germania di materie prime e macchinari; dopo la Liberazione i ferrovieri contribuirono alla rinascita della città. All’interno dell’Officina due monumenti ricordano il sacrificio di tanti membri della comunità, celebrando la ricorrenza del 25 aprile con la partecipazione sentita e numerosa dei lavoratori attivi e in pensione, depositando ogni anno una corona al Monumento.
+        </p>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reverse reveal-detail" id="piazzale-gramsci">
+      <div class="monumento-img">
+        <img src="Immagini_Monumenti/PiazzaleGramsci.jpg" alt="Piazzale Gramsci">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail8.label">Piazzale Gramsci</span>
+
+        <h2 data-i18n="mappa.detail8.title">Un luogo vivo dedicato ad Antonio Gramsci</h2>
+
+        <p data-i18n="mappa.detail8.text1">
+          Piazzale Gramsci è il cuore pulsante di Rimini, situato di fronte al Mercato Coperto e sede storica del mercato settimanale. È intitolato ad Antonio Gramsci, uno dei più grandi intellettuali del Novecento e simbolo della resistenza al fascismo.
+        </p>
+
+        <p data-i18n="mappa.detail8.text2">
+          La dedica unisce la memoria di un uomo che ha lottato per la giustizia sociale al luogo più vivo e laborioso della città, trasformando i suoi ideali in un punto di riferimento quotidiano per tutta la comunità.
+        </p>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reveal-detail" id="sede-ceis">
+      <div class="monumento-img">
+        <img src="Immagini_Monumenti/CEIS.jpg" alt="Sede CEIS">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail9.label">Sede CEIS</span>
+
+        <h2 data-i18n="mappa.detail9.title">Il primo segno di rinascita di Rimini</h2>
+
+        <p data-i18n="mappa.detail9.text1">
+          Il CEIS (Centro Educativo Italo Svizzero)  è il primo, straordinario, segno di rinascita di Rimini sconvolta e massacrata dalla guerra. Sorge, per una decisione  della Giunta Comunale su un’area, quella dell’Anfiteatro Romano, non ingombra di macerie e con lo spazio per far nascere un giardino. Grazie a vari collaboratori qui i bambini più bisognosi   troveranno asilo e istruzione mentre le persone più povere potranno farsi la prima doccia o avere un vestito.
+        </p>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reverse reveal-detail" id="monumento-resistenza">
+      <div class="monumento-img">
+        <img src="Immagini_Monumenti/MonumentoElioMorri.jpg" alt="Monumento alla Resistenza">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail10.label">Monumento alla Resistenza</span>
+
+        <h2 data-i18n="mappa.detail10.title">Il monumento di Elio Morri nel Parco Cervi</h2>
+
+        <p data-i18n="mappa.detail10.text1">
+          Il monumento alla resistenza di Rimini, opera del famoso scultore Elio Morri, fu inaugurato con una grande manifestazione popolare il 21 ottobre 1973.
+        </p>
+
+        <p data-i18n="mappa.detail10.text2">
+          Il monumento si compone di tre parti: il Martirio, la Riscossa, la Liberazione definendo quest’opera come “l’intuizione dinamica delle incalzanti emozioni e sensazioni del mio tempo”.
+        </p>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reveal-detail" id="elisa-mini-imola">
+      <div class="monumento-img">
+        <img src="Immagini_Monumenti/MonumentoElisaMiniImola.png" alt="Elisa Mini Imola">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail11.label">Elisa Mini Imola</span>
+
+        <h2 data-i18n="mappa.detail11.title">Una partigiana combattente</h2>
+
+        <p data-i18n="mappa.detail11.text1">
+          Elisa Mini fu una partigiana combattente della 29ª Brigata GAP a Forlì (1943-1944). Animata da un profondo ideale antifascista condiviso col marito Romeo Imola, scelse la lotta armata nonostante fosse rimasta vedova con tre figli. Per il suo coraggio ricevette la Croce al merito di guerra (1960) e il Diploma d'onore dal Presidente Pertini (1984).
+        </p>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reverse reveal-detail" id="targa-olga-bondi">
+      <div class="monumento-img">
+        <img src="Immagini_Monumenti/OlgaBondiTarga.png" alt="Targa Olga Bondi">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail12.label">Targa Olga Bondi</span>
+
+        <h2 data-i18n="mappa.detail12.title">Il ricordo della giovane antifascista</h2>
+
+        <p data-i18n="mappa.detail12.text1">
+          A Rimini, la memoria di Olga Bondi, giovane antifascista riminese, uccisa a 21 anni dalla violenza fascista il 25 luglio 1922, è custodita in un’area verde dedicata al suo sacrificio. Il Parco Olga Bondi (proseguimento del Parco Cervi verso via Roma) ospita una targa commemorativa sulle antiche mura presso l'Arco d'Augusto e lo Skatepark cittadino, unendo oggi il ricordo storico alla vita sociale e sportiva dei giovani riminesi.
+        </p>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reveal-detail" id="adria-neri-marga">
+      <div class="monumento-img">
+        <img src="Immagini_Monumenti/AdriaNeri.png" alt="Adria Neri Marga">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail13.label">Adria Neri “Marga”</span>
+
+        <h2 data-i18n="mappa.detail13.title">Staffetta della 29ª Brigata GAP</h2>
+
+        <p data-i18n="mappa.detail13.text1">
+          Marga, staffetta della 29ª Brigata GAP e collaboratrice di "Bulow", gestì i collegamenti politici tra Rimini, Ravenna e Forlì. Riconosciuta sottotenente dall'esercito, ricevette la Medaglia d'oro alla memoria dal Comune di Rimini nel 1972. Nel dopoguerra lavorò per i comuni di Rimini e Bellaria.
+        </p>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reverse reveal-detail" id="rosina-donini">
+      <div class="monumento-img">
+        <img src="img1.jpg" alt="Rosina Donini">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail14.label">Rosina Donini “Margherita”</span>
+
+        <h2 data-i18n="mappa.detail14.title">Una staffetta essenziale per i collegamenti partigiani</h2>
+
+        <p data-i18n="mappa.detail14.text1">
+          Durante i duri bombardamenti su Rimini, le “staffette partigiane” furono essenziali per i collegamenti dei GAP tra Forlì e Cattolica. Tra loro spicca “Rosina Donini” ("Margherita"), che collaborò con i Tre Martiri e ospitò il comando delle staffette in via Lavatoio. Moglie del capo militare Attilio Venturi, ricevette la “Medaglia d'oro” dal Comune per il suo ruolo nella Liberazione e gli venne dedicato a suo nome un percorso ciclo-pedonale all’interno del Parco Cervi.
+        </p>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
       </div>
     </article>
 
 
     <article class="monumento-detail reveal-detail" id="arco-augusto">
       <div class="monumento-img">
-        <img src="img1.jpg" alt="Arco d’Augusto">
+        <img src="Immagini_Monumenti/ArcoDiAugusto.jpg" alt="Arco d’Augusto">
       </div>
 
       <div class="monumento-text">
-        <span>Arco d’Augusto</span>
-        <h2>Il passato antico dentro la città moderna</h2>
-        <p>
-          L’Arco d’Augusto è uno dei monumenti più riconoscibili di Rimini. Anche se
-          appartiene alla storia antica della città, durante il Novecento ha continuato
-          a essere parte del paesaggio urbano vissuto dalla popolazione.
+        <span data-i18n="mappa.detail15.label">Arco d’Augusto</span>
+
+        <h2 data-i18n="mappa.detail15.title">Il luogo della morte di Silvio Cenci</h2>
+
+        <p data-i18n="mappa.detail15.text1">
+          Alle 6 del pomeriggio del 10 maggio 1944, vicino all'Arco d'Augusto, i giovani gappisti riminesi Silvio Cenci e Ivo Lotti, armati, attendevano un partigiano di Santarcangelo per stabilire un collegamento con l'Ottava Brigata Garibaldi. Intercettati e bloccati da una squadra repubblichina riescono a svincolarsi. Nel conflitto a fuoco che segue Silvio riesce a colpire mortalmente un militare fascista ma rimane ucciso dal fuoco dei servi degli occupanti nazisti, morendo a 19 per la nostra libertà, dedicandogli un cippo in quella zona.
         </p>
-        <p>
-          Nel percorso della memoria può rappresentare il legame tra epoche diverse:
-          la Rimini romana, la città della guerra e la città che oggi conserva i propri luoghi simbolo.
-        </p>
-        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
       </div>
     </article>
 
 
-    <article class="monumento-detail reverse reveal-detail" id="ponte-tiberio">
+    <article class="monumento-detail reverse reveal-detail" id="rifugi-antiaerei">
       <div class="monumento-img">
-        <img src="img1.jpg" alt="Ponte di Tiberio">
+        <img src="Immagini_Monumenti/RifugioAntiAerei.jpg" alt="Rifugi Antiaerei">
       </div>
 
       <div class="monumento-text">
-        <span>Ponte di Tiberio</span>
-        <h2>Un simbolo resistente della città</h2>
-        <p>
-          Il Ponte di Tiberio è uno dei simboli più forti di Rimini. La sua presenza
-          racconta la continuità della città attraverso i secoli e permette di collegare
-          il tema della memoria storica al paesaggio urbano.
+        <span data-i18n="mappa.detail16.label">Rifugi Antiaerei</span>
+
+        <h2 data-i18n="mappa.detail16.title">La memoria dei bombardamenti</h2>
+
+        <p data-i18n="mappa.detail16.text1">
+          E’ il 28 dicembre 1943, il primo di tre giorni di incessanti bombardamenti. In vicolo S. Bernardino nei sotterranei dell’edificio accanto alla chiesa era allestito, già nel corso della Prima guerra mondiale, un rifugio paraschegge dove rimangono uccisi 56 civili schiacciati e soffocati dal crollo dei muri dei fabbricati laterali. Nello stesso giorno 30 furono le vittime nel rifugio Cecchi detto “Brutapela”, in via Montefeltro 55, una targa ne ricorda i nomi.
         </p>
-        <p>
-          Anche in un percorso dedicato alla Resistenza, monumenti come questo aiutano
-          a capire quanto la città sia stata segnata dalla guerra e dalla ricostruzione.
+
+        <p data-i18n="mappa.detail16.text2">
+          Un altro rifugio fu colpito durante il primo bombardamento l’1 novembre 1943, quello della Croce Verde, restano sepolte fra le macerie 97 persone.
         </p>
-        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
       </div>
     </article>
 
 
-    <article class="monumento-detail reveal-detail" id="borgo-san-giuliano">
+    <article class="monumento-detail reveal-detail" id="piazza-tre-martiri">
       <div class="monumento-img">
-        <img src="img1.jpg" alt="Borgo San Giuliano">
+        <img src="Immagini_Monumenti/Monumento3Martiri.jpg" alt="Piazza Tre Martiri">
       </div>
 
       <div class="monumento-text">
-        <span>Borgo San Giuliano</span>
-        <h2>Memoria urbana e vita quotidiana</h2>
-        <p>
-          Borgo San Giuliano è una zona storica della città, legata alla vita quotidiana
-          e alla memoria urbana. Durante la guerra, anche i quartieri e le zone abitate
-          furono coinvolti nelle difficoltà dell’occupazione e dei bombardamenti.
+        <span data-i18n="mappa.detail17.label">Piazza Tre Martiri</span>
+
+        <h2 data-i18n="mappa.detail17.title">Il monumento ai caduti per la Liberazione</h2>
+
+        <p data-i18n="mappa.detail17.text1">
+          In Piazza Tre Martiri si decise che fosse degnamente ricordato con un monumento il solenne sacrificio dei caduti per la Liberazione. Il monumento, consistente in una lapide, ideata dal pittore riminese Giovanni Sesto Menghi, comandante partigiano, fu inaugurato il 16 agosto 1946 nel corso di una straordinaria manifestazione. Col passare degli anni crebbe la volontà di dare una più decorosa sistemazione alla lapide ampliandola per contenere i nomi di altri combattenti per la libertà, inaugurandola nuovamente il 25 aprile 1965. Il sito è perimetrato con due fittoni di pietra con una catena in ferro battuto. La lapide si apre con i nomi dei Tre Martiri, Mario Capelli, Luigi Nicolò, Adelio Pagliarani. Seguono quelli di 25 patrioti fucilati, e 35 nominativi di Caduti combattendo.
         </p>
-        <p>
-          Raccontare il borgo significa dare spazio non solo ai grandi monumenti,
-          ma anche ai luoghi vissuti dalle persone comuni.
-        </p>
-        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
       </div>
     </article>
 
 
-    <article class="monumento-detail reverse reveal-detail" id="stazione-rimini">
+    <article class="monumento-detail reverse reveal-detail" id="albo-oro-caduti">
       <div class="monumento-img">
-        <img src="img1.jpg" alt="Stazione di Rimini">
+        <img src="Immagini_Monumenti/DuomoRimini.JPG" alt="Albo d’Oro Caduti Riminesi">
       </div>
 
       <div class="monumento-text">
-        <span>Stazione di Rimini</span>
-        <h2>Collegamenti, guerra e bombardamenti</h2>
-        <p>
-          La stazione di Rimini fu un luogo importante per i collegamenti e per la vita
-          della città. Durante il periodo bellico, le infrastrutture e le aree legate
-          ai trasporti ebbero un ruolo strategico.
+        <span data-i18n="mappa.detail18.label">Albo d’Oro Caduti Riminesi 1943-1945</span>
+
+        <h2 data-i18n="mappa.detail18.title">La memoria custodita nel Duomo</h2>
+
+        <p data-i18n="mappa.detail18.text1">
+          Nella Cappella dei Caduti del Duomo di Rimini, uno dei monumenti fondamentali del Rinascimento italiano, è custodito "Rimini ai suoi caduti", pubblicato dal Comune di Rimini nel 1956/57. Riporta: l'elenco dei Caduti per eventi bellici in Africa Orientale italiana 1935-36; per operazioni militari in Spagna 1936-39 e l'elenco dei Caduti e dispersi riminesi, militari e civili, nella Seconda guerra mondiale.
         </p>
-        <p>
-          Nel percorso della memoria, la stazione permette di ricordare anche l’impatto
-          materiale della guerra sul territorio e sulla popolazione civile.
-        </p>
-        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
       </div>
     </article>
 
 
-    <article class="monumento-detail reveal-detail" id="cimitero-monumentale">
+    <article class="monumento-detail reveal-detail" id="via-cairoli">
       <div class="monumento-img">
-        <img src="img1.jpg" alt="Cimitero Monumentale">
+        <img src="Immagini_Monumenti/ViaCairoli.jpg" alt="Via Cairoli">
       </div>
 
       <div class="monumento-text">
-        <span>Cimitero Monumentale</span>
-        <h2>Un luogo di ricordo e commemorazione</h2>
-        <p>
-          Il Cimitero Monumentale è uno spazio dedicato al ricordo dei caduti e delle
-          vittime del periodo bellico. Luoghi come questo hanno un valore particolare
-          perché mantengono viva la memoria delle persone e delle famiglie colpite dalla guerra.
+        <span data-i18n="mappa.detail19.label">Via Cairoli</span>
+
+        <h2 data-i18n="mappa.detail19.title">La morte di Enrico Battarra e Igino Chesi</h2>
+
+        <p data-i18n="mappa.detail19.text1">
+          Sono trascorsi solo otto giorni dall'assassinio dei Tre Martiri. In via Cairoli sono appostati da due gappisti riminesi, Enrico Battarra, 52 anni, e Igino Chesi, 40 anni, secondo di tre fratelli militanti comunisti perseguitati dai fascisti (Giuseppe, il maggiore, fu catturato e torturato in un rastrellamento nazista a Forlì nel 1944; Mansueto, il più giovane, fu incarcerato più volte dal regime fascista). I due partigiani vengono intercettati da militi repubblichini e tedeschi e, dopo una colluttazione, cadono sotto il fuoco dei nazi-fascisti.
         </p>
-        <p>
-          Visitare o raccontare questi spazi significa riflettere sul costo umano del conflitto
-          e sull’importanza della memoria.
-        </p>
-        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
       </div>
     </article>
 
 
-    <article class="monumento-detail reverse reveal-detail" id="tempio-malatestiano">
+    <article class="monumento-detail reverse reveal-detail" id="via-ducale">
       <div class="monumento-img">
-        <img src="img1.jpg" alt="Tempio Malatestiano">
+        <img src="Immagini_Monumenti/Arresto3Martiri.jpg" alt="Via Ducale">
       </div>
 
       <div class="monumento-text">
-        <span>Tempio Malatestiano</span>
-        <h2>Arte, storia e ferite della guerra</h2>
-        <p>
-          Il Tempio Malatestiano è uno dei monumenti più importanti della città.
-          Durante la guerra anche il patrimonio artistico e architettonico venne
-          colpito e danneggiato, lasciando segni visibili nella memoria urbana.
+        <span data-i18n="mappa.detail20.label">Via Ducale</span>
+
+        <h2 data-i18n="mappa.detail20.title">La base partigiana dei Tre Martiri</h2>
+
+        <p data-i18n="mappa.detail20.text1">
+          La sera del 12 agosto, una trebbiatrice che era al servizio dei tedeschi viene incendiata da una squadra di partigiani, la cui sede logistica è l'ex caserma Ducale, nei pressi del ponte di Tiberio. Il giorno 13 agosto i militi fascisti, circondano la base partigiana, Mario Capelli, di 23 anni, di Luigi Nicolò, di 22, e Adelio Pagliarani, di 19, sorpresi nel nascondiglio, con armi e volantini, sono condotti nell'ex Caserma dei Carabinieri alle Grazie (Covignano) processandoli e dopo essere riconosciuti come partigiani, sono condannati a morte.
         </p>
-        <p>
-          Questo luogo permette di collegare la storia della Resistenza alla distruzione
-          subita dalla città e al successivo percorso di ricostruzione.
-        </p>
-        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
       </div>
     </article>
 
 
-    <article class="monumento-detail reveal-detail" id="castel-sismondo">
+    <article class="monumento-detail reveal-detail" id="piazza-cavour">
       <div class="monumento-img">
-        <img src="img1.jpg" alt="Castel Sismondo">
+        <img src="Immagini_Monumenti/MedagliaPiazzaCavour.jpg" alt="Piazza Cavour">
       </div>
 
       <div class="monumento-text">
-        <span>Castel Sismondo</span>
-        <h2>Un riferimento storico del centro cittadino</h2>
-        <p>
-          Castel Sismondo è un luogo storico del centro di Rimini e fa parte
-          dell’identità urbana della città. Nel percorso della memoria può essere
-          collegato alla trasformazione del centro storico durante e dopo la guerra.
+        <span data-i18n="mappa.detail21.label">Piazza Cavour</span>
+
+        <h2 data-i18n="mappa.detail21.title">La Medaglia d’oro al Valor Civile</h2>
+
+        <p data-i18n="mappa.detail21.text1">
+          Il teatro Amintore Galli, distrutto dai tremendi bombardamenti e ricostruito recente mente, rappresenta mirabilmente l'attaccamento della popolazione riminese alla cultura. all'arte, alla vita associativa e comunitaria. L'atrio del Teatro è dunque il luogo ideale per custodire la Medaglia d'oro al Valor Civile attribuita alla nostra città il 1 settembre 1962 dal ministro Giuseppe Medici. Al suo fianco la medaglia d'oro commemorativa consegnata dall'Amministrazione comunale di Rimini alle famiglie dei Tre Martiri e gentilmente concessa dai fratelli Pierpaolo e Gilberto Capelli, nipoti del martire Langi Nicolo, che con un nobile gesto hanno deciso di donarla alla cittadinanza.
         </p>
-        <p>
-          La presenza di monumenti storici permette di raccontare la città come
-          uno spazio che conserva tracce di epoche e vicende diverse.
-        </p>
-        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
       </div>
     </article>
 
 
-    <article class="monumento-detail reverse reveal-detail" id="anfiteatro-romano">
+    <article class="monumento-detail reverse reveal-detail" id="rotonda-vito-nicoletti">
       <div class="monumento-img">
-        <img src="img1.jpg" alt="Anfiteatro Romano">
+        <img src="Immagini_Monumenti/RotondaVitoNicoletti.png" alt="Rotonda Vito Nicoletti">
       </div>
 
       <div class="monumento-text">
-        <span>Anfiteatro Romano</span>
-        <h2>Il passato nel tessuto urbano</h2>
-        <p>
-          L’Anfiteatro Romano è un’area storica vicina al centro cittadino.
-          Raccontarlo all’interno del percorso significa mettere in relazione
-          la memoria antica con la storia più recente della città.
+        <span data-i18n="mappa.detail22.label">Rotonda Vito Nicoletti</span>
+
+        <h2 data-i18n="mappa.detail22.title">Un antifascista e dirigente sindacale</h2>
+
+        <p data-i18n="mappa.detail22.text1">
+          Vito Nicoletti (1909-1968), storico antifascista e dirigente sindacale, dedicò la vita alla causa dell’antifascismo e dell’emancipazione dei lavoratori. Dopo anni di confino e carcere, guidò la Resistenza a Fabriano e, dal 1956, la CGIL di Rimini, contribuendo allo sviluppo del turismo di massa e alla politica locale come consigliere.
         </p>
-        <p>
-          Anche i resti archeologici contribuiscono a costruire il racconto di Rimini,
-          mostrando come il territorio custodisca molti livelli di memoria.
+
+        <p data-i18n="mappa.detail22.text2">
+          In suo onore, nel 2016, gli è stata intitolata la rotatoria di via Marecchiese a Rimini.
         </p>
-        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
       </div>
     </article>
 
 
-    <article class="monumento-detail reveal-detail" id="porto-canale">
+    <article class="monumento-detail reveal-detail" id="piazzale-caduti-cefalonia">
       <div class="monumento-img">
-        <img src="img1.jpg" alt="Porto Canale">
+        <img src="Immagini_Monumenti/PiazzaleCaduti.jpg" alt="Piazzale Caduti di Cefalonia">
       </div>
 
       <div class="monumento-text">
-        <span>Porto Canale</span>
-        <h2>Il rapporto tra città, mare e territorio</h2>
-        <p>
-          Il Porto Canale è una zona collegata al mare, agli scambi e alla vita urbana.
-          Durante la guerra, le aree strategiche del territorio ebbero un ruolo importante
-          e furono coinvolte nelle trasformazioni della città.
+        <span data-i18n="mappa.detail23.label">Piazzale Caduti di Cefalonia</span>
+
+        <h2 data-i18n="mappa.detail23.title">La memoria della Divisione Acqui</h2>
+
+        <p data-i18n="mappa.detail23.text1">
+          Il piazzale fu intitolato ai Caduti di Cefalonia il 28 settembre 2003, 60O anniversario della barbara strage nella quale i tedeschi si resero responsabili di un orrendo massacro fucilando militi inermi, abbandonati dai loro Comandi. Nella targa viene indicato il numero di 10.260 caduti della Divisione Acqui a Cefalonia e Corfù. Di questi una parte perirono in combattimento, mitragliati a freddo, oppure nei campi di concentramento. Il responsabile maggiore della strage fu Hubert Lanz, capo del XII Corpo d'armata truppe da montagna della Wehrmacht, ma l'ordine di fucilare i militari italiani pare sia stato dato direttamente da Hitler.
         </p>
-        <p>
-          Inserirlo nella mappa permette di allargare il percorso della memoria oltre
-          il centro storico, includendo anche il rapporto tra Rimini e il mare.
-        </p>
-        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
       </div>
     </article>
 
 
-    <article class="monumento-detail reverse reveal-detail" id="parco-cervi">
+    <article class="monumento-detail reverse reveal-detail" id="giardino-giusti">
       <div class="monumento-img">
-        <img src="img1.jpg" alt="Parco Cervi">
+        <img src="Immagini_Monumenti/GiardinoDeiGiusti.jpg" alt="Giardino dei Giusti">
       </div>
 
       <div class="monumento-text">
-        <span>Parco Cervi</span>
-        <h2>Uno spazio urbano per ricordare</h2>
-        <p>
-          Parco Cervi è un’area urbana vicina al centro storico. Anche gli spazi verdi
-          possono diventare parte di un percorso della memoria, perché sono luoghi
-          attraversati ogni giorno dai cittadini.
+        <span data-i18n="mappa.detail24.label">Giardino dei Giusti</span>
+
+        <h2 data-i18n="mappa.detail24.title">Ezio Giorgetti e Osman Carugno</h2>
+
+        <p data-i18n="mappa.detail24.text1">
+          Dopo l'11 settembre 1943, l'albergatore Ezio Giorgetti e il maresciallo Osman Carugno salvarono 38 profughi ebrei, nascondendoli tra Bellaria e i casolari di Madonna di Pugliano. Grazie a documenti falsi e alla protezione della comunità locale, il gruppo rimase incolume fino alla Liberazione. ​Per questo coraggio, Giorgetti fu il primo italiano nominato "Giusto tra le Nazioni". In loro memoria, oltre alla Medaglia d'Argento al Valor Civile al Comune di Montecopiolo, è stata dedicata una targa commemorativa proprio a Pugliano, nel luogo che offrì rifugio ai perseguitati.
         </p>
-        <p>
-          Collegare questi spazi alla storia aiuta a rendere la memoria più vicina
-          alla vita quotidiana e al presente.
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reveal-detail" id="cappella-martiri-liberta">
+      <div class="monumento-img">
+        <img src="Immagini_Monumenti/Sepolcreto.jpg" alt="Cappella dei Martiri per la Libertà">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail25.label">Cappella dei Martiri per la Libertà</span>
+
+        <h2 data-i18n="mappa.detail25.title">Il sepolcreto “Gloria ai Caduti”</h2>
+
+        <p data-i18n="mappa.detail25.text1">
+          Sono oltre 130 i nomi, alcuni ormai illeggibili, dei patrioti riportati su varie lapidi all'interno del sepolcreto titolato "GLORIA AI CADUTI” nel Cimitero Monumentale di Rimini. Varie lapidi di epoche diverse ricordano Patrioti in vari modi connessi alla storia locale: da Giovanni Venerucci; ad alcuni Garibaldini, per passare poi Martiri della 1ª Guerra Mondiale, delle Guerre Coloniali, della 2ª Guerra Mondiale, ed infine un rappresentativo numero di Partigiani.
         </p>
-        <a href="#mappa" class="back-map">Torna alla mappa ↑</a>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reverse reveal-detail" id="guglielmo-marconi-paolo">
+      <div class="monumento-img">
+        <img src="Immagini_Storia/GuglielmoMarconi.jpg" alt="Guglielmo Marconi Paolo">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail26.label">Guglielmo Marconi “Paolo”</span>
+
+        <h2 data-i18n="mappa.detail26.title">Uno dei padri della Resistenza riminese</h2>
+
+        <p data-i18n="mappa.detail26.text1">
+          Alessandro Marconi ("Paolo") (1903-1968), perseguitato e confinato, fu combattente in Spagna e vice comandante dell'8ª Brigata Garibaldi. Insignito della Medaglia d'argento al valor militare, è tra i padri della Resistenza riminese. Le sue spoglie riposano nel Cimitero Monumentale di Rimini, in un’area di grande importanza storica dedicata ai caduti e ai protagonisti dell'antifascismo riminese dove la sua memoria è solennemente onorata. Nel giugno del 1968, i suoi funerali videro una partecipazione popolare immensa, a testimonianza del profondo legame con la città.
+        </p>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reveal-detail" id="lapide-sminatori">
+      <div class="monumento-img">
+        <img src="Immagini_Monumenti/CippoCadutiSminatori.jpg" alt="Lapide Sminatori">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail27.label">Lapide Sminatori</span>
+
+        <h2 data-i18n="mappa.detail27.title">La guerra finita che continuava a uccidere</h2>
+
+        <p data-i18n="mappa.detail27.text1">
+          Nel 1945 la guerra era finita ma continuava a mietere vittime, tra i bambini, gli agricoltori, a causa di una ingente quantità di mine, anti-uomo ed anti-carro, lasciate nei campi dalle truppe nazifasciste. Si ricorda ad esempio la storia di cinque bambini locali dilaniati da una mina mentre scavavano una pista per il gioco delle biglie. Silvano Lisi, il Partigiano Bardan, che partecipò allo sminamento dal 1945 al 1948 fortemente volle che i nomi dei 9 morti in servizio nella nostra zona fossero ricordati. Un masso con una lapide recante i nomi si trova all'interno del Parco Briolini a San Giuliano Mare.
+        </p>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reverse reveal-detail" id="diapason-viserba">
+      <div class="monumento-img">
+        <img src="Immagini_Monumenti/DiapasonViserba.png" alt="Il Diapason di Viserba">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail28.label">Il “Diapason” di Viserba</span>
+
+        <h2 data-i18n="mappa.detail28.title">Il monumento ai caduti di Viserba</h2>
+
+        <p data-i18n="mappa.detail28.text1">
+          Il monumento, nato da una sottoscrizione popolare nel 1998 per volontà dell'Associazione Nazionale Combattenti e Reduci di Viserba e dei suoi Presidenti, Ferruccio Bernardi e Guerrino Pasini, purtroppo scomparsi prima della sua realizzazione. È sito a lato della via Puccini all'interno del parco intitolato alla Beata Maria Rosa Pellesi. Inseriti su due tabelle a lato della struttura a forma di diapason troviamo a sinistra i nomi di militari deceduti nel corso della Prima guerra mondiale, a destra i nomi relativi al Secondo Conflitto Mondiale, ed è stato Inaugurato il 23 ottobre 1998.
+        </p>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reveal-detail" id="alfredo-clementi-enrico-petrucci">
+      <div class="monumento-img">
+        <img src="Immagini_Monumenti/CippoAlfredoEnrico.jpg" alt="Alfredo Clementi ed Enrico Petrucci">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail29.label">Alfredo Clementi ed Enrico Petrucci</span>
+
+        <h2 data-i18n="mappa.detail29.title">Il cippo di San Giovanni in Bagno</h2>
+
+        <p data-i18n="mappa.detail29.text1">
+          Il 18 settembre 1944 l'aviazione alleata martellò con bombardamenti a tappeto le postazioni tedesche a nord ovest della città di Rimini. Il fuoco della contraerea abbatté tre bombardieri medi B25. Due aerei precipitarono in mare nei pressi di Bellaria, un terzo cadde vicino a Borghi. Alfredo Clementi ed Enrico Petrucci, partigiani, tentarono di salvare uno degli aviatori lanciatosi col paracadute. Catturati dai tedeschi furono fucilati in località S. Giovanni in Bagno, in via Osteria del Bagno. Un cippo ricorda l'eroico sacrificio dei due partigiani nel luogo dove furono fucilati.
+        </p>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reverse reveal-detail" id="targa-eccidio-santa-giustina">
+      <div class="monumento-img">
+        <img src="Immagini_Monumenti/MonumentoEccidioSantaGiustina.jpg" alt="Targa Eccidio di Santa Giustina">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail30.label">Targa Eccidio di Santa Giustina</span>
+
+        <h2 data-i18n="mappa.detail30.title">La strage del 22 maggio 1921</h2>
+
+        <p data-i18n="mappa.detail30.text1">
+          Il 22 maggio 1921 a S. Giustina, nella piazza antistante la chiesa, le squadracce fasciste bolognesi compiono una strage. Reduci dal funerale del segretario del fascio riminese Luigi Platania, ucciso il 19 maggio, le camicie nere di Bologna a bordo di auto e camion attraversarono S. Giustina incontrando il disprezzo e la disapprovazione di tanti lavoratori della terra e cittadini. I fascisti scaricarono la loro rabbia sulla popolazione inerme uccidendo Ferdinando Samuelli Amati, Pierino Vannoni e Salvatore Sarti. Una lapide ricorda l'eccidio su una parete del Circolo di S. Giustina.
+        </p>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reveal-detail" id="giardino-silvano-lisi-valter-vallicelli">
+      <div class="monumento-img">
+        <img src="Immagini_Monumenti/TargaSilvanoLisi.jpg" alt="Giardino Silvano Lisi e Valter Vallicelli">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail31.label">Giardino Silvano Lisi e murales Valter Vallicelli</span>
+
+        <h2 data-i18n="mappa.detail31.title">Memoria partigiana alla Grotta Rossa</h2>
+
+        <p data-i18n="mappa.detail31.text1">
+          Nel giardino antistante il Centro Sociale Autogestito GrottaRossa, una targa ricorda la figura di Silvano Lisi, nato nel 1925 nel popolare borgo della Grotta Rossa, partecipò alla lotta di Resistenza e all’opera di sminamento.  Il 26 settembre 2020 nel giardino della Grotta Rossa è spuntato un altro fiore rosso, in memoria di Valter Vallicelli, il partigiano nato il 12 giugno 1927, partecipò alla Resistenza nel Ravennate, contribuendo inoltre a farla conoscere a tanti cittadini e studenti, tra cui due giovani artisti che gli dedicarono un murales.
+        </p>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reverse reveal-detail" id="cimitero-gurkha-indiano">
+      <div class="monumento-img">
+        <img src="Immagini_Monumenti/CimiteroGurkha.JPG" alt="Cimitero Gurkha e Indiano">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail32.label">Cimitero Gurkha e Indiano</span>
+
+        <h2 data-i18n="mappa.detail32.title">Il cimitero di guerra sulla Superstrada di San Marino</h2>
+
+        <p data-i18n="mappa.detail32.text1">
+          Il Cimitero di guerra Gurkha e Indiano ospita le tombe di combattenti Indiani e Gurkha nepalesi. In un'area monumentale sono contenute le ceneri di militari Indiani, tra cui vari ufficiali. Il cimitero, che fa parte del circuito dei cimiteri britannici, fu realizzato nell'ottobre 1945, su un terreno, come ricorda una lapide, donato dal popolo italiano
+        </p>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reveal-detail" id="monte-cieco">
+      <div class="monumento-img">
+        <img src="Immagini_Monumenti/MonteciecoCippo.jpg" alt="Monte Cieco">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail33.label">Monte Cieco</span>
+
+        <h2 data-i18n="mappa.detail33.title">La battaglia del settembre 1944</h2>
+
+        <p data-i18n="mappa.detail33.text1">
+          II 19 e 20 settembre 1944 a Monte Cieco si svolse una tremenda battaglia tra la 1º Divisione Corazzata Britannica e la 90° Divisione Tedesca. L'esito fu disastroso per le truppe britanniche portando alla distruzione di carri armati e al massacro di 64 uomini degli equipaggi. Subito dopo la 1º Divisione Corazzata Britannica sarebbe stata sciolta portando i tedeschi a rioccupare l'importante posizione di Monte-cieco. Il 20 settembre le truppe canadesi e neozelandesi sfondarono le linee tedesche a Covignano ed il 21 settembre la III Brigata di Montagna Greca entrò a Rimini dall'Arco d'Augusto.
+        </p>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reverse reveal-detail" id="cippo-aristodemo-ciavatti">
+      <div class="monumento-img">
+        <img src="Immagini_Monumenti/CippoAristodemoCiavatti.jpg" alt="Cippo Aristodemo Ciavatti">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail34.label">Cippo Aristodemo Ciavatti</span>
+
+        <h2 data-i18n="mappa.detail34.title">Il giovane combattente ucciso a Cerasolo</h2>
+
+        <p data-i18n="mappa.detail34.text1">
+          Il 3 settembre 1944 a Cerasolo (nel Comune di Coriano, fra Rimini e S. Marino) la piccola comunità che abitava le case del crinale assistette a una esecuzione senza processo, all'omicidio di un giovane combattente per la libertà che si chiamava Aristodemo Ciavatti.
+        </p>
+
+        <p data-i18n="mappa.detail34.text2">
+          Aveva 22 anni, era impegnato nella lotta al nazifascismo e diffondeva i volantini della Resistenza. Ancora oggi fra gli abitanti anziani di quel borgo permane il ricordo di quel terribile episodio di violenza.
+        </p>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
+      </div>
+    </article>
+
+
+    <article class="monumento-detail reveal-detail" id="pietro-barberini">
+      <div class="monumento-img">
+        <img src="Immagini_Monumenti/CippoPietroBarberini.png" alt="Pietro Barberini">
+      </div>
+
+      <div class="monumento-text">
+        <span data-i18n="mappa.detail35.label">Pietro Barberini</span>
+
+        <h2 data-i18n="mappa.detail35.title">La lapide commemorativa a Vergiano</h2>
+
+        <p data-i18n="mappa.detail35.text1">
+          Dopo l'8 settembre 1943, il vergianese Pietro Barberini si unì alla Divisione Italia per combattere i tedeschi in Jugoslavia. Caduto in battaglia a Zagabria nel maggio 1945, ricevette la Medaglia di Bronzo al Valor Militare.
+        </p>
+
+        <p data-i18n="mappa.detail35.text2">
+          In suo onore, l’ANPI e il Comune hanno posto una grande lapide commemorativa in via Marecchiese 454 a Vergiano. Il marmo è affisso al primo piano dell'edificio che ospitava la storica Cooperativa "La Vergillana", rendendo omaggio al suo sacrificio proprio nel cuore della sua comunità.
+        </p>
+
+        <a href="#mappa" class="back-map" data-i18n="mappa.back">Torna alla mappa ↑</a>
       </div>
     </article>
 
@@ -416,148 +984,108 @@
 
 
   <section class="mappa-note">
-    <p class="reveal-soft">
+    <p class="reveal-soft" data-i18n="mappa.note.text">
       Ogni luogo racconta una parte della memoria collettiva di Rimini:
-      piazze, monumenti e spazi urbani diventano punti da cui rileggere la storia della città.
+      piazze, monumenti, parchi, cippi e targhe diventano punti da cui rileggere la storia della città.
     </p>
   </section>
 
 
   <footer>
     <div class="footer-top">
-      <span class="footer-top-text">XIII Premio "Vincenzo Mascia" — ANPI Rimini</span>
-      <span class="footer-top-text">A.S. 2025/2026</span>
+      <span class="footer-top-text" data-i18n="footer.top.left">XIII Premio "Vincenzo Mascia" — ANPI Rimini</span>
+      <span class="footer-top-text" data-i18n="footer.top.right">A.S. 2025/2026</span>
     </div>
 
     <div class="footer-body">
       <div class="footer-col">
-        <div class="footer-logo"><em>Resistenza</em> Rimini</div>
-        <div class="footer-sub">ITTS Belluzzi–Da Vinci di Rimini</div>
-        <div class="footer-credits">Realizzato da Nome1, Nome2, Nome3</div>
+        <div class="footer-logo" data-i18n-html="site.logo"><em>Resistenza</em> Rimini</div>
+        <div class="footer-sub" data-i18n="footer.school">ITTS Belluzzi–Da Vinci di Rimini</div>
+        <div class="footer-credits" data-i18n="footer.credits">Realizzato da Santopaolo William, Clementi Matteo, Punzo Christian</div>
       </div>
 
       <div class="footer-col">
         <nav class="footer-nav">
-          <a href="index.html">Home</a>
-          <a href="storia.html">Storia</a>
-          <a href="mappa.html">Mappa</a>
-          <a href="partigiani.html">Partigiani</a>
-          <a href="podcast.html">Podcast</a>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="storia.html" data-i18n="nav.storia">Storia</a>
+          <a href="mappa.html" data-i18n="nav.mappa">Mappa</a>
+          <a href="partigiani.html" data-i18n="nav.partigiani">Partigiani</a>
+          <a href="podcast.html" data-i18n="nav.podcast">Podcast</a>
         </nav>
       </div>
     </div>
 
-    <div class="footer-bottom">
+    <div class="footer-bottom" data-i18n="footer.bottom">
       XIII Premio "Vincenzo Mascia" · Progetto realizzato per il bando ANPI Sezione di Rimini
     </div>
   </footer>
 
 
-  <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
   <script>
     const map = L.map('map', {
-      minZoom: 5,
+      minZoom: 10,
       maxZoom: 18,
       maxBounds: [
-        [35.0, 6.0],
-        [48.5, 19.5]
+        [43.80, 12.30],
+        [44.20, 12.75]
       ],
-      maxBoundsViscosity: 0.8
-    }).setView([44.0590, 12.5683], 14);
+      maxBoundsViscosity: 0.9
+    }).setView([44.0590, 12.5683], 12);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors',
-      minZoom: 5,
+      minZoom: 10,
       maxZoom: 18
     }).addTo(map);
 
-    const luoghi = [
-      {
-        nome: "Piazza Tre Martiri",
-        descrizione: "Luogo simbolo della memoria cittadina.",
-        coords: [44.05933, 12.56839],
-        link: "#piazza-tre-martiri"
-      },
-      {
-        nome: "Piazza Cavour",
-        descrizione: "Centro storico e spazio della vita pubblica.",
-        coords: [44.06072, 12.56568],
-        link: "#piazza-cavour"
-      },
-      {
-        nome: "Arco d’Augusto",
-        descrizione: "Ingresso storico della città.",
-        coords: [44.05836, 12.57005],
-        link: "#arco-augusto"
-      },
-      {
-        nome: "Ponte di Tiberio",
-        descrizione: "Uno dei simboli più riconoscibili di Rimini.",
-        coords: [44.06325, 12.56365],
-        link: "#ponte-tiberio"
-      },
-      {
-        nome: "Borgo San Giuliano",
-        descrizione: "Zona storica legata alla memoria urbana.",
-        coords: [44.06522, 12.56253],
-        link: "#borgo-san-giuliano"
-      },
-      {
-        nome: "Stazione di Rimini",
-        descrizione: "Area importante per collegamenti e bombardamenti.",
-        coords: [44.06420, 12.57416],
-        link: "#stazione-rimini"
-      },
-      {
-        nome: "Cimitero Monumentale",
-        descrizione: "Luogo di ricordo e commemorazione.",
-        coords: [44.04550, 12.57680],
-        link: "#cimitero-monumentale"
-      },
-      {
-        nome: "Tempio Malatestiano",
-        descrizione: "Monumento storico danneggiato dalla guerra.",
-        coords: [44.05911, 12.57095],
-        link: "#tempio-malatestiano"
-      },
-      {
-        nome: "Castel Sismondo",
-        descrizione: "Luogo storico del centro cittadino.",
-        coords: [44.06189, 12.56370],
-        link: "#castel-sismondo"
-      },
-      {
-        nome: "Anfiteatro Romano",
-        descrizione: "Area storica nel tessuto urbano riminese.",
-        coords: [44.05747, 12.57407],
-        link: "#anfiteatro-romano"
-      },
-      {
-        nome: "Porto Canale",
-        descrizione: "Zona strategica e simbolica della città.",
-        coords: [44.07020, 12.57790],
-        link: "#porto-canale"
-      },
-      {
-        nome: "Parco Cervi",
-        descrizione: "Area urbana vicina al centro storico.",
-        coords: [44.05620, 12.57350],
-        link: "#parco-cervi"
-      }
-    ];
-
-    luoghi.forEach(luogo => {
-      L.marker(luogo.coords).addTo(map)
+    function aggiungiMarker(nome, descrizione, coordinate, link) {
+      L.marker(coordinate).addTo(map)
         .bindPopup(`
           <div class="map-popup">
-            <h3>${luogo.nome}</h3>
-            <p>${luogo.descrizione}</p>
-            <a href="${luogo.link}">Vai alla descrizione →</a>
+            <h3>${nome}</h3>
+            <p>${descrizione}</p>
+            <a href="${link}">Vai alla descrizione →</a>
           </div>
         `);
-    });
+    }
+
+    aggiungiMarker("Monumento ai Caduti di Guerra di Miramare", "Monumento nel parco Spina Verde.", [44.02652509858977, 12.621382611942366], "#monumento-caduti-miramare");
+    aggiungiMarker("Parco Sandro Pertini", "Monumento al partigiano Presidente.", [44.039742738392064, 12.605502371203759], "#parco-sandro-pertini");
+    aggiungiMarker("Parco “Ai Caduti dei Lager 1943-1945”", "Luogo del Giorno della Memoria.", [44.03502338867182, 12.611872420191094], "#parco-caduti-lager");
+    aggiungiMarker("Augusto Innocenti e Stella Baschetti", "Memoria dei coniugi trucidati a Rivazzurra.", [44.03605855704216, 12.607555596599825], "#augusto-innocenti-stella-baschetti");
+    aggiungiMarker("La Celletta di Bellariva", "Celletta commemorativa della comunità del Comasco.", [44.04720827494939, 12.600211467764598], "#celletta-bellariva");
+    aggiungiMarker("Franco Tassinari e Domenico Gallegati", "Giovani partigiani fucilati a Bellariva.", [44.04892194595092, 12.600945700181606], "#franco-tassinari-domenico-gallegati");
+    aggiungiMarker("Officina Locomotive", "Centro ferroviario e luogo della Resistenza.", [44.059401315283985, 12.580068858083106], "#officina-locomotive");
+    aggiungiMarker("Piazzale Gramsci", "Spazio urbano dedicato ad Antonio Gramsci.", [44.06007688202806, 12.573327787930467], "#piazzale-gramsci");
+    aggiungiMarker("Sede CEIS", "Segno della rinascita di Rimini dopo la guerra.", [44.05977058484695, 12.574391280485452], "#sede-ceis");
+    aggiungiMarker("Monumento alla Resistenza", "Opera di Elio Morri nel Parco Cervi.", [44.059040297840404, 12.575900959164342], "#monumento-resistenza");
+    aggiungiMarker("Elisa Mini Imola", "Partigiana combattente della 29ª Brigata GAP.", [44.05847393304655, 12.576184961217544], "#elisa-mini-imola");
+    aggiungiMarker("Targa Olga Bondi", "Memoria della giovane antifascista riminese.", [44.056453595141754, 12.57135671009356], "#targa-olga-bondi");
+    aggiungiMarker("Adria Neri “Marga”", "Staffetta partigiana della 29ª Brigata GAP.", [44.057689684894974, 12.574071992900205], "#adria-neri-marga");
+    aggiungiMarker("Rosina Donini “Margherita”", "Staffetta partigiana ricordata nel Parco Cervi.", [44.05692493340698, 12.572615595905695], "#rosina-donini");
+    aggiungiMarker("Arco d’Augusto", "Luogo legato alla morte di Silvio Cenci.", [44.05698637314707, 12.571120519555702], "#arco-augusto");
+    aggiungiMarker("Rifugi Antiaerei", "Memoria dei bombardamenti su Rimini.", [44.05869892179159, 12.568404011943992], "#rifugi-antiaerei");
+    aggiungiMarker("Piazza Tre Martiri", "Luogo simbolo della memoria cittadina.", [44.05927341090391, 12.568515442597235], "#piazza-tre-martiri");
+    aggiungiMarker("Albo d’Oro Caduti Riminesi 1943-1945", "Memoria dei caduti custodita nel Duomo.", [44.05986110602734, 12.570107125151312], "#albo-oro-caduti");
+    aggiungiMarker("Via Cairoli", "Luogo della morte di Enrico Battarra e Igino Chesi.", [44.05947447285634, 12.565687437443191], "#via-cairoli");
+    aggiungiMarker("Via Ducale", "Base partigiana legata ai Tre Martiri.", [44.06374468124756, 12.565745167765435], "#via-ducale");
+    aggiungiMarker("Piazza Cavour", "Custodia della Medaglia d’oro al Valor Civile.", [44.06085698601356, 12.565968596601108], "#piazza-cavour");
+    aggiungiMarker("Rotonda Vito Nicoletti", "Rotatoria dedicata all’antifascista riminese.", [44.057007678393795, 12.551067483043818], "#rotonda-vito-nicoletti");
+    aggiungiMarker("Piazzale Caduti di Cefalonia", "Memoria della strage della Divisione Acqui.", [44.054235158745186, 12.551659728423607], "#piazzale-caduti-cefalonia");
+    aggiungiMarker("Giardino dei Giusti", "Memoria di Ezio Giorgetti e Osman Carugno.", [44.06292739514456, 12.56217081221851], "#giardino-giusti");
+    aggiungiMarker("Cappella dei Martiri per la Libertà", "Luogo di memoria nel Cimitero Monumentale.", [44.07199918016476, 12.5491967856021], "#cappella-martiri-liberta");
+    aggiungiMarker("Guglielmo Marconi “Paolo”", "Sepoltura del partigiano nel Cimitero Monumentale.", [44.073286313555315, 12.548283293317178], "#guglielmo-marconi-paolo");
+    aggiungiMarker("Lapide Sminatori", "Ricordo delle vittime dello sminamento.", [44.07252295472894, 12.567418906520626], "#lapide-sminatori");
+    aggiungiMarker("Il “Diapason” di Viserba", "Monumento ai caduti delle guerre mondiali.", [44.08551202733553, 12.54137003385315], "#diapason-viserba");
+    aggiungiMarker("Alfredo Clementi ed Enrico Petrucci", "Cippo in località San Giovanni in Bagno.", [44.093126282387125, 12.495237311945695], "#alfredo-clementi-enrico-petrucci");
+    aggiungiMarker("Targa Eccidio di Santa Giustina", "Lapide dell’eccidio del 22 maggio 1921.", [44.06691036083943, 12.482405967765649], "#targa-eccidio-santa-giustina");
+    aggiungiMarker("Giardino Silvano Lisi e murales Valter Vallicelli", "Memoria partigiana alla Grotta Rossa.", [44.03741781402402, 12.559192827564571], "#giardino-silvano-lisi-valter-vallicelli");
+    aggiungiMarker("Cimitero Gurkha e Indiano", "Cimitero di guerra del circuito britannico.", [44.00511045191231, 12.543786470732876], "#cimitero-gurkha-indiano");
+    aggiungiMarker("Monte Cieco", "Luogo della battaglia del settembre 1944.", [43.99988899601576, 12.49416875426955], "#monte-cieco");
+    aggiungiMarker("Cippo Aristodemo Ciavatti", "Ricordo del giovane combattente ucciso a Cerasolo.", [43.986942955828496, 12.536558027283446], "#cippo-aristodemo-ciavatti");
+    aggiungiMarker("Pietro Barberini", "Lapide commemorativa a Vergiano.", [44.04569485456136, 12.49941711313422], "#pietro-barberini");
 
     const elementiAnimati = document.querySelectorAll(
       ".reveal-map, .reveal-panel, .reveal-soft, .reveal-detail"
@@ -580,5 +1108,6 @@
     });
   </script>
 
+<script src="language.js"></script>
 </body>
 </html>
