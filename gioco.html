@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gioco — Resistenza Rimini</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gioco.css">
+</head>
+
+<body>
+
+  <nav id="navbarr">
+    <a href="index.html" class="nav-logo" data-i18n-html="site.logo"><em>Resistenza</em> Rimini</a>
+
+    <button class="nav-hamburger" id="hamburger" onclick="this.classList.toggle('open'); this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="storia.html" data-i18n="nav.storia">Storia</a></li>
+      <li><a href="mappa.html" data-i18n="nav.mappa">Mappa</a></li>
+      <li><a href="partigiani.html" data-i18n="nav.partigiani">Partigiani</a></li>
+      <li><a href="gioco.html" class="active">Gioco</a></li>
+    </ul>
+
+    <button class="language-btn" id="languageBtn" aria-label="Cambia lingua">
+      <img id="languageFlag" src="Immagini_Bandiere/uk.png" alt="English">
+    </button>
+  </nav>
+
+
+  <section class="game-hero">
+    <div class="game-hero-inner">
+      <span class="hero-label">Escape room digitale</span>
+
+      <h1>
+        <span class="hero-light">La</span>
+        <span class="hero-accent">Chiave</span>
+        <span class="hero-light">della</span><br>
+        <span class="hero-accent">Memoria</span>
+      </h1>
+
+      <p>
+        Supera gli enigmi sulla Resistenza riminese.
+        Ogni sezione completata ti darà un frammento della frase finale.
+      </p>
+    </div>
+  </section>
+
+
+  <main class="game-page">
+
+    <section class="fragments-box">
+      <span class="fragments-label">Frammenti raccolti</span>
+
+      <div class="fragments-grid">
+        <div class="fragment" id="fragment-0">?</div>
+        <div class="fragment" id="fragment-1">?</div>
+        <div class="fragment" id="fragment-2">?</div>
+        <div class="fragment" id="fragment-3">?</div>
+        <div class="fragment" id="fragment-4">?</div>
+      </div>
+    </section>
+
+
+    <section class="game-card" id="gameCard">
+
+      <div class="game-progress">
+        <span id="sectionNumber">Sezione 1 / 5</span>
+        <span id="questionNumber">Domanda 1</span>
+      </div>
+
+      <h2 id="sectionTitle">Titolo sezione</h2>
+
+      <p id="sectionDescription">
+        Descrizione della sezione.
+      </p>
+
+      <div class="question-box">
+        <h3 id="questionText">Domanda</h3>
+
+        <div id="answersBox" class="answers-box"></div>
+
+        <div id="orderBox" class="order-box hidden"></div>
+
+        <div id="memoryBox" class="memory-box hidden"></div>
+
+        <div id="mapBox" class="leaflet-game-layout hidden"></div>
+
+        <div id="facesBox" class="faces-game hidden"></div>
+      </div>
+
+      <div class="game-message" id="gameMessage"></div>
+
+      <div class="game-actions">
+        <button id="restartBtn" class="secondary-btn">Ricomincia sezione</button>
+        <button id="nextBtn" class="main-btn hidden">Prossima domanda</button>
+      </div>
+
+    </section>
+
+
+    <section class="final-box hidden" id="finalBox">
+      <span class="final-label">Frase completata</span>
+
+      <h2>RICORDARE È DIFENDERE LA LIBERTÀ</h2>
+
+      <p>
+        Hai completato il percorso della memoria.
+        La libertà non vive solo nel passato: vive in chi sceglie di ricordare.
+      </p>
+
+      <button onclick="location.reload()" class="main-btn">Rigioca</button>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <div class="footer-top">
+      <span class="footer-top-text" data-i18n="footer.top.left">XIII Premio "Vincenzo Mascia" — ANPI Rimini</span>
+      <span class="footer-top-text" data-i18n="footer.top.right">A.S. 2025/2026</span>
+    </div>
+
+    <div class="footer-body">
+      <div class="footer-col">
+        <div class="footer-logo" data-i18n-html="site.logo"><em>Resistenza</em> Rimini</div>
+        <div class="footer-sub" data-i18n="footer.school">ITTS Belluzzi–Da Vinci di Rimini</div>
+        <div class="footer-credits" data-i18n="footer.credits">Realizzato da Santopaolo William, Clementi Matteo, Punzo Christian</div>
+      </div>
+
+      <div class="footer-col">
+        <nav class="footer-nav">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="storia.html" data-i18n="nav.storia">Storia</a>
+          <a href="mappa.html" data-i18n="nav.mappa">Mappa</a>
+          <a href="partigiani.html" data-i18n="nav.partigiani">Partigiani</a>
+          <a href="podcast.html" data-i18n="nav.podcast">Podcast</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer-bottom" data-i18n="footer.bottom">
+      XIII Premio "Vincenzo Mascia" · Progetto realizzato per il bando ANPI Sezione di Rimini
+    </div>
+  </footer>
+
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="gioco.js"></script>
+  <script src="language.js"></script>
+
+</body>
+</html>
