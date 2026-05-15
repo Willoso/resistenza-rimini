@@ -857,6 +857,91 @@ body {
     padding-top: 42px;
   }
 
+  .game-card {
+    background: #1E1810 !important;
+    border-color: rgba(139, 105, 20, 0.45) !important;
+  }
+
+  .question-box {
+    background: #111008 !important;
+    border-color: rgba(139, 105, 20, 0.35) !important;
+  }
+
+  .fragments-box,
+  .timeline-slot,
+  .face-card,
+  .final-box {
+    background: #111008 !important;
+    border-color: rgba(139, 105, 20, 0.35) !important;
+  }
+
+  .answers-box,
+  .order-box,
+  .memory-box,
+  .faces-game,
+  .leaflet-game-layout {
+    background: transparent !important;
+  }
+
+  .answer-btn,
+  .timeline-card,
+  .memory-card,
+  .map-place,
+  .name-tag {
+    background: #141008 !important;
+    border-color: rgba(139, 105, 20, 0.45) !important;
+    color: #f4ead8 !important;
+  }
+
+  .answer-btn:hover,
+  .timeline-card:hover,
+  .memory-card:hover,
+  .map-place:hover,
+  .name-tag:hover {
+    background: #1f180d !important;
+  }
+
+  .answer-btn.correct,
+  .map-place.correct {
+    background: rgba(80, 190, 120, 0.22) !important;
+    border-color: rgba(80, 190, 120, 0.95) !important;
+    color: #f4ead8 !important;
+  }
+
+  .answer-btn.wrong,
+  .map-place.wrong {
+    background: rgba(201, 57, 44, 0.24) !important;
+    border-color: rgba(201, 57, 44, 0.95) !important;
+    color: #f4ead8 !important;
+  }
+
+  .memory-card.matched {
+    background: rgba(80, 190, 120, 0.18) !important;
+    border-color: rgba(80, 190, 120, 0.9) !important;
+  }
+
+  .memory-card.wrong {
+    background: rgba(201, 57, 44, 0.22) !important;
+    border-color: rgba(201, 57, 44, 0.95) !important;
+  }
+
+  .timeline-slot.filled {
+    background: #17120a !important;
+  }
+
+  .timeline-card.in-slot,
+  .name-tag.in-slot {
+    background: #2a2110 !important;
+    border-color: rgba(196, 168, 130, 0.55) !important;
+  }
+
+  .timeline-card.selected,
+  .name-tag.selected,
+  .memory-card.selected {
+    background: #2a2110 !important;
+    border-color: #C4A882 !important;
+  }
+
   .fragments-grid {
     grid-template-columns: 1fr;
   }
@@ -981,62 +1066,5 @@ body {
 
   .final-box p {
     font-size: 0.98rem;
-  }
-}
-
-body,
-.partigiani-intro,
-.partigiani-list,
-.partigiani-note {
-  background: #1E1810 !important;
-}
-
-footer,
-.footer-body,
-.footer-col {
-  background: #111008 !important;
-}
-
-.footer-col:nth-child(2) {
-  background: #111008 !important;
-}
-
-.footer-nav {
-  background: transparent !important;
-}
-
-/* FIX SFONDO QUIZ SU MOBILE */
-
-@media (max-width: 760px) {
-  .game-card {
-    background: #151109 !important;
-  }
-
-  .question-box {
-    background: #0f0d07 !important;
-  }
-
-  .answers-box,
-  .order-box,
-  .memory-box,
-  .faces-game,
-  .leaflet-game-layout {
-    background: transparent !important;
-  }
-
-  .answer-btn,
-  .timeline-card,
-  .memory-card,
-  .map-place,
-  .name-tag {
-    background: #131008 !important;
-  }
-
-  .answer-btn:hover,
-  .timeline-card:hover,
-  .memory-card:hover,
-  .map-place:hover,
-  .name-tag:hover {
-    background: rgba(196, 168, 130, 0.14) !important;
   }
 }
