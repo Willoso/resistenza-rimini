@@ -1004,3 +1004,39 @@ footer,
 .footer-nav {
   background: transparent !important;
 }
+
+/* FIX SFONDO QUIZ SU MOBILE */
+
+@media (max-width: 760px) {
+  .game-card {
+    background: #151109 !important;
+  }
+
+  .question-box {
+    background: #0f0d07 !important;
+  }
+
+  .answers-box,
+  .order-box,
+  .memory-box,
+  .faces-game,
+  .leaflet-game-layout {
+    background: transparent !important;
+  }
+
+  .answer-btn,
+  .timeline-card,
+  .memory-card,
+  .map-place,
+  .name-tag {
+    background: #131008 !important;
+  }
+
+  .answer-btn:hover,
+  .timeline-card:hover,
+  .memory-card:hover,
+  .map-place:hover,
+  .name-tag:hover {
+    background: rgba(196, 168, 130, 0.14) !important;
+  }
+}
