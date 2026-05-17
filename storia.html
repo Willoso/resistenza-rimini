@@ -28,7 +28,7 @@
       <li><a href="storia.html" class="active" data-i18n="nav.storia">Storia</a></li>
       <li><a href="mappa.html" data-i18n="nav.mappa">Mappa</a></li>
       <li><a href="partigiani.html" data-i18n="nav.partigiani">Partigiani</a></li>
-      <li><a href="gioco.html" data-i18n="nav.podcast">Podcast</a></li>
+      <li><a href="gioco.html" data-i18n="nav.gioco">Quiz</a></li>
     </ul>
 
     <button class="language-btn" id="languageBtn" aria-label="Cambia lingua">
@@ -71,7 +71,7 @@
 
     <div class="timeline-line"></div>
 
-    <article class="timeline-item reveal-story">
+    <article class="timeline-item reveal-story" id="eccidio-santa-giustina">
       <div class="timeline-media">
         <img src="Immagini_Storia/EccidioSantaGiustina.jpg" alt="Eccidio di Santa Giustina">
       </div>
@@ -192,7 +192,7 @@
     </article>
 
 
-    <article class="timeline-item reveal-story">
+    <article class="timeline-item reveal-story" id="liberazione-rimini">
       <div class="timeline-media">
         <img src="Immagini_Storia/LiberazioneRimini.jpg" alt="Liberazione di Rimini e ultimi sacrifici">
       </div>
@@ -288,7 +288,7 @@
     </article>
 
 
-    <article class="timeline-item reveal-story">
+    <article class="timeline-item reveal-story" id="medaglia-oro-rimini">
       <div class="timeline-media">
         <img src="Immagini_Storia/MedagliaOroRimini.jpg" alt="Medaglia d’oro al Valor Civile a Rimini">
       </div>
@@ -349,7 +349,7 @@
           <a href="storia.html" data-i18n="nav.storia">Storia</a>
           <a href="mappa.html" data-i18n="nav.mappa">Mappa</a>
           <a href="partigiani.html" data-i18n="nav.partigiani">Partigiani</a>
-          <a href="podcast.html" data-i18n="nav.podcast">Podcast</a>
+          <a href="gioco.html" data-i18n="nav.gioco">Gioco</a>
         </nav>
       </div>
     </div>
@@ -381,6 +381,23 @@
   </script>
 
   <script src="language.js"></script>
+
+  <script>
+    window.addEventListener("load", () => {
+      if (window.location.hash) {
+        const elemento = document.querySelector(window.location.hash);
+
+        if (elemento) {
+          setTimeout(() => {
+            elemento.scrollIntoView({
+              behavior: "smooth",
+              block: "start"
+            });
+          }, 250);
+        }
+      }
+    });
+  </script>
 
 </body>
 </html>

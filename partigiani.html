@@ -28,7 +28,7 @@
       <li><a href="storia.html" data-i18n="nav.storia">Storia</a></li>
       <li><a href="mappa.html" data-i18n="nav.mappa">Mappa</a></li>
       <li><a href="partigiani.html" class="active" data-i18n="nav.partigiani">Partigiani</a></li>
-      <li><a href="gioco.html" data-i18n="nav.podcast">Podcast</a></li>
+      <li><a href="gioco.html" data-i18n="nav.gioco">Quiz</a></li>
     </ul>
 
     <button class="language-btn" id="languageBtn" aria-label="Cambia lingua">
@@ -67,7 +67,7 @@
 
   <section class="partigiani-list">
 
-    <article class="partigiano-row reveal-row">
+    <article class="partigiano-row reveal-row" id="guglielmo-marconi">
       <img src="Immagini_Partigiani/GuglielmoMarconi.jpg" alt="Guglielmo Marconi">
 
       <div class="partigiano-text">
@@ -216,7 +216,7 @@
     </article>
 
 
-    <article class="partigiano-row reverse reveal-row">
+    <article class="partigiano-row reverse reveal-row" id="vito-nicoletti">
       <img src="Immagini_Partigiani/VitoNicoletti.jpg" alt="Vito Nicoletti">
 
       <div class="partigiano-text">
@@ -320,16 +320,16 @@
 
 
     <article class="partigiano-row reveal-row">
-      <img src="Immagini_Partigiani/Pietro_Barbieri.jpg" alt="Pietro Barbieri">
+      <img src="Immagini_Partigiani/Pietro_Barberini.jpg.jpeg" alt="Pietro Barberini">
 
       <div class="partigiano-text">
         <span class="partigiano-label" data-i18n="partigiani.bio.label">Biografia</span>
 
-        <h2 data-i18n="partigiani.barberi.title">Pietro Barbieri</h2>
+        <h2 data-i18n="partigiani.barberi.title">Pietro Barberini</h2>
 
         <div class="partigiano-scroll">
           <p data-i18n="partigiani.barberi.p1">
-            Nella memoria di Rimini, il nome di Pietro Barbieri brilla per quella forza silenziosa e quella schiena dritta con cui scelse di non piegarsi mai davanti all'oppressione. Nato il 22 giugno 1915, Pietro era un uomo guidato da principi solidi, uno di quelli che dopo l’8 settembre 1943 non ebbe bisogno di troppi calcoli per capire da che parte stare: si schierò subito con la Resistenza, diventando un pilastro della 29ª Brigata GAP "Gastone Sozzi".
+            Nella memoria di Rimini, il nome di Pietro Barberini brilla per quella forza silenziosa e quella schiena dritta con cui scelse di non piegarsi mai davanti all'oppressione. Nato il 22 giugno 1915, Pietro era un uomo guidato da principi solidi, uno di quelli che dopo l’8 settembre 1943 non ebbe bisogno di troppi calcoli per capire da che parte stare: si schierò subito con la Resistenza, diventando un pilastro della 29ª Brigata GAP "Gastone Sozzi".
           </p>
 
           <p data-i18n="partigiani.barberi.p2">
@@ -341,7 +341,7 @@
           </p>
 
           <p data-i18n="partigiani.barberi.p4">
-            Venne fucilato il 14 agosto 1944, cadendo insieme all'amico Luigi Platania, proprio mentre Rimini si avviava verso i giorni più bui e gloriosi della sua liberazione. Ricordare Pietro Barbieri oggi non significa solo celebrare un caduto, ma onorare un uomo che ha saputo trasformare il sogno della libertà in un sacrificio concreto. La sua vita è una delle pietre angolari della nostra democrazia, un esempio di come la dignità di un singolo possa diventare la salvezza di un’intera comunità.
+            Venne fucilato il 14 agosto 1944, cadendo insieme all'amico Luigi Platania, proprio mentre Rimini si avviava verso i giorni più bui e gloriosi della sua liberazione. Ricordare Pietro Barberini oggi non significa solo celebrare un caduto, ma onorare un uomo che ha saputo trasformare il sogno della libertà in un sacrificio concreto. La sua vita è una delle pietre angolari della nostra democrazia, un esempio di come la dignità di un singolo possa diventare la salvezza di un’intera comunità.
           </p>
         </div>
       </div>
@@ -500,7 +500,7 @@
     </article>
 
 
-    <article class="partigiano-row reverse reveal-row">
+    <article class="partigiano-row reverse reveal-row" id="olga-bondi">
       <img src="Immagini_Partigiani/OlgaBondi.jpg" alt="Olga Bondi">
 
       <div class="partigiano-text">
@@ -589,7 +589,7 @@
           <a href="storia.html" data-i18n="nav.storia">Storia</a>
           <a href="mappa.html" data-i18n="nav.mappa">Mappa</a>
           <a href="partigiani.html" data-i18n="nav.partigiani">Partigiani</a>
-          <a href="podcast.html" data-i18n="nav.podcast">Podcast</a>
+          <a href="gioco.html" data-i18n="nav.gioco">Gioco</a>
         </nav>
       </div>
     </div>
@@ -623,6 +623,23 @@
   </script>
 
   <script src="language.js"></script>
+
+  <script>
+    window.addEventListener("load", () => {
+      if (window.location.hash) {
+        const elemento = document.querySelector(window.location.hash);
+
+        if (elemento) {
+          setTimeout(() => {
+            elemento.scrollIntoView({
+              behavior: "smooth",
+              block: "start"
+            });
+          }, 250);
+        }
+      }
+    });
+  </script>
 
 </body>
 </html>

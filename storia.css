@@ -3,7 +3,7 @@
 .storia-hero {
   background:
     linear-gradient(rgba(30,24,16,0.76), rgba(30,24,16,0.88)),
-    url("img1.jpg") center center / cover no-repeat;
+    url("Immagini_Storia/StoriaBackground.jpg") center center / cover no-repeat;
   min-height: 360px;
   padding: 5rem 2.5rem 4rem;
   text-align: center;
@@ -730,4 +730,10 @@ footer,
     position: relative;
     top: auto;
   }
+}
+
+#eccidio-santa-giustina,
+#liberazione-rimini,
+#medaglia-oro-rimini {
+  scroll-margin-top: 120px;
 }

@@ -9,7 +9,7 @@ html {
 .mappa-hero {
   background:
     linear-gradient(rgba(30,24,16,0.78), rgba(30,24,16,0.9)),
-    url("img1.jpg") center center / cover no-repeat;
+    url("Immagini_Monumenti/MonumentiBackground.jpeg") center center / cover no-repeat;
   min-height: 340px;
   padding: 5rem 2.5rem 4rem;
   text-align: center;
@@ -99,7 +99,7 @@ html {
   content: "";
   position: absolute;
   inset: 0;
-  background:#1E1810;
+  background: #1E1810;
   pointer-events: none;
 }
 
@@ -302,7 +302,7 @@ html {
   content: "";
   position: absolute;
   inset: 0;
-  background:#1E1810;
+  background: #1E1810;
   pointer-events: none;
 }
 
@@ -748,6 +748,10 @@ html {
     object-position: center 18%;
   }
 
+  #adria-neri-marga .monumento-img img {
+    object-position: center 70%;
+  }
+
   .monumento-text {
     padding: 1.4rem 1.1rem 1.6rem;
   }
@@ -800,6 +804,13 @@ html {
     transform: translateY(0) scale(1);
   }
 
+  #rosina-donini .monumento-img img {
+  object-position: center 50%;
+  } 
+
+  #elisa-mini-imola .monumento-img img {
+  object-position: center 35%;
+  }
 
   /* FOOTER MOBILE */
 

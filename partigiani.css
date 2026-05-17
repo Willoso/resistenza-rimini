@@ -3,7 +3,7 @@
 .partigiani-hero {
   background:
     linear-gradient(rgba(30,24,16,0.78), rgba(30,24,16,0.9)),
-    url("img1.jpg") center center / cover no-repeat;
+    url("Immagini_Partigiani/PartigianiBackground.jpg") center center / cover no-repeat;
   min-height: 340px;
   padding: 5rem 2.5rem 4rem;
   text-align: center;
@@ -694,4 +694,10 @@ footer,
     transform: none !important;
     filter: none !important;
   }
+}
+
+#guglielmo-marconi,
+#vito-nicoletti,
+#olga-bondi {
+  scroll-margin-top: 120px;
 }
