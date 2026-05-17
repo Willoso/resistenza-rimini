@@ -1068,3 +1068,24 @@ body {
     font-size: 0.98rem;
   }
 }
+
+body,
+.mappa-section,
+.monumenti-section,
+.mappa-note {
+  background: #1E1810 !important;
+}
+
+footer,
+.footer-body,
+.footer-col {
+  background: #111008 !important;
+}
+
+.footer-col:nth-child(2) {
+  background: #111008 !important;
+}
+
+.footer-nav {
+  background: transparent !important;
+}

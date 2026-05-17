@@ -72,8 +72,8 @@ const sections = [
       pairs: [
         ["Silvio Cenci", "Arco d’Augusto"],
         ["Adria Neri", "Marga"],
-        ["Guglielmo Marconi", "Paolo"],
-        ["Piazza Tre Martiri", "Tre Martiri"]
+        ["Guglielmo Marconi", "8ª Brigata Garibaldi"],
+        ["Tre Martiri", "Via Ducale 3"]
       ]
     }
   },
@@ -86,41 +86,107 @@ const sections = [
     questions: [
       {
         text: "Quale luogo è collegato alla morte di Silvio Cenci?",
-        correct: "Arco d’Augusto"
+        correct: "Arco d’Augusto",
+        places: [
+          {
+            name: "Arco d’Augusto",
+            coords: [44.05698637314707, 12.571120519555702]
+          },
+          {
+            name: "Piazza Cavour",
+            coords: [44.06085698601356, 12.565968596601108]
+          },
+          {
+            name: "Sede CEIS",
+            coords: [44.05977058484695, 12.574391280485452]
+          },
+          {
+            name: "Ponte di Tiberio",
+            coords: [44.063028, 12.563181]
+          },
+          {
+            name: "Piazza Tre Martiri",
+            coords: [44.05927341090391, 12.568515442597235]
+          }
+        ]
       },
       {
         text: "Quale luogo rappresenta un segno della rinascita di Rimini dopo la guerra?",
-        correct: "Sede CEIS"
+        correct: "Sede CEIS",
+        places: [
+          {
+            name: "Sede CEIS",
+            coords: [44.05977058484695, 12.574391280485452]
+          },
+          {
+            name: "Parco Caduti nei Lager",
+            coords: [44.034991, 12.598233]
+          },
+          {
+            name: "Monte Cieco",
+            coords: [43.99988899601576, 12.49416875426955]
+          },
+          {
+            name: "Cimitero Monumentale di Rimini",
+            coords: [44.046809, 12.588168]
+          },
+          {
+            name: "Piazza Cavour",
+            coords: [44.06085698601356, 12.565968596601108]
+          }
+        ]
       },
       {
         text: "Dove si trova il monumento ai Caduti per la Libertà?",
-        correct: "Piazza Tre Martiri"
+        correct: "Piazza Tre Martiri",
+        places: [
+          {
+            name: "Piazza Tre Martiri",
+            coords: [44.05927341090391, 12.568515442597235]
+          },
+          {
+            name: "Arco d’Augusto",
+            coords: [44.05698637314707, 12.571120519555702]
+          },
+          {
+            name: "Piazza Malatesta",
+            coords: [44.060509, 12.566944]
+          },
+          {
+            name: "Borgo San Giuliano",
+            coords: [44.066005, 12.562805]
+          },
+          {
+            name: "Sede CEIS",
+            coords: [44.05977058484695, 12.574391280485452]
+          }
+        ]
       },
       {
         text: "Quale luogo è collegato alla Medaglia d’oro al Valor Civile?",
-        correct: "Piazza Cavour"
-      }
-    ],
-    places: [
-      {
-        name: "Arco d’Augusto",
-        coords: [44.05698637314707, 12.571120519555702]
-      },
-      {
-        name: "Sede CEIS",
-        coords: [44.05977058484695, 12.574391280485452]
-      },
-      {
-        name: "Piazza Tre Martiri",
-        coords: [44.05927341090391, 12.568515442597235]
-      },
-      {
-        name: "Piazza Cavour",
-        coords: [44.06085698601356, 12.565968596601108]
-      },
-      {
-        name: "Monte Cieco",
-        coords: [43.99988899601576, 12.49416875426955]
+        correct: "Piazza Cavour",
+        places: [
+          {
+            name: "Piazza Cavour",
+            coords: [44.06085698601356, 12.565968596601108]
+          },
+          {
+            name: "Piazza Tre Martiri",
+            coords: [44.05927341090391, 12.568515442597235]
+          },
+          {
+            name: "Arco d’Augusto",
+            coords: [44.05698637314707, 12.571120519555702]
+          },
+          {
+            name: "Parco Caduti nei Lager",
+            coords: [44.034991, 12.598233]
+          },
+          {
+            name: "Monte Cieco",
+            coords: [43.99988899601576, 12.49416875426955]
+          }
+        ]
       }
     ]
   },
@@ -632,7 +698,7 @@ function loadMapSection() {
   smallTitle.textContent = "Luoghi disponibili";
   list.appendChild(smallTitle);
 
-  section.places.forEach((place, index) => {
+  question.places.forEach((place, index) => {
     const button = document.createElement("button");
     button.className = "map-place";
     button.textContent = `${index + 1}. ${place.name}`;
@@ -648,7 +714,7 @@ function loadMapSection() {
   mapBox.appendChild(list);
 
   setTimeout(() => {
-    createEscapeMap(section.places);
+    createEscapeMap(question.places);
   }, 50);
 }
 

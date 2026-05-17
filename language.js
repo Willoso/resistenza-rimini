@@ -13,6 +13,10 @@ const translations = {
     "footer.school": "ITTS Belluzzi–Da Vinci di Rimini",
     "footer.credits": "Realizzato da Santopaolo William, Clementi Matteo, Punzo Christian",
     "footer.bottom": "XIII Premio \"Vincenzo Mascia\" · Progetto realizzato per il bando ANPI Sezione di Rimini",
+    "footer.sources.title": "Fonti",
+    "footer.sources.book": "<em>Libro: Passi e Ripassi – Guida illustrativa ai luoghi della Resistenza della città di Rimini</em>",
+    "footer.sources.gambalunga": "Archivio fotografico della Biblioteca Gambalunga di Rimini",
+    "footer.sources.anpi": "Comitato Provinciale ANPI Rimini",
 
     "index.hero.title": "La Resistenza a Rimini",
     "index.hero.subtitle": "Memoria, luoghi e storie di chi ha lottato per la libertà",
@@ -494,6 +498,10 @@ const translations = {
     "footer.school": "ITTS Belluzzi–Da Vinci of Rimini",
     "footer.credits": "Created by Santopaolo William, Clementi Matteo, Punzo Christian",
     "footer.bottom": "13th \"Vincenzo Mascia\" Prize · Project created for the ANPI Rimini call",
+    "footer.sources.title": "Sources",
+    "footer.sources.book": "<em>Book: Passi e Ripassi – Illustrated guide to the places of the Resistance in the city of Rimini</em>",
+    "footer.sources.gambalunga": "Photographic Archive of the Gambalunga Library of Rimini",
+    "footer.sources.anpi": "ANPI Provincial Committee of Rimini",
 
     "index.hero.title": "The Resistance in Rimini",
     "index.hero.subtitle": "Memory, places and stories of those who fought for freedom",
