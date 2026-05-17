@@ -45,6 +45,18 @@ const translations = {
     "storia.event1.title": "Eccidio di Santa Giustina",
     "storia.event1.text": "Il 22 ci fu l’eccidio di Santa Giustina con la morte di 3 persone - Samuelli Ferdinando, Vannoni Pietro, Sarti Salvatore - ed una cinquantina di feriti per mano di fascisti bolognesi.",
 
+    "storia.giugno1922.date": "Giugno 1922",
+    "storia.giugno1922.title": "Attentato all’osteria Colombi",
+    "storia.giugno1922.text": "Il 24 i fascisti lanciano una bomba a mano nell’osteria di Giovanni Colombi (Borgo San Giuliano), abituale ritrovo di socialisti e comunisti, ferendo gravemente il proprietario. Viene bastonato e accoltellato, con ferite considerate guaribili in dieci giorni, anche Giovanni Renzi.",
+
+    "storia.luglio1922.date": "Luglio 1922",
+    "storia.luglio1922.title": "Libero Zanardi e Olga Bondi",
+    "storia.luglio1922.text": "Il 9 muore a Rimini Libero Zanardi, figlio dell’ex sindaco di Bologna Francesco Zanardi; i suoi funerali si trasformano in una grande manifestazione antifascista, nonostante i divieti e le minacce dei fascisti; il 24 ci fu uno scontro a fuoco, per cause mai del tutto chiarite, tra fascisti e anarchici; il bersaglio dei fascisti è l’anarchico Nello Rossi, che si salva nonostante le gravi ferite riportate, purtroppo però, la sua fidanzata, Olga Bondi, viene ferita dai fascisti e morirà in seguito all’ospedale di Rimini.",
+
+    "storia.luglioottobre1922.date": "Luglio - Ottobre 1922",
+    "storia.luglioottobre1922.title": "Spedizione squadrista e occupazione fascista",
+    "storia.luglioottobre1922.text": "Il 28-29 luglio ci fu la spedizione squadrista capeggiata da Italo Balbo in tutto il territorio romagnolo; vengono incendiati la sede della Camera del Lavoro ed il Circolo Comunista considerando questa spedizione la “prova generale” della marcia su Roma; il 28-29-30 ottobre in concomitanza con la “Marcia su Roma”, le squadriste fasciste occupano la sottoprefettura, le poste, la stazione, il comune, e inoltre anche la Rocca Malatestiana, liberando tutti i prigionieri; a quel punto Ludovico Pugliesi si insedia come commissario prefettizio della città.",
+
     "storia.event2.date": "Luglio 1943",
     "storia.event2.title": "Caduta della dittatura fascista",
     "storia.event2.text": "Il 25 ci fu la caduta della dittatura fascista, Mussolini viene arrestato (tagliatella antifascista in memoria dei Fratelli Cervi).",
@@ -55,7 +67,7 @@ const translations = {
 
     "storia.event4.date": "Marzo 1944",
     "storia.event4.title": "Fucilazione alla colonia De Orchi",
-    "storia.event4.text": "Il 3 i faentini Domenico Gallegati e Franco Tassinari per un tentativo di diserzione vengono fucilati dai fascisti presso la colonia De Orchi di Bellariva.",
+    "storia.event4.text": "Il 3 i faentini Domenico Gallegati e Franco Tassinari per un tentativo di diserzione vengono fucilati dai fascisti presso la colonia De Orchi di Bellariva; il 24 a Roma la Strage delle Fosse Ardeatine porta alla morte dei Martiri Egidio Renzi, nato a San Giovanni in Marignano e Giorgio Giorgi, di Sant’Agata Feltria.",
 
     "storia.event5.date": "Aprile 1944",
     "storia.event5.title": "Strage di Fragheto e martiri di Casteldelci",
@@ -63,7 +75,7 @@ const translations = {
 
     "storia.event6.date": "Agosto 1944",
     "storia.event6.title": "I Tre Martiri di Rimini",
-    "storia.event6.text": "Il 16 vengono impiccati a Rimini, nell’allora piazza Giulio Cesare, i Tre Martiri Mario Capelli, Luigi Nicolò, Adelio Pagliarani.",
+    "storia.event6.text": "Il 16 vengono impiccati a Rimini, nell’allora piazza Giulio Cesare, i Tre Martiri Mario Capelli, Luigi Nicolò, Adelio Pagliarani; il 24 vengono uccisi a Rimini dagli squadristi i Partigiani Enrico Battarra ed Igino Chesi.",
 
     "storia.event7.date": "Settembre 1944",
     "storia.event7.title": "Liberazione di Rimini e ultimi sacrifici",
@@ -81,7 +93,7 @@ const translations = {
 
     "storia.event10.date": "Maggio 1946",
     "storia.event10.title": "Inaugurazione del Centro Educativo Italo Svizzero",
-    "storia.event10.text": "L’1 viene inaugurato a Rimini il Centro Educativo Italo Svizzero, finanziato dal Soccorso Operaio Svizzero e dietro disperata richiesta delle Autorità cittadine.",
+    "storia.event10.text": "L’1 viene inaugurato a Rimini il Centro Educativo Italo Svizzero, finanziato dal Soccorso Operaio Svizzero e dietro disperata richiesta delle Autorità cittadine; mentre il 5 muore a Milano, per malattia contratta durante la guerra, il Gappista riminese Enzo Carpi.",
 
     "storia.event11.date": "Settembre 1962",
     "storia.event11.title": "Medaglia d’oro al Valor Civile a Rimini",
@@ -514,6 +526,18 @@ const translations = {
     "storia.event1.title": "Santa Giustina massacre",
     "storia.event1.text": "On the 22nd, the Santa Giustina massacre took place, causing the death of three people — Ferdinando Samuelli, Pietro Vannoni and Salvatore Sarti — and around fifty wounded at the hands of fascists from Bologna.",
 
+    "storia.giugno1922.date": "June 1922",
+    "storia.giugno1922.title": "Attack on Colombi’s tavern",
+    "storia.giugno1922.text": "On the 24th, fascists threw a hand grenade into Giovanni Colombi’s tavern in Borgo San Giuliano, a regular meeting place for socialists and communists, seriously injuring the owner. Giovanni Renzi was also beaten and stabbed, with wounds considered healable in ten days.",
+
+    "storia.luglio1922.date": "July 1922",
+    "storia.luglio1922.title": "Libero Zanardi and Olga Bondi",
+    "storia.luglio1922.text": "On the 9th, Libero Zanardi died in Rimini. He was the son of the former mayor of Bologna, Francesco Zanardi; his funeral became a large antifascist demonstration, despite fascist bans and threats. On the 24th, a gunfight broke out, for reasons never fully clarified, between fascists and anarchists. The fascists’ target was the anarchist Nello Rossi, who survived despite serious injuries. Unfortunately, his girlfriend Olga Bondi was wounded by the fascists and later died in Rimini hospital.",
+
+    "storia.luglioottobre1922.date": "July - October 1922",
+    "storia.luglioottobre1922.title": "Squadrist expedition and fascist occupation",
+    "storia.luglioottobre1922.text": "On July 28th and 29th, the squadrist expedition led by Italo Balbo took place throughout Romagna. The headquarters of the Chamber of Labour and the Communist Club were set on fire, and this expedition was considered a “general rehearsal” for the March on Rome. On October 28th, 29th and 30th, at the same time as the March on Rome, fascist squads occupied the sub-prefecture, the post office, the railway station, the town hall and also the Malatesta Fortress, freeing all prisoners. At that point Ludovico Pugliesi took office as prefectural commissioner of the city.",
+
     "storia.event2.date": "July 1943",
     "storia.event2.title": "Fall of the fascist dictatorship",
     "storia.event2.text": "On the 25th, the fascist dictatorship fell and Mussolini was arrested. The date is also linked to the anti-fascist tagliatella tradition in memory of the Cervi brothers.",
@@ -524,7 +548,7 @@ const translations = {
 
     "storia.event4.date": "March 1944",
     "storia.event4.title": "Execution at the De Orchi colony",
-    "storia.event4.text": "On March 3rd, Domenico Gallegati and Franco Tassinari from Faenza were executed by fascists near the De Orchi colony in Bellariva after an attempted desertion.",
+    "storia.event4.text": "On the 3rd, the Faenza natives Domenico Gallegati and Franco Tassinari were shot by the fascists at the De Orchi colony in Bellariva for an attempted desertion. On the 24th, in Rome, the Fosse Ardeatine massacre led to the death of the martyrs Egidio Renzi, born in San Giovanni in Marignano, and Giorgio Giorgi, from Sant’Agata Feltria.",
 
     "storia.event5.date": "April 1944",
     "storia.event5.title": "Fragheto massacre and martyrs of Casteldelci",
@@ -532,7 +556,7 @@ const translations = {
 
     "storia.event6.date": "August 1944",
     "storia.event6.title": "The Three Martyrs of Rimini",
-    "storia.event6.text": "On the 16th, Mario Capelli, Luigi Nicolò and Adelio Pagliarani, known as the Three Martyrs, were hanged in Rimini in what was then Piazza Giulio Cesare.",
+    "storia.event6.text": "On the 16th, the Three Martyrs Mario Capelli, Luigi Nicolò and Adelio Pagliarani were hanged in Rimini, in what was then Piazza Giulio Cesare. On the 24th, the partisans Enrico Battarra and Igino Chesi were killed in Rimini by fascist squads.",
 
     "storia.event7.date": "September 1944",
     "storia.event7.title": "Liberation of Rimini and final sacrifices",
@@ -550,7 +574,7 @@ const translations = {
 
     "storia.event10.date": "May 1946",
     "storia.event10.title": "Opening of the Italian-Swiss Educational Centre",
-    "storia.event10.text": "On May 1st, the Italian-Swiss Educational Centre was opened in Rimini, funded by Swiss Workers’ Aid after an urgent request from the city authorities.",
+    "storia.event10.text": "On the 1st, the Italo-Swiss Educational Centre was inaugurated in Rimini, funded by Swiss Workers’ Aid after a desperate request from the city authorities. On the 5th, the Rimini GAP member Enzo Carpi died in Milan from an illness contracted during the war.",
 
     "storia.event11.date": "September 1962",
     "storia.event11.title": "Gold Medal for Civil Valor awarded to Rimini",
