@@ -1217,3 +1217,25 @@ footer,
     background: #1f180d !important;
   }
 }
+
+/* FIX VERDE ABBINAMENTI SU MOBILE */
+
+@media (max-width: 760px) {
+  .memory-card.matched {
+    border-color: rgba(80, 190, 120, 0.9) !important;
+    background: rgba(80, 190, 120, 0.18) !important;
+    color: #fff7e8 !important;
+  }
+
+  .memory-card.matched:hover {
+    background: rgba(80, 190, 120, 0.22) !important;
+    transform: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .final-box::after {
+    top: 70px !important;
+    width: 130px !important;
+  }
+}
