@@ -1,228 +1,286 @@
-const sections = [
-  {
-    title: "La porta della storia",
-    description: "Rispondi correttamente alle domande per aprire la prima porta.",
-    fragment: "RICORDARE",
-    type: "quiz",
-    questions: [
-      {
-        text: "Quale evento avvenne nel maggio 1921?",
-        answers: [
-          "Liberazione di Rimini",
-          "Eccidio di Santa Giustina",
-          "Caduta della dittatura fascista",
-          "Medaglia d’oro al Valor Civile"
-        ],
-        correct: 1
-      },
-      {
-        text: "In quale anno avvenne la Liberazione di Rimini?",
-        answers: [
-          "1921",
-          "1943",
-          "1944",
-          "1962"
-        ],
-        correct: 2
-      },
-      {
-        text: "Il 25 aprile 1945 viene ricordato come:",
-        answers: [
-          "Liberazione d’Italia",
-          "Annuncio dell’Armistizio",
-          "Eccidio di Santa Giustina",
-          "Inaugurazione del CEIS"
-        ],
-        correct: 0
-      }
-    ]
-  },
+function currentLang() {
+  return localStorage.getItem("siteLanguage") || "it";
+}
 
-  {
-    title: "La linea del tempo spezzata",
-    description: "Trascina gli eventi nella linea del tempo, dal più antico al più recente.",
-    fragment: "È",
-    type: "order",
-    question: {
-      text: "Ricostruisci la linea del tempo degli eventi:",
-      items: [
-        "Liberazione di Rimini",
-        "Eccidio di Santa Giustina",
-        "Medaglia d’oro al Valor Civile a Rimini",
-        "Annuncio dell’Armistizio",
-        "I Tre Martiri di Rimini"
-      ],
-      correctOrder: [
-        "Eccidio di Santa Giustina",
-        "Annuncio dell’Armistizio",
-        "I Tre Martiri di Rimini",
-        "Liberazione di Rimini",
-        "Medaglia d’oro al Valor Civile a Rimini"
-      ]
+function getTranslationsObject() {
+  if (window.translations) {
+    return window.translations;
+  }
+
+  if (typeof translations !== "undefined") {
+    return translations;
+  }
+
+  return {};
+}
+
+function tr(key) {
+  const lang = currentLang();
+  const allTranslations = getTranslationsObject();
+
+  if (allTranslations[lang] && allTranslations[lang][key]) {
+    return allTranslations[lang][key];
+  }
+
+  if (allTranslations.it && allTranslations.it[key]) {
+    return allTranslations.it[key];
+  }
+
+  return key;
+}
+
+function fragmentByKey(key) {
+  const lang = currentLang();
+
+  const fragments = {
+    it: {
+      remembering: "RICORDARE",
+      is: "È",
+      defending: "DIFENDERE",
+      the: "LA",
+      freedom: "LIBERTÀ"
+    },
+    en: {
+      remembering: "REMEMBERING",
+      is: "MEANS",
+      defending: "DEFENDING",
+      the: "OUR",
+      freedom: "FREEDOM"
     }
-  },
+  };
 
-  {
-    title: "Gli abbinamenti della Resistenza",
-    description: "Collega ogni nome al suo riferimento corretto. Se sbagli, la sezione riparte.",
-    fragment: "DIFENDERE",
-    type: "memory",
-    question: {
-      text: "Abbina ogni nome al suo collegamento corretto:",
-      pairs: [
-        ["Silvio Cenci", "Arco d’Augusto"],
-        ["Adria Neri", "Marga"],
-        ["Guglielmo Marconi", "8ª Brigata Garibaldi"],
-        ["Tre Martiri", "Via Ducale 3"]
-      ]
-    }
-  },
+  return fragments[lang]?.[key] || fragments.it[key];
+}
 
-  {
-    title: "La mappa della memoria",
-    description: "Leggi l’indizio e clicca il luogo corretto sulla mappa o nella lista.",
-    fragment: "LA",
-    type: "map",
-    questions: [
-      {
-        text: "Quale luogo è collegato alla morte di Silvio Cenci?",
-        correct: "Arco d’Augusto",
-        places: [
-          {
-            name: "Arco d’Augusto",
-            coords: [44.05698637314707, 12.571120519555702]
-          },
-          {
-            name: "Piazza Cavour",
-            coords: [44.06085698601356, 12.565968596601108]
-          },
-          {
-            name: "Sede CEIS",
-            coords: [44.05977058484695, 12.574391280485452]
-          },
-          {
-            name: "Ponte di Tiberio",
-            coords: [44.063028, 12.563181]
-          },
-          {
-            name: "Piazza Tre Martiri",
-            coords: [44.05927341090391, 12.568515442597235]
-          }
-        ]
-      },
-      {
-        text: "Quale luogo rappresenta un segno della rinascita di Rimini dopo la guerra?",
-        correct: "Sede CEIS",
-        places: [
-          {
-            name: "Sede CEIS",
-            coords: [44.05977058484695, 12.574391280485452]
-          },
-          {
-            name: "Parco Caduti nei Lager",
-            coords: [44.034991, 12.598233]
-          },
-          {
-            name: "Monte Cieco",
-            coords: [43.99988899601576, 12.49416875426955]
-          },
-          {
-            name: "Cimitero Monumentale di Rimini",
-            coords: [44.046809, 12.588168]
-          },
-          {
-            name: "Piazza Cavour",
-            coords: [44.06085698601356, 12.565968596601108]
-          }
-        ]
-      },
-      {
-        text: "Dove si trova il monumento ai Caduti per la Libertà?",
-        correct: "Piazza Tre Martiri",
-        places: [
-          {
-            name: "Piazza Tre Martiri",
-            coords: [44.05927341090391, 12.568515442597235]
-          },
-          {
-            name: "Arco d’Augusto",
-            coords: [44.05698637314707, 12.571120519555702]
-          },
-          {
-            name: "Piazza Malatesta",
-            coords: [44.060509, 12.566944]
-          },
-          {
-            name: "Borgo San Giuliano",
-            coords: [44.066005, 12.562805]
-          },
-          {
-            name: "Sede CEIS",
-            coords: [44.05977058484695, 12.574391280485452]
-          }
-        ]
-      },
-      {
-        text: "Quale luogo è collegato alla Medaglia d’oro al Valor Civile?",
-        correct: "Piazza Cavour",
-        places: [
-          {
-            name: "Piazza Cavour",
-            coords: [44.06085698601356, 12.565968596601108]
-          },
-          {
-            name: "Piazza Tre Martiri",
-            coords: [44.05927341090391, 12.568515442597235]
-          },
-          {
-            name: "Arco d’Augusto",
-            coords: [44.05698637314707, 12.571120519555702]
-          },
-          {
-            name: "Parco Caduti nei Lager",
-            coords: [44.034991, 12.598233]
-          },
-          {
-            name: "Monte Cieco",
-            coords: [43.99988899601576, 12.49416875426955]
-          }
-        ]
-      }
-    ]
-  },
-
-  {
-    title: "I volti della memoria",
-    description: "Trascina ogni nome sotto l’immagine corretta del partigiano.",
-    fragment: "LIBERTÀ",
-    type: "faces",
-    question: {
-      text: "Associa ogni volto al nome corretto:",
-      people: [
+function getSections() {
+  return [
+    {
+      title: tr("quiz.s1.title"),
+      description: tr("quiz.s1.description"),
+      fragment: fragmentByKey("remembering"),
+      type: "quiz",
+      questions: [
         {
-          name: "Guglielmo Marconi",
-          image: "Immagini_Partigiani/GuglielmoMarconi.jpg"
+          text: tr("quiz.s1.q1"),
+          answers: [
+            tr("quiz.s1.q1.a1"),
+            tr("quiz.s1.q1.a2"),
+            tr("quiz.s1.q1.a3"),
+            tr("quiz.s1.q1.a4")
+          ],
+          correct: 1
         },
         {
-          name: "Silvio Cenci",
-          image: "Immagini_Partigiani/SilvioCenci.jpg"
+          text: tr("quiz.s1.q2"),
+          answers: [
+            "1921",
+            "1943",
+            "1944",
+            "1962"
+          ],
+          correct: 2
         },
         {
-          name: "Vito Nicoletti",
-          image: "Immagini_Partigiani/VitoNicoletti.jpg"
-        },
-        {
-          name: "Adria Neri",
-          image: "Immagini_Partigiani/AdriaNeri.png"
-        },
-        {
-          name: "Olga Bondi",
-          image: "Immagini_Partigiani/OlgaBondi.jpg"
+          text: tr("quiz.s1.q3"),
+          answers: [
+            tr("quiz.s1.q3.a1"),
+            tr("quiz.s1.q3.a2"),
+            tr("quiz.s1.q3.a3"),
+            tr("quiz.s1.q3.a4")
+          ],
+          correct: 0
         }
       ]
+    },
+
+    {
+      title: tr("quiz.s2.title"),
+      description: tr("quiz.s2.description"),
+      fragment: fragmentByKey("is"),
+      type: "order",
+      question: {
+        text: tr("quiz.s2.question"),
+        items: [
+          tr("quiz.event.liberazione"),
+          tr("quiz.event.santa"),
+          tr("quiz.event.medaglia"),
+          tr("quiz.event.armistizio"),
+          tr("quiz.event.tre")
+        ],
+        correctOrder: [
+          tr("quiz.event.santa"),
+          tr("quiz.event.armistizio"),
+          tr("quiz.event.tre"),
+          tr("quiz.event.liberazione"),
+          tr("quiz.event.medaglia")
+        ]
+      }
+    },
+
+    {
+      title: tr("quiz.s3.title"),
+      description: tr("quiz.s3.description"),
+      fragment: fragmentByKey("defending"),
+      type: "memory",
+      question: {
+        text: tr("quiz.s3.question"),
+        pairs: [
+          [tr("quiz.name.silvio"), tr("quiz.link.arco")],
+          [tr("quiz.name.adria"), tr("quiz.link.marga")],
+          [tr("quiz.name.guglielmo"), tr("quiz.link.garibaldi")],
+          [tr("quiz.name.tre"), tr("quiz.link.ducale")]
+        ]
+      }
+    },
+
+    {
+      title: tr("quiz.s4.title"),
+      description: tr("quiz.s4.description"),
+      fragment: fragmentByKey("the"),
+      type: "map",
+      questions: [
+        {
+          text: tr("quiz.s4.q1"),
+          correct: tr("quiz.place.arco"),
+          places: [
+            {
+              name: tr("quiz.place.piazza.cavour"),
+              coords: [44.06085698601356, 12.565968596601108]
+            },
+            {
+              name: tr("quiz.place.ceis"),
+              coords: [44.05977058484695, 12.574391280485452]
+            },
+            {
+              name: tr("quiz.place.arco"),
+              coords: [44.05698637314707, 12.571120519555702]
+            },
+            {
+              name: tr("quiz.place.ponte"),
+              coords: [44.063028, 12.563181]
+            },
+            {
+              name: tr("quiz.place.tre"),
+              coords: [44.05927341090391, 12.568515442597235]
+            }
+          ]
+        },
+        {
+          text: tr("quiz.s4.q2"),
+          correct: tr("quiz.place.ceis"),
+          places: [
+            {
+              name: tr("quiz.place.lager"),
+              coords: [44.034991, 12.598233]
+            },
+            {
+              name: tr("quiz.place.monte"),
+              coords: [43.99988899601576, 12.49416875426955]
+            },
+            {
+              name: tr("quiz.place.cimitero"),
+              coords: [44.046809, 12.588168]
+            },
+            {
+              name: tr("quiz.place.ceis"),
+              coords: [44.05977058484695, 12.574391280485452]
+            },
+            {
+              name: tr("quiz.place.piazza.cavour"),
+              coords: [44.06085698601356, 12.565968596601108]
+            }
+          ]
+        },
+        {
+          text: tr("quiz.s4.q3"),
+          correct: tr("quiz.place.tre"),
+          places: [
+            {
+              name: tr("quiz.place.arco"),
+              coords: [44.05698637314707, 12.571120519555702]
+            },
+            {
+              name: tr("quiz.place.malatesta"),
+              coords: [44.060509, 12.566944]
+            },
+            {
+              name: tr("quiz.place.borgo"),
+              coords: [44.066005, 12.562805]
+            },
+            {
+              name: tr("quiz.place.ceis"),
+              coords: [44.05977058484695, 12.574391280485452]
+            },
+            {
+              name: tr("quiz.place.tre"),
+              coords: [44.05927341090391, 12.568515442597235]
+            }
+          ]
+        },
+        {
+          text: tr("quiz.s4.q4"),
+          correct: tr("quiz.place.piazza.cavour"),
+          places: [
+            {
+              name: tr("quiz.place.tre"),
+              coords: [44.05927341090391, 12.568515442597235]
+            },
+            {
+              name: tr("quiz.place.piazza.cavour"),
+              coords: [44.06085698601356, 12.565968596601108]
+            },
+            {
+              name: tr("quiz.place.arco"),
+              coords: [44.05698637314707, 12.571120519555702]
+            },
+            {
+              name: tr("quiz.place.lager"),
+              coords: [44.034991, 12.598233]
+            },
+            {
+              name: tr("quiz.place.monte"),
+              coords: [43.99988899601576, 12.49416875426955]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      title: tr("quiz.s5.title"),
+      description: tr("quiz.s5.description"),
+      fragment: fragmentByKey("freedom"),
+      type: "faces",
+      question: {
+        text: tr("quiz.s5.question"),
+        people: [
+          {
+            name: tr("quiz.name.guglielmo"),
+            image: "Immagini_Partigiani/GuglielmoMarconi.jpg"
+          },
+          {
+            name: tr("quiz.name.silvio"),
+            image: "Immagini_Partigiani/SilvioCenci.jpg"
+          },
+          {
+            name: tr("quiz.name.vito"),
+            image: "Immagini_Partigiani/VitoNicoletti.jpg"
+          },
+          {
+            name: tr("quiz.name.adria"),
+            image: "Immagini_Partigiani/AdriaNeri.png"
+          },
+          {
+            name: tr("quiz.name.olga"),
+            image: "Immagini_Partigiani/OlgaBondi.jpg"
+          }
+        ]
+      }
     }
-  }
-];
+  ];
+}
+
+let sections = getSections();
 
 let currentSectionIndex = 0;
 let currentQuestionIndex = 0;
@@ -267,7 +325,7 @@ function loadSection() {
   selectedNameTag = null;
   selectedMarkerName = null;
 
-  sectionNumber.textContent = `Sezione ${currentSectionIndex + 1} / ${sections.length}`;
+  sectionNumber.textContent = `${tr("quiz.section.of")} ${currentSectionIndex + 1} / ${sections.length}`;
   sectionTitle.textContent = section.title;
   sectionDescription.textContent = section.description;
 
@@ -294,7 +352,7 @@ function loadQuestion() {
   hideAllQuestionTypes();
   answersBox.classList.remove("hidden");
 
-  questionNumber.textContent = `Domanda ${currentQuestionIndex + 1} / ${section.questions.length}`;
+  questionNumber.textContent = `${tr("quiz.question")} ${currentQuestionIndex + 1} / ${section.questions.length}`;
   questionText.textContent = question.text;
   answersBox.innerHTML = "";
   nextBtn.classList.add("hidden");
@@ -328,7 +386,7 @@ function checkAnswer(value, clickedButton) {
   }
 
   clickedButton.classList.add("correct");
-  showSuccess("Risposta corretta.");
+  showSuccess(tr("quiz.correct"));
 
   disableAnswerButtons();
 
@@ -354,7 +412,7 @@ function loadOrderSection() {
   hideAllQuestionTypes();
   orderBox.classList.remove("hidden");
 
-  questionNumber.textContent = "Linea del tempo";
+  questionNumber.textContent = tr("quiz.timeline");
   questionText.textContent = question.text;
   orderBox.innerHTML = "";
   nextBtn.classList.add("hidden");
@@ -371,7 +429,7 @@ function loadOrderSection() {
     slot.className = "timeline-slot";
     slot.dataset.number = i + 1;
     slot.dataset.index = i;
-    slot.textContent = "Trascina qui";
+    slot.textContent = tr("quiz.drag.here");
 
     slot.addEventListener("dragover", (event) => {
       event.preventDefault();
@@ -394,7 +452,7 @@ function loadOrderSection() {
 
     slot.addEventListener("click", () => {
       if (!selectedTimelineCard) {
-        showError("Prima seleziona un evento sotto.");
+        showError(tr("quiz.select.event.first"));
         return;
       }
 
@@ -413,7 +471,7 @@ function loadOrderSection() {
 
   const bankTitle = document.createElement("div");
   bankTitle.className = "timeline-bank-title";
-  bankTitle.textContent = "Eventi da ordinare";
+  bankTitle.textContent = tr("quiz.events.order");
   bank.appendChild(bankTitle);
 
   const shuffledItems = [...question.items];
@@ -426,7 +484,7 @@ function loadOrderSection() {
 
   const checkButton = document.createElement("button");
   checkButton.className = "timeline-check-btn";
-  checkButton.textContent = "Controlla ordine";
+  checkButton.textContent = tr("quiz.check.order");
   checkButton.addEventListener("click", checkTimelineOrder);
 
   orderBox.appendChild(dropArea);
@@ -458,7 +516,7 @@ function createTimelineCard(text) {
     selectedTimelineCard = card;
     card.classList.add("selected");
 
-    showSuccess(`Hai selezionato: ${text}. Ora clicca lo spazio giusto nella linea del tempo.`);
+    showSuccess(`${tr("quiz.selected")}: ${text}. ${tr("quiz.timeline.instruction")}`);
   });
 
   return card;
@@ -476,7 +534,7 @@ function putTimelineCardInSlot(slot, card) {
 
   if (oldSlot) {
     oldSlot.classList.remove("filled");
-    oldSlot.textContent = "Trascina qui";
+    oldSlot.textContent = tr("quiz.drag.here");
   }
 
   slot.textContent = "";
@@ -498,7 +556,7 @@ function checkTimelineOrder() {
     const card = slot.querySelector(".timeline-card");
 
     if (!card) {
-      showError("Devi riempire tutta la linea del tempo.");
+      showError(tr("quiz.fill.timeline"));
       return;
     }
 
@@ -512,7 +570,7 @@ function checkTimelineOrder() {
     return;
   }
 
-  showSuccess("Linea del tempo corretta.");
+  showSuccess(tr("quiz.timeline.correct"));
   completeSection();
 }
 
@@ -524,7 +582,7 @@ function loadMemorySection() {
   hideAllQuestionTypes();
   memoryBox.classList.remove("hidden");
 
-  questionNumber.textContent = "Abbinamento";
+  questionNumber.textContent = tr("quiz.match");
   questionText.textContent = section.question.text;
   memoryBox.innerHTML = "";
   selectedMemoryCards = [];
@@ -541,11 +599,11 @@ function loadMemorySection() {
 
   const leftTitle = document.createElement("div");
   leftTitle.className = "memory-column-title";
-  leftTitle.textContent = "Nomi";
+  leftTitle.textContent = tr("quiz.names");
 
   const rightTitle = document.createElement("div");
   rightTitle.className = "memory-column-title";
-  rightTitle.textContent = "Collegamenti";
+  rightTitle.textContent = tr("quiz.links");
 
   leftColumn.appendChild(leftTitle);
   rightColumn.appendChild(rightTitle);
@@ -643,7 +701,7 @@ function checkMatchPair() {
     selectedMemoryCards = [];
     matchedPairs++;
 
-    showSuccess("Abbinamento corretto.");
+    showSuccess(tr("quiz.match.correct"));
 
     if (matchedPairs === sections[currentSectionIndex].question.pairs.length) {
       completeSection();
@@ -656,7 +714,7 @@ function checkMatchPair() {
   second.classList.add("wrong");
 
   lockMemory = true;
-  showError("Abbinamento sbagliato. La sezione riparte.");
+  showError(tr("quiz.match.wrong"));
 
   setTimeout(() => {
     loadSection();
@@ -674,7 +732,7 @@ function loadMapSection() {
   hideAllQuestionTypes();
   mapBox.classList.remove("hidden");
 
-  questionNumber.textContent = `Indizio ${currentQuestionIndex + 1} / ${section.questions.length}`;
+  questionNumber.textContent = `${tr("quiz.clue")} ${currentQuestionIndex + 1} / ${section.questions.length}`;
   questionText.textContent = question.text;
   mapBox.innerHTML = "";
   nextBtn.classList.add("hidden");
@@ -695,7 +753,7 @@ function loadMapSection() {
 
   const smallTitle = document.createElement("div");
   smallTitle.className = "map-question-small";
-  smallTitle.textContent = "Luoghi disponibili";
+  smallTitle.textContent = tr("quiz.available.places");
   list.appendChild(smallTitle);
 
   question.places.forEach((place, index) => {
@@ -744,7 +802,7 @@ function createEscapeMap(places) {
     marker.bindPopup(`
       <div class="escape-map-popup">
         <h4>${index + 1}. ${place.name}</h4>
-        <p>Clicca di nuovo questo marker per confermare la risposta.</p>
+        <p>${tr("quiz.popup.confirm")}</p>
       </div>
     `);
 
@@ -774,7 +832,7 @@ function handleMarkerClick(placeName, marker) {
   selectedMarkerName = placeName;
   marker.openPopup();
 
-  showSuccess(`Hai selezionato: ${placeName}. Clicca di nuovo lo stesso marker per confermare.`);
+  showSuccess(`${tr("quiz.selected")}: ${placeName}. ${tr("quiz.marker.confirm")}`);
 }
 
 function checkMapAnswer(placeName, clickedElement) {
@@ -794,7 +852,7 @@ function checkMapAnswer(placeName, clickedElement) {
     clickedElement.classList.add("correct");
   }
 
-  showSuccess("Luogo corretto.");
+  showSuccess(tr("quiz.place.correct"));
 
   disableMapButtons();
 
@@ -824,7 +882,7 @@ function loadFacesSection() {
   hideAllQuestionTypes();
   facesBox.classList.remove("hidden");
 
-  questionNumber.textContent = "Volti";
+  questionNumber.textContent = tr("quiz.faces");
   questionText.textContent = section.question.text;
   facesBox.innerHTML = "";
   nextBtn.classList.add("hidden");
@@ -847,7 +905,7 @@ function loadFacesSection() {
     const drop = document.createElement("div");
     drop.className = "face-drop";
     drop.dataset.correct = person.name;
-    drop.textContent = "Trascina qui il nome";
+    drop.textContent = tr("quiz.drag.name.here");
 
     drop.addEventListener("dragover", (event) => {
       event.preventDefault();
@@ -870,7 +928,7 @@ function loadFacesSection() {
 
     drop.addEventListener("click", () => {
       if (!selectedNameTag) {
-        showError("Prima seleziona un nome sotto.");
+        showError(tr("quiz.select.name.first"));
         return;
       }
 
@@ -890,7 +948,7 @@ function loadFacesSection() {
 
   const bankTitle = document.createElement("div");
   bankTitle.className = "name-bank-title";
-  bankTitle.textContent = "Nomi da trascinare o cliccare";
+  bankTitle.textContent = tr("quiz.names.drag");
   nameBank.appendChild(bankTitle);
 
   const tagsBox = document.createElement("div");
@@ -909,7 +967,7 @@ function loadFacesSection() {
 
   const checkButton = document.createElement("button");
   checkButton.className = "faces-check-btn";
-  checkButton.textContent = "Controlla nomi";
+  checkButton.textContent = tr("quiz.check.names");
   checkButton.addEventListener("click", checkFacesAnswer);
 
   facesBox.appendChild(facesGrid);
@@ -941,7 +999,7 @@ function createNameTag(name) {
     selectedNameTag = tag;
     tag.classList.add("selected");
 
-    showSuccess(`Hai selezionato: ${name}. Ora clicca lo spazio sotto la foto giusta.`);
+    showSuccess(`${tr("quiz.selected")}: ${name}. ${tr("quiz.face.instruction")}`);
   });
 
   return tag;
@@ -959,7 +1017,7 @@ function putNameInDrop(drop, tag) {
 
   if (oldDrop) {
     oldDrop.classList.remove("filled");
-    oldDrop.textContent = "Trascina qui il nome";
+    oldDrop.textContent = tr("quiz.drag.name.here");
   }
 
   drop.textContent = "";
@@ -977,7 +1035,7 @@ function checkFacesAnswer() {
     const tag = drop.querySelector(".name-tag");
 
     if (!tag) {
-      showError("Devi inserire tutti i nomi sotto le immagini.");
+      showError(tr("quiz.fill.faces"));
       return;
     }
 
@@ -987,7 +1045,7 @@ function checkFacesAnswer() {
     }
   }
 
-  showSuccess("Hai riconosciuto tutti i volti della memoria.");
+  showSuccess(tr("quiz.faces.correct"));
   completeSection();
 }
 
@@ -1001,7 +1059,7 @@ function completeSection() {
     unlockFragment(currentSectionIndex, section.fragment);
   }
 
-  showSuccess(`Sezione completata. Hai ottenuto il frammento: ${section.fragment}`);
+  showSuccess(`${tr("quiz.section.completed")} ${section.fragment}`);
 
   setTimeout(() => {
     if (currentSectionIndex < sections.length - 1) {
@@ -1015,12 +1073,28 @@ function completeSection() {
 
 function unlockFragment(index, text) {
   const fragmentBox = document.getElementById(`fragment-${index}`);
+
+  if (!fragmentBox) {
+    return;
+  }
+
   fragmentBox.textContent = text;
   fragmentBox.classList.add("unlocked");
 }
 
+function updateUnlockedFragments() {
+  unlockedFragments.forEach((index) => {
+    const fragmentBox = document.getElementById(`fragment-${index}`);
+
+    if (fragmentBox && sections[index]) {
+      fragmentBox.textContent = sections[index].fragment;
+      fragmentBox.classList.add("unlocked");
+    }
+  });
+}
+
 function failSection() {
-  showError("Risposta sbagliata. La sezione riparte.");
+  showError(tr("quiz.wrong"));
 
   setTimeout(() => {
     loadSection();
@@ -1031,10 +1105,12 @@ function showFinal() {
   gameCard.classList.add("hidden");
   finalBox.classList.remove("hidden");
 
-  window.scrollTo({
-    top: finalBox.offsetTop - 120,
-    behavior: "smooth"
-  });
+  setTimeout(() => {
+    document.getElementById("finalPhrase").scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    });
+  }, 200);
 }
 
 function hideAllQuestionTypes() {
@@ -1078,6 +1154,17 @@ nextBtn.addEventListener("click", () => {
 });
 
 restartBtn.addEventListener("click", () => {
+  loadSection();
+});
+
+document.addEventListener("siteLanguageChanged", () => {
+  sections = getSections();
+  updateUnlockedFragments();
+
+  if (!finalBox.classList.contains("hidden")) {
+    return;
+  }
+
   loadSection();
 });
 

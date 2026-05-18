@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gioco — Resistenza Rimini</title>
+  <title data-i18n="gioco.page.title">Gioco — Resistenza Rimini</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="gioco.css?v=20">
+  <link rel="stylesheet" href="gioco.css?v=22">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
       <li><a href="storia.html" data-i18n="nav.storia">Storia</a></li>
       <li><a href="mappa.html" data-i18n="nav.mappa">Mappa</a></li>
       <li><a href="partigiani.html" data-i18n="nav.partigiani">Partigiani</a></li>
-      <li><a href="gioco.html" class="active">Quiz</a></li>
+      <li><a href="gioco.html" class="active" data-i18n="nav.gioco">Quiz</a></li>
     </ul>
 
     <button class="language-btn" id="languageBtn" aria-label="Cambia lingua">
@@ -41,16 +41,16 @@
 
   <section class="game-hero">
     <div class="game-hero-inner">
-      <span class="hero-label">Escape room digitale</span>
+      <span class="hero-label" data-i18n="gioco.hero.label">Escape room digitale</span>
 
-      <h1>
+      <h1 data-i18n-html="gioco.hero.title">
         <span class="hero-light">La</span>
         <span class="hero-accent">Chiave</span>
         <span class="hero-light">della</span><br>
         <span class="hero-accent">Memoria</span>
       </h1>
 
-      <p>
+      <p data-i18n="gioco.hero.text">
         Supera gli enigmi sulla Resistenza riminese.
         Ogni sezione completata ti darà un frammento della frase finale.
       </p>
@@ -61,7 +61,7 @@
   <main class="game-page">
 
     <section class="fragments-box">
-      <span class="fragments-label">Frammenti raccolti</span>
+      <span class="fragments-label" data-i18n="gioco.fragments.label">Frammenti raccolti</span>
 
       <div class="fragments-grid">
         <div class="fragment" id="fragment-0">?</div>
@@ -103,24 +103,64 @@
       <div class="game-message" id="gameMessage"></div>
 
       <div class="game-actions">
-        <button id="restartBtn" class="secondary-btn">Ricomincia sezione</button>
-        <button id="nextBtn" class="main-btn hidden">Prossima domanda</button>
+        <button id="restartBtn" class="secondary-btn" data-i18n="gioco.restart">Ricomincia sezione</button>
+        <button id="nextBtn" class="main-btn hidden" data-i18n="gioco.next">Prossima domanda</button>
       </div>
 
     </section>
 
 
     <section class="final-box hidden" id="finalBox">
-      <span class="final-label">Frase completata</span>
+      <span class="final-label" data-i18n="gioco.final.label">Frase completata</span>
 
-      <h2>RICORDARE È DIFENDERE LA LIBERTÀ</h2>
+      <h2 id="finalPhrase" data-i18n="gioco.final.phrase">RICORDARE È DIFENDERE LA LIBERTÀ</h2>
 
-      <p>
+      <p data-i18n="gioco.final.text">
         Hai completato il percorso della memoria.
         La libertà non vive solo nel passato: vive in chi sceglie di ricordare.
       </p>
 
-      <button onclick="location.reload()" class="main-btn">Rigioca</button>
+      <div class="today-box">
+        <span class="today-label" data-i18n="gioco.today.label">Dal passato al presente</span>
+
+        <h3 data-i18n="gioco.today.title">E oggi, cosa significa difendere la libertà?</h3>
+
+        <div class="today-grid">
+          <div class="today-card">
+            <h4 data-i18n="gioco.today.card1.title">Informarsi</h4>
+            <p data-i18n="gioco.today.card1.text">
+              Conoscere le storie dei partigiani aiuta a capire che la libertà non è nata da sola, ma da scelte difficili e coraggiose.
+            </p>
+          </div>
+
+          <div class="today-card">
+            <h4 data-i18n="gioco.today.card2.title">Rispettare</h4>
+            <p data-i18n="gioco.today.card2.text">
+              I partigiani lottarono anche per un futuro più libero e giusto: rispettare i diritti degli altri significa continuare quei valori.
+            </p>
+          </div>
+
+          <div class="today-card">
+            <h4 data-i18n="gioco.today.card3.title">Partecipare</h4>
+            <p data-i18n="gioco.today.card3.text">
+              I partigiani non rimasero indifferenti davanti alla violenza: anche oggi ognuno può fare la propria parte nella società.
+            </p>
+          </div>
+
+          <div class="today-card">
+            <h4 data-i18n="gioco.today.card4.title">Memoria</h4>
+            <p data-i18n="gioco.today.card4.text">
+              Ricordare i luoghi e le persone della Resistenza aiuta a capire il valore della libertà oggi.
+            </p>
+          </div>
+        </div>
+
+        <div class="today-image">
+          <img src="Immagini_Monumenti/GloriaAiCadutiPerLaLibertà.jpg" alt="Memoria e attualità">
+        </div>
+      </div>
+
+      <button onclick="location.reload()" class="main-btn" data-i18n="gioco.replay">Rigioca</button>
     </section>
 
   </main>
@@ -190,8 +230,8 @@
 
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="gioco.js"></script>
   <script src="language.js"></script>
+  <script src="gioco.js"></script>
 
 </body>
 </html>

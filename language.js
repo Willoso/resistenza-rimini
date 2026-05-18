@@ -23,7 +23,7 @@ const translations = {
     "index.hero.button": "Scopri la storia",
 
     "index.about.title": "Chi siamo",
-    "index.about.p1": "Siamo tre studenti dell’ITTS Belluzzi-Da Vinci di Rimini, indirizzo Informatica e Telecomunicazioni, e abbiamo creato questo sito per raccontare e approfondire la Resistenza nel territorio riminese, utilizzando le nostre competenze digitali per valorizzare la memoria storica.",
+    "index.about.p1": "Siamo tre studenti dell’ITTS Belluzzi-Da Vinci di Rimini, e abbiamo creato questo sito per raccontare e approfondire la Resistenza nel territorio riminese, utilizzando le nostre competenze digitali per valorizzare la memoria storica.",
     "index.about.p2": "Attraverso questo progetto vogliamo presentare la Resistenza a Rimini in modo chiaro e comprensibile, raccogliendo informazioni su eventi, luoghi e persone che hanno segnato la storia della città.",
 
     "index.timeline.title": "La storia della <em>Resistenza</em>",
@@ -481,7 +481,126 @@ const translations = {
     "mappa.detail35.text1": "Dopo l'8 settembre 1943, il vergianese Pietro Barberini si unì alla Divisione Italia per combattere i tedeschi in Jugoslavia. Caduto in battaglia a Zagabria nel maggio 1945, ricevette la Medaglia di Bronzo al Valor Militare.",
     "mappa.detail35.text2": "In suo onore, l’ANPI e il Comune hanno posto una grande lapide commemorativa in via Marecchiese 454 a Vergiano. Il marmo è affisso al primo piano dell'edificio che ospitava la storica Cooperativa \"La Vergillana\", rendendo omaggio al suo sacrificio proprio nel cuore della sua comunità.",
 
-    "mappa.note.text": "Ogni luogo racconta una parte della memoria collettiva di Rimini: piazze, monumenti, parchi, cippi e targhe diventano punti da cui rileggere la storia della città."
+    "mappa.note.text": "Ogni luogo racconta una parte della memoria collettiva di Rimini: piazze, monumenti, parchi, cippi e targhe diventano punti da cui rileggere la storia della città.",
+
+    /* GIOCO / QUIZ */
+
+    "gioco.page.title": "Gioco — Resistenza Rimini",
+    "gioco.hero.label": "Escape room digitale",
+    "gioco.hero.title": "<span class=\"hero-light\">La</span> <span class=\"hero-accent\">Chiave</span> <span class=\"hero-light\">della</span><br><span class=\"hero-accent\">Memoria</span>",
+    "gioco.hero.text": "Supera gli enigmi sulla Resistenza riminese. Ogni sezione completata ti darà un frammento della frase finale.",
+    "gioco.fragments.label": "Frammenti raccolti",
+    "gioco.restart": "Ricomincia sezione",
+    "gioco.next": "Prossima domanda",
+
+    "gioco.final.label": "Frase completata",
+    "gioco.final.phrase": "RICORDARE È DIFENDERE LA LIBERTÀ",
+    "gioco.final.text": "Hai completato il percorso della memoria. La libertà non vive solo nel passato: vive in chi sceglie di ricordare.",
+    "gioco.today.label": "Dal passato al presente",
+    "gioco.today.title": "E oggi, cosa significa difendere la libertà?",
+
+    "gioco.today.card1.title": "Informarsi",
+    "gioco.today.card1.text": "Conoscere le storie dei partigiani aiuta a capire che la libertà non è nata da sola, ma da scelte difficili e coraggiose.",
+    "gioco.today.card2.title": "Rispettare",
+    "gioco.today.card2.text": "I partigiani lottarono anche per un futuro più libero e giusto: rispettare i diritti degli altri significa continuare quei valori.",
+    "gioco.today.card3.title": "Partecipare",
+    "gioco.today.card3.text": "I partigiani non rimasero indifferenti davanti alla violenza: anche oggi ognuno può fare la propria parte nella società.",
+    "gioco.today.card4.title": "Memoria",
+    "gioco.today.card4.text": "Ricordare i luoghi e le persone della Resistenza aiuta a capire il valore della libertà oggi.",
+    "gioco.replay": "Rigioca",
+
+    "quiz.section.of": "Sezione",
+    "quiz.question": "Domanda",
+    "quiz.timeline": "Linea del tempo",
+    "quiz.match": "Abbinamento",
+    "quiz.clue": "Indizio",
+    "quiz.faces": "Volti",
+
+    "quiz.correct": "Risposta corretta.",
+    "quiz.place.correct": "Luogo corretto.",
+    "quiz.timeline.correct": "Linea del tempo corretta.",
+    "quiz.faces.correct": "Hai riconosciuto tutti i volti della memoria.",
+    "quiz.wrong": "Risposta sbagliata. La sezione riparte.",
+    "quiz.match.correct": "Abbinamento corretto.",
+    "quiz.match.wrong": "Abbinamento sbagliato. La sezione riparte.",
+    "quiz.fill.timeline": "Devi riempire tutta la linea del tempo.",
+    "quiz.fill.faces": "Devi inserire tutti i nomi sotto le immagini.",
+    "quiz.select.event.first": "Prima seleziona un evento sotto.",
+    "quiz.select.name.first": "Prima seleziona un nome sotto.",
+    "quiz.selected": "Hai selezionato",
+    "quiz.timeline.instruction": "Ora clicca lo spazio giusto nella linea del tempo.",
+    "quiz.face.instruction": "Ora clicca lo spazio sotto la foto giusta.",
+    "quiz.marker.confirm": "Clicca di nuovo lo stesso marker per confermare.",
+    "quiz.section.completed": "Sezione completata. Hai ottenuto il frammento:",
+    "quiz.drag.here": "Trascina qui",
+    "quiz.drag.name.here": "Trascina qui il nome",
+    "quiz.events.order": "Eventi da ordinare",
+    "quiz.check.order": "Controlla ordine",
+    "quiz.names": "Nomi",
+    "quiz.links": "Collegamenti",
+    "quiz.available.places": "Luoghi disponibili",
+    "quiz.names.drag": "Nomi da trascinare o cliccare",
+    "quiz.check.names": "Controlla nomi",
+    "quiz.popup.confirm": "Clicca di nuovo questo marker per confermare la risposta.",
+
+    "quiz.s1.title": "La porta della storia",
+    "quiz.s1.description": "Rispondi correttamente alle domande per aprire la prima porta.",
+    "quiz.s1.q1": "Quale evento avvenne nel maggio 1921?",
+    "quiz.s1.q1.a1": "Liberazione di Rimini",
+    "quiz.s1.q1.a2": "Eccidio di Santa Giustina",
+    "quiz.s1.q1.a3": "Caduta della dittatura fascista",
+    "quiz.s1.q1.a4": "Medaglia d’oro al Valor Civile",
+    "quiz.s1.q2": "In quale anno avvenne la Liberazione di Rimini?",
+    "quiz.s1.q3": "Il 25 aprile 1945 viene ricordato come:",
+    "quiz.s1.q3.a1": "Liberazione d’Italia",
+    "quiz.s1.q3.a2": "Annuncio dell’Armistizio",
+    "quiz.s1.q3.a3": "Eccidio di Santa Giustina",
+    "quiz.s1.q3.a4": "Inaugurazione del CEIS",
+
+    "quiz.s2.title": "La linea del tempo spezzata",
+    "quiz.s2.description": "Trascina gli eventi nella linea del tempo, dal più antico al più recente.",
+    "quiz.s2.question": "Ricostruisci la linea del tempo degli eventi:",
+    "quiz.event.liberazione": "Liberazione di Rimini",
+    "quiz.event.santa": "Eccidio di Santa Giustina",
+    "quiz.event.medaglia": "Medaglia d’oro al Valor Civile a Rimini",
+    "quiz.event.armistizio": "Annuncio dell’Armistizio",
+    "quiz.event.tre": "I Tre Martiri di Rimini",
+
+    "quiz.s3.title": "Gli abbinamenti della Resistenza",
+    "quiz.s3.description": "Collega ogni nome al suo riferimento corretto. Se sbagli, la sezione riparte.",
+    "quiz.s3.question": "Abbina ogni nome al suo collegamento corretto:",
+    "quiz.name.silvio": "Silvio Cenci",
+    "quiz.name.adria": "Adria Neri",
+    "quiz.name.guglielmo": "Guglielmo Marconi",
+    "quiz.name.tre": "Tre Martiri",
+    "quiz.link.arco": "Arco d’Augusto",
+    "quiz.link.marga": "Marga",
+    "quiz.link.garibaldi": "8ª Brigata Garibaldi",
+    "quiz.link.ducale": "Via Ducale 3",
+
+    "quiz.s4.title": "La mappa della memoria",
+    "quiz.s4.description": "Leggi l’indizio e clicca il luogo corretto sulla mappa o nella lista.",
+    "quiz.s4.q1": "Quale luogo è collegato alla morte di Silvio Cenci?",
+    "quiz.s4.q2": "Quale luogo rappresenta un segno della rinascita di Rimini dopo la guerra?",
+    "quiz.s4.q3": "Dove si trova il monumento ai Caduti per la Libertà?",
+    "quiz.s4.q4": "Quale luogo è collegato alla Medaglia d’oro al Valor Civile?",
+
+    "quiz.place.piazza.cavour": "Piazza Cavour",
+    "quiz.place.ceis": "Sede CEIS",
+    "quiz.place.arco": "Arco d’Augusto",
+    "quiz.place.ponte": "Ponte di Tiberio",
+    "quiz.place.tre": "Piazza Tre Martiri",
+    "quiz.place.lager": "Parco Caduti nei Lager",
+    "quiz.place.monte": "Monte Cieco",
+    "quiz.place.cimitero": "Cimitero Monumentale di Rimini",
+    "quiz.place.malatesta": "Piazza Malatesta",
+    "quiz.place.borgo": "Borgo San Giuliano",
+
+    "quiz.s5.title": "I volti della memoria",
+    "quiz.s5.description": "Trascina ogni nome sotto l’immagine corretta del partigiano.",
+    "quiz.s5.question": "Associa ogni volto al nome corretto:",
+    "quiz.name.vito": "Vito Nicoletti",
+    "quiz.name.olga": "Olga Bondi"
   },
 
   en: {
@@ -508,7 +627,7 @@ const translations = {
     "index.hero.button": "Discover the history",
 
     "index.about.title": "About us",
-    "index.about.p1": "We are three students from ITTS Belluzzi-Da Vinci in Rimini, studying Computer Science and Telecommunications. We created this website to tell and explore the history of the Resistance in the Rimini area, using our digital skills to preserve and promote historical memory.",
+    "index.about.p1": "We are three students from ITTS Belluzzi-Da Vinci in Rimini. We created this website to tell and explore the history of the Resistance in the Rimini area, using our digital skills to preserve and promote historical memory.",
     "index.about.p2": "Through this project, we want to present the Resistance in Rimini in a clear and accessible way, collecting information about events, places and people that marked the history of the city.",
 
     "index.timeline.title": "The history of the <em>Resistance</em>",
@@ -966,28 +1085,153 @@ const translations = {
     "mappa.detail35.text1": "After 8 September 1943, Pietro Barberini from Vergiano joined the Italia Division to fight the Germans in Yugoslavia. He fell in battle in Zagreb in May 1945 and received the Bronze Medal for Military Valour.",
     "mappa.detail35.text2": "In his honour, ANPI and the Municipality placed a large commemorative plaque in Via Marecchiese 454 in Vergiano. The marble plaque is fixed to the first floor of the building that housed the historic cooperative “La Vergillana”, paying tribute to his sacrifice in the very heart of his community.",
 
-    "mappa.note.text": "Every place tells a part of Rimini’s collective memory: squares, monuments, parks, memorial stones and plaques become points from which to reread the history of the city."
+    "mappa.note.text": "Every place tells a part of Rimini’s collective memory: squares, monuments, parks, memorial stones and plaques become points from which to reread the history of the city.",
+
+    /* GAME / QUIZ */
+
+    "gioco.page.title": "Game — Resistance Rimini",
+    "gioco.hero.label": "Digital escape room",
+    "gioco.hero.title": "<span class=\"hero-light\">The</span> <span class=\"hero-accent\">Key</span> <span class=\"hero-light\">of</span><br><span class=\"hero-accent\">Memory</span>",
+    "gioco.hero.text": "Solve the challenges about the Resistance in Rimini. Each completed section will give you a fragment of the final sentence.",
+    "gioco.fragments.label": "Collected fragments",
+    "gioco.restart": "Restart section",
+    "gioco.next": "Next question",
+
+    "gioco.final.label": "Completed sentence",
+    "gioco.final.phrase": "REMEMBERING MEANS DEFENDING FREEDOM",
+    "gioco.final.text": "You have completed the journey of memory. Freedom does not live only in the past: it lives in those who choose to remember.",
+    "gioco.today.label": "From the past to the present",
+    "gioco.today.title": "What does defending freedom mean today?",
+
+    "gioco.today.card1.title": "Learning",
+    "gioco.today.card1.text": "Learning about the stories of the partisans helps us understand that freedom did not come by itself, but through difficult and courageous choices.",
+    "gioco.today.card2.title": "Respecting",
+    "gioco.today.card2.text": "The partisans also fought for a freer and fairer future: respecting other people’s rights means carrying those values forward.",
+    "gioco.today.card3.title": "Participating",
+    "gioco.today.card3.text": "The partisans did not remain indifferent in the face of violence: even today, everyone can do their part in society.",
+    "gioco.today.card4.title": "Memory",
+    "gioco.today.card4.text": "Remembering the places and people of the Resistance helps us understand the value of freedom today.",
+    "gioco.replay": "Play again",
+
+    "quiz.section.of": "Section",
+    "quiz.question": "Question",
+    "quiz.timeline": "Timeline",
+    "quiz.match": "Matching",
+    "quiz.clue": "Clue",
+    "quiz.faces": "Faces",
+
+    "quiz.correct": "Correct answer.",
+    "quiz.place.correct": "Correct place.",
+    "quiz.timeline.correct": "Correct timeline.",
+    "quiz.faces.correct": "You recognized all the faces of memory.",
+    "quiz.wrong": "Wrong answer. The section will restart.",
+    "quiz.match.correct": "Correct match.",
+    "quiz.match.wrong": "Wrong match. The section will restart.",
+    "quiz.fill.timeline": "You must fill the whole timeline.",
+    "quiz.fill.faces": "You must place all the names under the images.",
+    "quiz.select.event.first": "First select an event below.",
+    "quiz.select.name.first": "First select a name below.",
+    "quiz.selected": "You selected",
+    "quiz.timeline.instruction": "Now click the correct space in the timeline.",
+    "quiz.face.instruction": "Now click the space under the correct photo.",
+    "quiz.marker.confirm": "Click the same marker again to confirm.",
+    "quiz.section.completed": "Section completed. You obtained the fragment:",
+    "quiz.drag.here": "Drag here",
+    "quiz.drag.name.here": "Drag the name here",
+    "quiz.events.order": "Events to order",
+    "quiz.check.order": "Check order",
+    "quiz.names": "Names",
+    "quiz.links": "Connections",
+    "quiz.available.places": "Available places",
+    "quiz.names.drag": "Names to drag or click",
+    "quiz.check.names": "Check names",
+    "quiz.popup.confirm": "Click this marker again to confirm the answer.",
+
+    "quiz.s1.title": "The door of history",
+    "quiz.s1.description": "Answer the questions correctly to open the first door.",
+    "quiz.s1.q1": "Which event happened in May 1921?",
+    "quiz.s1.q1.a1": "Liberation of Rimini",
+    "quiz.s1.q1.a2": "Santa Giustina massacre",
+    "quiz.s1.q1.a3": "Fall of the Fascist dictatorship",
+    "quiz.s1.q1.a4": "Gold Medal for Civil Valour",
+    "quiz.s1.q2": "In which year did the Liberation of Rimini take place?",
+    "quiz.s1.q3": "25 April 1945 is remembered as:",
+    "quiz.s1.q3.a1": "Liberation of Italy",
+    "quiz.s1.q3.a2": "Announcement of the Armistice",
+    "quiz.s1.q3.a3": "Santa Giustina massacre",
+    "quiz.s1.q3.a4": "Opening of CEIS",
+
+    "quiz.s2.title": "The broken timeline",
+    "quiz.s2.description": "Drag the events into the timeline, from the oldest to the most recent.",
+    "quiz.s2.question": "Rebuild the timeline of the events:",
+    "quiz.event.liberazione": "Liberation of Rimini",
+    "quiz.event.santa": "Santa Giustina massacre",
+    "quiz.event.medaglia": "Gold Medal for Civil Valour to Rimini",
+    "quiz.event.armistizio": "Announcement of the Armistice",
+    "quiz.event.tre": "The Three Martyrs of Rimini",
+
+    "quiz.s3.title": "Resistance connections",
+    "quiz.s3.description": "Match each name with its correct connection. If you make a mistake, the section restarts.",
+    "quiz.s3.question": "Match each name with its correct connection:",
+    "quiz.name.silvio": "Silvio Cenci",
+    "quiz.name.adria": "Adria Neri",
+    "quiz.name.guglielmo": "Guglielmo Marconi",
+    "quiz.name.tre": "Three Martyrs",
+    "quiz.link.arco": "Arch of Augustus",
+    "quiz.link.marga": "Marga",
+    "quiz.link.garibaldi": "8th Garibaldi Brigade",
+    "quiz.link.ducale": "Via Ducale 3",
+
+    "quiz.s4.title": "The map of memory",
+    "quiz.s4.description": "Read the clue and click the correct place on the map or in the list.",
+    "quiz.s4.q1": "Which place is connected to the death of Silvio Cenci?",
+    "quiz.s4.q2": "Which place represents a sign of Rimini’s rebirth after the war?",
+    "quiz.s4.q3": "Where is the monument to the Fallen for Freedom located?",
+    "quiz.s4.q4": "Which place is connected to the Gold Medal for Civil Valour?",
+
+    "quiz.place.piazza.cavour": "Piazza Cavour",
+    "quiz.place.ceis": "CEIS Headquarters",
+    "quiz.place.arco": "Arch of Augustus",
+    "quiz.place.ponte": "Tiberius Bridge",
+    "quiz.place.tre": "Piazza Tre Martiri",
+    "quiz.place.lager": "Park of the Fallen in the Camps",
+    "quiz.place.monte": "Monte Cieco",
+    "quiz.place.cimitero": "Rimini Monumental Cemetery",
+    "quiz.place.malatesta": "Piazza Malatesta",
+    "quiz.place.borgo": "Borgo San Giuliano",
+
+    "quiz.s5.title": "The faces of memory",
+    "quiz.s5.description": "Drag each name under the correct image of the partisan.",
+    "quiz.s5.question": "Match each face with the correct name:",
+    "quiz.name.vito": "Vito Nicoletti",
+    "quiz.name.olga": "Olga Bondi"
   }
 };
 
 function applyLanguage(lang) {
-  document.documentElement.lang = lang;
+  const selectedTranslations = translations[lang];
+
+  if (!selectedTranslations) {
+    return;
+  }
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.getAttribute("data-i18n");
 
-    if (translations[lang] && translations[lang][key]) {
-      element.textContent = translations[lang][key];
+    if (selectedTranslations[key]) {
+      element.textContent = selectedTranslations[key];
     }
   });
 
   document.querySelectorAll("[data-i18n-html]").forEach((element) => {
     const key = element.getAttribute("data-i18n-html");
 
-    if (translations[lang] && translations[lang][key]) {
-      element.innerHTML = translations[lang][key];
+    if (selectedTranslations[key]) {
+      element.innerHTML = selectedTranslations[key];
     }
   });
+
+  document.documentElement.lang = lang;
 
   const flag = document.getElementById("languageFlag");
 
@@ -1000,6 +1244,10 @@ function applyLanguage(lang) {
       flag.alt = "Italiano";
     }
   }
+
+  document.dispatchEvent(new CustomEvent("siteLanguageChanged", {
+    detail: { lang: lang }
+  }));
 }
 
 document.addEventListener("DOMContentLoaded", () => {

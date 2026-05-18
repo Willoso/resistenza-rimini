@@ -65,7 +65,7 @@ body {
 }
 
 .game-hero h1 .hero-accent {
-  color: #e35a49;
+  color: #C9392C;
   font-style: italic;
 }
 
@@ -797,6 +797,91 @@ body {
   box-shadow: 0 14px 34px rgba(139, 105, 20, 0.25);
 }
 
+/* ATTUALITÀ NEL FINALE DEL QUIZ */
+
+.today-box {
+  position: relative;
+  z-index: 2;
+  margin-top: 46px;
+  padding-top: 38px;
+  border-top: 1px solid rgba(196, 168, 130, 0.28);
+  text-align: center;
+}
+
+.today-label {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #C9392C;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.today-box h3 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  color: #f4ead8;
+  margin-bottom: 28px;
+  line-height: 1.1;
+}
+
+.today-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin: 0 auto 34px;
+}
+
+.today-card {
+  background: rgba(17, 16, 8, 0.78);
+  border: 1px solid rgba(196, 168, 130, 0.32);
+  border-radius: 20px;
+  padding: 22px 18px;
+  min-height: 150px;
+  transition: 0.25s ease;
+}
+
+.today-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(196, 168, 130, 0.7);
+  background: rgba(196, 168, 130, 0.1);
+}
+
+.today-card h4 {
+  color: #C4A882;
+  font-size: 1.08rem;
+  margin-bottom: 10px;
+}
+
+.today-card p {
+  color: rgba(244, 234, 216, 0.75);
+  line-height: 1.55;
+  font-size: 0.94rem;
+  margin: 0;
+}
+
+/* immagine attualità: più verticale, senza bande nere laterali */
+.today-image {
+  width: min(430px, 100%);
+  height: auto;
+  margin: 0 auto 34px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(196, 168, 130, 0.35);
+  background: transparent;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+}
+
+.today-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  filter: sepia(0.08) contrast(1.04) brightness(0.9);
+}
+
 .hidden {
   display: none !important;
 }
@@ -806,6 +891,10 @@ body {
 @media (max-width: 1050px) {
   .faces-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .today-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -849,97 +938,17 @@ body {
   .final-box h2 {
     font-size: clamp(2.3rem, 8vw, 4.4rem);
   }
+
+  .today-image {
+    width: min(390px, 100%);
+    height: auto;
+  }
 }
 
 @media (max-width: 760px) {
   .game-page {
-    width: min(100% - 24px, 1100px);
+    width: calc(100% - 34px);
     padding-top: 42px;
-  }
-
-  .game-card {
-    background: #1E1810 !important;
-    border-color: rgba(139, 105, 20, 0.45) !important;
-  }
-
-  .question-box {
-    background: #111008 !important;
-    border-color: rgba(139, 105, 20, 0.35) !important;
-  }
-
-  .fragments-box,
-  .timeline-slot,
-  .face-card,
-  .final-box {
-    background: #111008 !important;
-    border-color: rgba(139, 105, 20, 0.35) !important;
-  }
-
-  .answers-box,
-  .order-box,
-  .memory-box,
-  .faces-game,
-  .leaflet-game-layout {
-    background: transparent !important;
-  }
-
-  .answer-btn,
-  .timeline-card,
-  .memory-card,
-  .map-place,
-  .name-tag {
-    background: #141008 !important;
-    border-color: rgba(139, 105, 20, 0.45) !important;
-    color: #f4ead8 !important;
-  }
-
-  .answer-btn:hover,
-  .timeline-card:hover,
-  .memory-card:hover,
-  .map-place:hover,
-  .name-tag:hover {
-    background: #1f180d !important;
-  }
-
-  .answer-btn.correct,
-  .map-place.correct {
-    background: rgba(80, 190, 120, 0.22) !important;
-    border-color: rgba(80, 190, 120, 0.95) !important;
-    color: #f4ead8 !important;
-  }
-
-  .answer-btn.wrong,
-  .map-place.wrong {
-    background: rgba(201, 57, 44, 0.24) !important;
-    border-color: rgba(201, 57, 44, 0.95) !important;
-    color: #f4ead8 !important;
-  }
-
-  .memory-card.matched {
-    background: rgba(80, 190, 120, 0.18) !important;
-    border-color: rgba(80, 190, 120, 0.9) !important;
-  }
-
-  .memory-card.wrong {
-    background: rgba(201, 57, 44, 0.22) !important;
-    border-color: rgba(201, 57, 44, 0.95) !important;
-  }
-
-  .timeline-slot.filled {
-    background: #17120a !important;
-  }
-
-  .timeline-card.in-slot,
-  .name-tag.in-slot {
-    background: #2a2110 !important;
-    border-color: rgba(196, 168, 130, 0.55) !important;
-  }
-
-  .timeline-card.selected,
-  .name-tag.selected,
-  .memory-card.selected {
-    background: #2a2110 !important;
-    border-color: #C4A882 !important;
   }
 
   .fragments-grid {
@@ -971,6 +980,10 @@ body {
 }
 
 @media (max-width: 560px) {
+  .game-page {
+    width: calc(100% - 34px);
+  }
+
   .game-hero {
     min-height: 68vh;
     padding: 120px 18px 70px;
@@ -1046,7 +1059,13 @@ body {
   }
 
   .final-box {
-    padding: 34px 18px;
+    padding: 30px 18px;
+    border-radius: 22px;
+  }
+
+  .final-box::before {
+    inset: 10px;
+    border-radius: 18px;
   }
 
   .final-box::after {
@@ -1067,12 +1086,51 @@ body {
   .final-box p {
     font-size: 0.98rem;
   }
+
+  .today-box {
+    margin-top: 34px;
+    padding-top: 30px;
+  }
+
+  .today-label {
+    font-size: 0.68rem;
+    letter-spacing: 2px;
+  }
+
+  .today-box h3 {
+    font-size: clamp(1.8rem, 9vw, 2.5rem);
+  }
+
+  .today-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .today-card {
+    min-height: auto;
+    padding: 18px 16px;
+    border-radius: 18px;
+  }
+
+  .today-image {
+    width: min(300px, 100%);
+    margin-top: 28px;
+    border-radius: 18px;
+  }
+
+  .today-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 }
 
+/* FIX SFONDO PAGINA E FOOTER */
+
 body,
-.mappa-section,
-.monumenti-section,
-.mappa-note {
+.partigiani-intro,
+.partigiani-list,
+.partigiani-note {
   background: #1E1810 !important;
 }
 
@@ -1088,4 +1146,74 @@ footer,
 
 .footer-nav {
   background: transparent !important;
+}
+
+/* FIX COLORI QUIZ SU MOBILE */
+
+@media (max-width: 760px) {
+  .game-card {
+    background: #1E1810 !important;
+    border-color: rgba(139, 105, 20, 0.45) !important;
+  }
+
+  .question-box {
+    background: #111008 !important;
+    border-color: rgba(139, 105, 20, 0.35) !important;
+  }
+
+  .timeline-slot,
+  .face-card,
+  .fragments-box,
+  .final-box {
+    background: #111008 !important;
+    border-color: rgba(139, 105, 20, 0.35) !important;
+  }
+
+  .timeline-slot.filled {
+    background: #17120a !important;
+  }
+
+  .timeline-card,
+  .answer-btn,
+  .memory-card,
+  .map-place,
+  .name-tag {
+    background: #141008 !important;
+    border-color: rgba(139, 105, 20, 0.45) !important;
+    color: #f4ead8 !important;
+  }
+
+  .timeline-card.in-slot,
+  .name-tag.in-slot {
+    background: #2a2110 !important;
+    border-color: rgba(196, 168, 130, 0.55) !important;
+  }
+
+  .timeline-card.selected,
+  .name-tag.selected,
+  .memory-card.selected {
+    background: #2a2110 !important;
+    border-color: #C4A882 !important;
+  }
+
+  .answer-btn.correct,
+  .map-place.correct {
+    border-color: rgba(80, 190, 120, 0.9) !important;
+    background: rgba(80, 190, 120, 0.18) !important;
+  }
+
+  .answer-btn.wrong,
+  .map-place.wrong,
+  .memory-card.wrong {
+    border-color: rgba(201, 57, 44, 0.9) !important;
+    background: rgba(201, 57, 44, 0.18) !important;
+  }
+
+  .answer-btn:hover,
+  .timeline-card:hover,
+  .memory-card:hover,
+  .map-place:hover,
+  .name-tag:hover {
+    background: #1f180d !important;
+  }
 }
