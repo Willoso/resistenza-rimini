@@ -311,9 +311,29 @@ const nextBtn = document.getElementById("nextBtn");
 const restartBtn = document.getElementById("restartBtn");
 const gameCard = document.getElementById("gameCard");
 const finalBox = document.getElementById("finalBox");
+const sectionProgressFill = document.getElementById("sectionProgressFill");
+const sectionProgressText = document.getElementById("sectionProgressText");
+
+function updateProgressBar(forceComplete = false) {
+  if (!sectionProgressFill || !sectionProgressText) {
+    return;
+  }
+
+  let completedSections = unlockedFragments.length;
+
+  if (forceComplete) {
+    completedSections = sections.length;
+  }
+
+  const percentage = Math.round((completedSections / sections.length) * 100);
+
+  sectionProgressFill.style.width = `${percentage}%`;
+  sectionProgressText.textContent = `${percentage}%`;
+}
 
 function loadSection() {
   const section = sections[currentSectionIndex];
+  updateProgressBar();
 
   currentQuestionIndex = 0;
   selectedMemoryCards = [];
@@ -1059,6 +1079,8 @@ function completeSection() {
     unlockFragment(currentSectionIndex, section.fragment);
   }
 
+  updateProgressBar();
+
   showSuccess(`${tr("quiz.section.completed")} ${section.fragment}`);
 
   setTimeout(() => {
@@ -1102,6 +1124,8 @@ function failSection() {
 }
 
 function showFinal() {
+  updateProgressBar(true);
+
   gameCard.classList.add("hidden");
   finalBox.classList.remove("hidden");
 
@@ -1160,6 +1184,7 @@ restartBtn.addEventListener("click", () => {
 document.addEventListener("siteLanguageChanged", () => {
   sections = getSections();
   updateUnlockedFragments();
+  updateProgressBar(!finalBox.classList.contains("hidden"));
 
   if (!finalBox.classList.contains("hidden")) {
     return;
