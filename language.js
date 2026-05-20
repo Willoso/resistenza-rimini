@@ -23,8 +23,9 @@ const translations = {
     "index.hero.button": "Scopri la storia",
 
     "index.about.title": "Chi siamo",
-    "index.about.p1": "Siamo tre studenti dell’ITTS Belluzzi-Da Vinci di Rimini, e abbiamo creato questo sito per raccontare e approfondire la Resistenza nel territorio riminese, utilizzando le nostre competenze digitali per valorizzare la memoria storica.",
+    "index.about.p1": "Siamo tre studenti dell’ITTS Belluzzi-Da Vinci di Rimini e abbiamo creato questo sito per raccontare e approfondire la Resistenza nel territorio riminese, utilizzando le nostre competenze digitali per valorizzare la memoria storica.",
     "index.about.p2": "Attraverso questo progetto vogliamo presentare la Resistenza a Rimini in modo chiaro e comprensibile, raccogliendo informazioni su eventi, luoghi e persone che hanno segnato la storia della città.",
+    "index.about.p3": "Questo lavoro ci ha permesso di collegare la storia al presente: i luoghi della Resistenza che abbiamo studiato fanno parte della nostra città e ci ricordano che libertà, diritti sociali e partecipazione non sono valori scontati, ma responsabilità da custodire ogni giorno.",
 
     "index.timeline.title": "La storia della <em>Resistenza</em>",
     "index.timeline.link": "Vai alla storia <span class=\"arrow\">→</span>",
@@ -637,6 +638,7 @@ const translations = {
     "index.about.title": "About us",
     "index.about.p1": "We are three students from ITTS Belluzzi-Da Vinci in Rimini. We created this website to tell and explore the history of the Resistance in the Rimini area, using our digital skills to preserve and promote historical memory.",
     "index.about.p2": "Through this project, we want to present the Resistance in Rimini in a clear and accessible way, collecting information about events, places and people that marked the history of the city.",
+    "index.about.p3": "This project allowed us to connect history with the present: the places of the Resistance that we studied are part of our city and remind us that freedom, social rights and participation are not values to be taken for granted, but responsibilities to protect every day.",
 
     "index.timeline.title": "The history of the <em>Resistance</em>",
     "index.timeline.link": "Go to history <span class=\"arrow\">→</span>",
