@@ -48,15 +48,15 @@ const translations = {
 
     "storia.event1.date": "Maggio 1921",
     "storia.event1.title": "Eccidio di Santa Giustina",
-    "storia.event1.text": "Il 22 ci fu l’eccidio di Santa Giustina con la morte di 3 persone - Samuelli Ferdinando, Vannoni Pietro, Sarti Salvatore - ed una cinquantina di feriti per mano di fascisti bolognesi.",
+    "storia.event1.text": "Il 22 maggio ci fu l’eccidio di Santa Giustina con la morte di 3 persone - Samuelli Ferdinando, Vannoni Pietro, Sarti Salvatore - ed una cinquantina di feriti per mano di fascisti bolognesi.",
 
     "storia.giugno1922.date": "Giugno 1922",
     "storia.giugno1922.title": "Attentato all’osteria Colombi",
-    "storia.giugno1922.text": "Il 24 i fascisti lanciano una bomba a mano nell’osteria di Giovanni Colombi (Borgo San Giuliano), abituale ritrovo di socialisti e comunisti, ferendo gravemente il proprietario. Viene bastonato e accoltellato, con ferite considerate guaribili in dieci giorni, anche Giovanni Renzi.",
+    "storia.giugno1922.text": "Il 24 giugno i fascisti lanciano una bomba a mano nell’osteria di Giovanni Colombi (Borgo San Giuliano), abituale ritrovo di socialisti e comunisti, ferendo gravemente il proprietario. Viene bastonato e accoltellato, con ferite considerate guaribili in dieci giorni, anche Giovanni Renzi.",
 
     "storia.luglio1922.date": "Luglio 1922",
     "storia.luglio1922.title": "Libero Zanardi e Olga Bondi",
-    "storia.luglio1922.text": "Il 9 muore a Rimini Libero Zanardi, figlio dell’ex sindaco di Bologna Francesco Zanardi; i suoi funerali si trasformano in una grande manifestazione antifascista, nonostante i divieti e le minacce dei fascisti; il 24 ci fu uno scontro a fuoco, per cause mai del tutto chiarite, tra fascisti e anarchici; il bersaglio dei fascisti è l’anarchico Nello Rossi, che si salva nonostante le gravi ferite riportate, purtroppo però, la sua fidanzata, Olga Bondi, viene ferita dai fascisti e morirà in seguito all’ospedale di Rimini.",
+    "storia.luglio1922.text": "Il 9 luglio muore a Rimini Libero Zanardi, figlio dell’ex sindaco di Bologna Francesco Zanardi; i suoi funerali si trasformano in una grande manifestazione antifascista, nonostante i divieti e le minacce dei fascisti; il 24 ci fu uno scontro a fuoco, per cause mai del tutto chiarite, tra fascisti e anarchici; il bersaglio dei fascisti è l’anarchico Nello Rossi, che si salva nonostante le gravi ferite riportate, purtroppo però, la sua fidanzata, Olga Bondi, viene ferita dai fascisti e morirà in seguito all’ospedale di Rimini.",
 
     "storia.luglioottobre1922.date": "Luglio - Ottobre 1922",
     "storia.luglioottobre1922.title": "Spedizione squadrista e occupazione fascista",
@@ -64,23 +64,23 @@ const translations = {
 
     "storia.event2.date": "Luglio 1943",
     "storia.event2.title": "Caduta della dittatura fascista",
-    "storia.event2.text": "Il 25 ci fu la caduta della dittatura fascista, Mussolini viene arrestato (tagliatella antifascista in memoria dei Fratelli Cervi).",
+    "storia.event2.text": "Il 25 luglio ci fu la caduta della dittatura fascista, Mussolini viene arrestato (tagliatella antifascista in memoria dei Fratelli Cervi).",
 
     "storia.event3.date": "Settembre 1943",
     "storia.event3.title": "Annuncio dell’Armistizio",
-    "storia.event3.text": "L’8 ci fu l’annuncio dell’Armistizio fra l’Italia e gli Alleati.",
+    "storia.event3.text": "L’8 settembre ci fu l’annuncio dell’Armistizio fra l’Italia e gli Alleati.",
 
     "storia.event4.date": "Marzo 1944",
     "storia.event4.title": "Fucilazione alla colonia De Orchi",
-    "storia.event4.text": "Il 3 i faentini Domenico Gallegati e Franco Tassinari per un tentativo di diserzione vengono fucilati dai fascisti presso la colonia De Orchi di Bellariva; il 24 a Roma la Strage delle Fosse Ardeatine porta alla morte dei Martiri Egidio Renzi, nato a San Giovanni in Marignano e Giorgio Giorgi, di Sant’Agata Feltria.",
+    "storia.event4.text": "Il 3 marzo i faentini Domenico Gallegati e Franco Tassinari per un tentativo di diserzione vengono fucilati dai fascisti presso la colonia De Orchi di Bellariva; il 24 a Roma la Strage delle Fosse Ardeatine porta alla morte dei Martiri Egidio Renzi, nato a San Giovanni in Marignano e Giorgio Giorgi, di Sant’Agata Feltria.",
 
     "storia.event5.date": "Aprile 1944",
     "storia.event5.title": "Strage di Fragheto e martiri di Casteldelci",
-    "storia.event5.text": "Il 7 ci fu la Strage di Fragheto (Rimini) con la morte di 30 martiri civili; mentre l’8 al ponte di Casteldelci vengono fucilati dai fascisti 8 Martiri, 7 partigiani ed un civile.",
+    "storia.event5.text": "Il 7 aprile ci fu la Strage di Fragheto (Rimini) con la morte di 30 martiri civili; mentre l’8 al ponte di Casteldelci vengono fucilati dai fascisti 8 Martiri, 7 partigiani ed un civile.",
 
     "storia.event6.date": "Agosto 1944",
     "storia.event6.title": "I Tre Martiri di Rimini",
-    "storia.event6.text": "Il 16 vengono impiccati a Rimini, nell’allora piazza Giulio Cesare, i Tre Martiri Mario Capelli, Luigi Nicolò, Adelio Pagliarani; il 24 vengono uccisi a Rimini dagli squadristi i Partigiani Enrico Battarra ed Igino Chesi.",
+    "storia.event6.text": "Il 16 agosto vengono impiccati a Rimini, nell’allora piazza Giulio Cesare, i Tre Martiri Mario Capelli, Luigi Nicolò, Adelio Pagliarani; il 24 vengono uccisi a Rimini dagli squadristi i Partigiani Enrico Battarra ed Igino Chesi.",
 
     "storia.event7.date": "Settembre 1944",
     "storia.event7.title": "Liberazione di Rimini e ultimi sacrifici",
@@ -90,7 +90,7 @@ const translations = {
 
     "storia.event8.date": "Gennaio 1945",
     "storia.event8.title": "Liberazione del Lager di Auschwitz",
-    "storia.event8.text": "Il 27 ci fu la Liberazione del Lager di Auschwitz da parte dell’Armata Rossa; in tale ricorrenza è istituito il “Giorno della Memoria”. A Rimini la celebrazione avviene al “Parco Caduti nel Lager” di via Madrid.",
+    "storia.event8.text": "Il 27 gennaio ci fu la Liberazione del Lager di Auschwitz da parte dell’Armata Rossa; in tale ricorrenza è istituito il “Giorno della Memoria”. A Rimini la celebrazione avviene al “Parco Caduti nel Lager” di via Madrid.",
 
     "storia.event9.date": "Aprile 1945",
     "storia.event9.title": "Liberazione d’Italia",
@@ -98,11 +98,11 @@ const translations = {
 
     "storia.event10.date": "Maggio 1946",
     "storia.event10.title": "Inaugurazione del Centro Educativo Italo Svizzero",
-    "storia.event10.text": "L’1 viene inaugurato a Rimini il Centro Educativo Italo Svizzero, finanziato dal Soccorso Operaio Svizzero e dietro disperata richiesta delle Autorità cittadine; mentre il 5 muore a Milano, per malattia contratta durante la guerra, il Gappista riminese Enzo Carpi.",
+    "storia.event10.text": "Il primo viene inaugurato a Rimini il Centro Educativo Italo Svizzero, finanziato dal Soccorso Operaio Svizzero e dietro disperata richiesta delle Autorità cittadine; mentre il 5 muore a Milano, per malattia contratta durante la guerra, il Gappista riminese Enzo Carpi.",
 
     "storia.event11.date": "Settembre 1962",
     "storia.event11.title": "Medaglia d’oro al Valor Civile a Rimini",
-    "storia.event11.text": "L’1 viene consegnata, tramite l’On. Giuseppe Medici, la Medaglia d’oro al Valor Civile alla Città di Rimini.",
+    "storia.event11.text": "Il primo viene consegnata, tramite l’On. Giuseppe Medici, la Medaglia d’oro al Valor Civile alla Città di Rimini.",
 
     "storia.event12.date": "Giugno 1968",
     "storia.event12.title": "Ricordo del partigiano Guglielmo Marconi",
