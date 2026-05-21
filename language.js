@@ -48,20 +48,20 @@ const translations = {
 
     "storia.event1.date": "Maggio 1921",
     "storia.event1.title": "Eccidio di Santa Giustina",
-    "storia.event1.text": "Il 22 maggio ci fu l’eccidio di Santa Giustina con la morte di 3 persone - Samuelli Ferdinando, Vannoni Pietro, Sarti Salvatore - ed una cinquantina di feriti per mano di fascisti bolognesi.",
-
+    "storia.event1.text": "Il 22 maggio ci fu l’eccidio di Santa Giustina, con la morte di 3 persone — Samuelli Ferdinando, Vannoni Pietro e Sarti Salvatore — e una cinquantina di feriti per mano di fascisti bolognesi.",
+    
     "storia.giugno1922.date": "Giugno 1922",
     "storia.giugno1922.title": "Attentato all’osteria Colombi",
     "storia.giugno1922.text": "Il 24 giugno i fascisti lanciano una bomba a mano nell’osteria di Giovanni Colombi (Borgo San Giuliano), abituale ritrovo di socialisti e comunisti, ferendo gravemente il proprietario. Viene bastonato e accoltellato, con ferite considerate guaribili in dieci giorni, anche Giovanni Renzi.",
 
     "storia.luglio1922.date": "Luglio 1922",
     "storia.luglio1922.title": "Libero Zanardi e Olga Bondi",
-    "storia.luglio1922.text": "Il 9 luglio muore a Rimini Libero Zanardi, figlio dell’ex sindaco di Bologna Francesco Zanardi; i suoi funerali si trasformano in una grande manifestazione antifascista, nonostante i divieti e le minacce dei fascisti; il 24 ci fu uno scontro a fuoco, per cause mai del tutto chiarite, tra fascisti e anarchici; il bersaglio dei fascisti è l’anarchico Nello Rossi, che si salva nonostante le gravi ferite riportate, purtroppo però, la sua fidanzata, Olga Bondi, viene ferita dai fascisti e morirà in seguito all’ospedale di Rimini.",
-
+    "storia.luglio1922.text": "Il 9 luglio muore a Rimini Libero Zanardi, figlio dell’ex sindaco di Bologna Francesco Zanardi; i suoi funerali si trasformano in una grande manifestazione antifascista, nonostante i divieti e le minacce dei fascisti. Il 24 luglio ci fu uno scontro a fuoco, per cause mai del tutto chiarite, tra fascisti e anarchici. Il bersaglio dei fascisti era l’anarchico Nello Rossi, che si salvò nonostante le gravi ferite riportate; la sua fidanzata, Olga Bondi, venne però ferita dai fascisti e morì in seguito all’ospedale di Rimini.",
+    
     "storia.luglioottobre1922.date": "Luglio - Ottobre 1922",
     "storia.luglioottobre1922.title": "Spedizione squadrista e occupazione fascista",
-    "storia.luglioottobre1922.text": "Il 28-29 luglio ci fu la spedizione squadrista capeggiata da Italo Balbo in tutto il territorio romagnolo; vengono incendiati la sede della Camera del Lavoro ed il Circolo Comunista considerando questa spedizione la “prova generale” della marcia su Roma; il 28-29-30 ottobre in concomitanza con la “Marcia su Roma”, le squadriste fasciste occupano la sottoprefettura, le poste, la stazione, il comune, e inoltre anche la Rocca Malatestiana, liberando tutti i prigionieri; a quel punto Ludovico Pugliesi si insedia come commissario prefettizio della città.",
-
+    "storia.luglioottobre1922.text": "Il 28 e 29 luglio ci fu la spedizione squadrista capeggiata da Italo Balbo in tutto il territorio romagnolo; vennero incendiate la sede della Camera del Lavoro e il Circolo Comunista, considerando questa spedizione come una “prova generale” della Marcia su Roma. Il 28, 29 e 30 ottobre, in concomitanza con la Marcia su Roma, le squadre fasciste occuparono la sottoprefettura, le poste, la stazione, il comune e anche la Rocca Malatestiana, liberando tutti i prigionieri. A quel punto Ludovico Pugliesi si insediò come commissario prefettizio della città.",
+    
     "storia.event2.date": "Luglio 1943",
     "storia.event2.title": "Caduta della dittatura fascista",
     "storia.event2.text": "Il 25 luglio ci fu la caduta della dittatura fascista, Mussolini viene arrestato (tagliatella antifascista in memoria dei Fratelli Cervi).",
@@ -76,16 +76,16 @@ const translations = {
 
     "storia.event5.date": "Aprile 1944",
     "storia.event5.title": "Strage di Fragheto e martiri di Casteldelci",
-    "storia.event5.text": "Il 7 aprile ci fu la Strage di Fragheto (Rimini) con la morte di 30 martiri civili; mentre l’8 al ponte di Casteldelci vengono fucilati dai fascisti 8 Martiri, 7 partigiani ed un civile.",
-
+    "storia.event5.text": "Il 7 aprile ci fu la strage di Fragheto, con la morte di 30 martiri civili; l’8 aprile, al ponte di Casteldelci, vennero fucilati dai fascisti 8 martiri: 7 partigiani e un civile.",
+    
     "storia.event6.date": "Agosto 1944",
     "storia.event6.title": "I Tre Martiri di Rimini",
-    "storia.event6.text": "Il 16 agosto vengono impiccati a Rimini, nell’allora piazza Giulio Cesare, i Tre Martiri Mario Capelli, Luigi Nicolò, Adelio Pagliarani; il 24 vengono uccisi a Rimini dagli squadristi i Partigiani Enrico Battarra ed Igino Chesi.",
-
+    "storia.event6.text": "Il 16 agosto vengono impiccati a Rimini, nell’allora piazza Giulio Cesare, i Tre Martiri Mario Capelli, Luigi Nicolò e Adelio Pagliarani; il 24 agosto vengono uccisi a Rimini dagli squadristi i partigiani Enrico Battarra e Igino Chesi.",
+    
     "storia.event7.date": "Settembre 1944",
     "storia.event7.title": "Liberazione di Rimini e ultimi sacrifici",
-    "storia.event7.text1": "Il 21 termina la battaglia di Rimini con la ritirata dei tedeschi i greci della Terza Brigata di Montagna, al comando del colonnello Tsakalotos, possono entrare nella città adriatica e liberarla, così per rappresaglia 9 Martiri civili vengono trucidati a Verucchio.",
-    "storia.event7.text2": "Il 22 Ermeti Giuseppe, del 3º Battaglione SAP di Rimini, viene ucciso da schegge di granata nel corso della ritirata tedesca da Rimini nord.",
+    "storia.event7.text1": "Il 21 settembre termina la battaglia di Rimini con la ritirata dei tedeschi. I greci della Terza Brigata di Montagna, al comando del colonnello Tsakalotos, possono entrare nella città adriatica e liberarla. Nello stesso periodo, per rappresaglia, 9 martiri civili vengono trucidati a Verucchio.",    
+    "storia.event7.text2": "Il 22 settembre Giuseppe Ermeti, del 3º Battaglione SAP di Rimini, viene ucciso da schegge di granata nel corso della ritirata tedesca da Rimini nord.",    
     "storia.event7.text3": "Il 26 il Sappista Gualtiero Giorgetti guidava una pattuglia neozelandese attraverso i campi minati di Bellaria; scorto un amico che avanza ignaro, si sacrificò per avvisarlo, cadendo sotto il fuoco delle retroguardie tedesche; ricoverato in un ospedale da campo, il giorno dopo morì.",
 
     "storia.event8.date": "Gennaio 1945",
@@ -94,15 +94,15 @@ const translations = {
 
     "storia.event9.date": "Aprile 1945",
     "storia.event9.title": "Liberazione d’Italia",
-    "storia.event9.text": "Il 25 Milano insorge contro il nazifascismo; la data viene ripresa come celebrazione della Liberazione dell’Italia dalla dittatura fascista e l’occupazione nazista.",
-
+    "storia.event9.text": "Il 25 aprile Milano insorge contro il nazifascismo; la data viene ricordata come celebrazione della Liberazione dell’Italia dalla dittatura fascista e dall’occupazione nazista.",
+    
     "storia.event10.date": "Maggio 1946",
     "storia.event10.title": "Inaugurazione del Centro Educativo Italo Svizzero",
-    "storia.event10.text": "Il primo viene inaugurato a Rimini il Centro Educativo Italo Svizzero, finanziato dal Soccorso Operaio Svizzero e dietro disperata richiesta delle Autorità cittadine; mentre il 5 muore a Milano, per malattia contratta durante la guerra, il Gappista riminese Enzo Carpi.",
+    "storia.event10.text": "Il 1° maggio viene inaugurato a Rimini il Centro Educativo Italo Svizzero, finanziato dal Soccorso Operaio Svizzero su richiesta delle autorità cittadine; il 5 maggio muore a Milano, per una malattia contratta durante la guerra, il gappista riminese Enzo Carpi.",
 
     "storia.event11.date": "Settembre 1962",
     "storia.event11.title": "Medaglia d’oro al Valor Civile a Rimini",
-    "storia.event11.text": "Il primo viene consegnata, tramite l’On. Giuseppe Medici, la Medaglia d’oro al Valor Civile alla Città di Rimini.",
+    "storia.event11.text": "Il 1° settembre viene consegnata alla Città di Rimini, tramite l’On. Giuseppe Medici, la Medaglia d’oro al Valor Civile.",
 
     "storia.event12.date": "Giugno 1968",
     "storia.event12.title": "Ricordo del partigiano Guglielmo Marconi",
@@ -134,13 +134,13 @@ const translations = {
 
     "partigiani.fossoli.label": "Walter Ghelfi - Rino Molari - Renato Mancini",
     "partigiani.fossoli.title": "Tre martiri di Fossoli",
-    "partigiani.fossoli.p1": "Nel cuore di rimini, i nomi di Walter Ghelfi, Rino Molari e Renato Mancini risuonano come un monito di libertà. Sebbene la memoria cittadina sia legata ai \"Tre Martiri\" dell'omonima piazza, questi tre figli della terra romagnola rappresentano un’altra pagina.",
+    "partigiani.fossoli.p1": "Nel cuore di Rimini, i nomi di Walter Ghelfi, Rino Molari e Renato Mancini risuonano come un monito di libertà. Sebbene la memoria cittadina sia legata ai \"Tre Martiri\" dell'omonima piazza, questi tre figli della terra romagnola rappresentano un’altra pagina della storia locale.",    
     "partigiani.fossoli.p2": "Il destino dei Tre Martiri si compì il 12 luglio 1944 nel fango del poligono di tiro di Cibeno dove le SS (abbreviazione di Schutzstaffeln, \"squadre di protezione\") stroncarono le loro vite.",
 
     "partigiani.fossoli.rino.title": "Rino Molari",
     "partigiani.fossoli.rino.p1": "Immaginiamolo come un uomo di pensiero e fede. Nato a Santarcangelo di Romagna il 9 maggio 1911, fu l’anima intellettuale e il punto di riferimento morale della resistenza cattolica riminese. Professore di lettere stimato, scelse di tradurre i suoi valori in azione civile entrando nel Comitato di Liberazione Nazionale (CLN).",
     "partigiani.fossoli.rino.p2": "Fu il coordinatore tra i contatti più difficili a proteggere i perseguitati. Il suo impegno lo portò a essere catturato dai fascisti il 28 aprile 1944.",
-    "partigiani.fossoli.rino.p3": "Ciò che seguì fu un calvario di prigionia tra Rimini, Forlì. Rino mantenne una dignità che traspariva dalle sue lettere.",
+    "partigiani.fossoli.rino.p3": "Ciò che seguì fu un calvario di prigionia tra Rimini e Forlì. Rino mantenne una dignità che traspariva dalle sue lettere.",    
     "partigiani.fossoli.rino.p4": "Il suo viaggio terminò tragicamente il 5 settembre 1944, nel campo di Fossoli non ne scalfì la dignità; il suo corpo, fu riconosciuto solo grazie a una licenza di matrimonio che portava con sé.",
 
     "partigiani.fossoli.walter.title": "Walter Ghelfi",
@@ -156,7 +156,7 @@ const translations = {
     "partigiani.fossoli.renato.title": "Renato Mancini",
     "partigiani.fossoli.renato.p1": "Immaginiamolo come un marito che aveva visto troppo orrore nelle pianure ucraine per permettere che la stessa brutalità soffocasse la sua terra.",
     "partigiani.fossoli.renato.p2": "Nato a Saludecio il 26 maggio 1914, completò l’ideale \"fronte comune\".",
-    "partigiani.fossoli.renato.p3": "Renato era un uomo di saludecio che avrebbe voluto solo tornare a casa, veder crescere sua figlia e godersi la pace della sua Romagna, invece, scelse di rischiare tutto.",
+    "partigiani.fossoli.renato.p3": "Renato era un uomo di Saludecio che avrebbe voluto solo tornare a casa, veder crescere sua figlia e godersi la pace della sua Romagna; invece, scelse di rischiare tutto.",    
     "partigiani.fossoli.renato.p4": "Il suo destino si compì il 12 luglio 1944 a Fossoli nel poligono di tiro. Le testimonianze raccontano di un uomo che non si arrese nemmeno alla fine: il suo gruppo tentò una disperata ribellione contro le SS proprio sul luogo dell'esecuzione, ma il suo tentativo di fuga fu stroncato dai proiettili nazisti.",
     "partigiani.fossoli.final": "Il martirio dei tre riminesi a Fossoli rimane una delle ferite più profonde per il territorio malatestiano. La loro fucilazione non fu un atto di guerra ma una brutale rappresaglia politica. Oggi, il loro esempio continua a vivere nelle scuole e nelle piazze della provincia, ricordando che la democrazia italiana affonda le sue radici nel coraggio di chi seppe restare uomo anche laddove l'umanità sembrava scomparsa.",
 
@@ -173,7 +173,7 @@ const translations = {
     "partigiani.nicoletti.p3": "Fondando la Camera del Lavoro, Vito Nicoletti divenne il porto sicuro per migliaia di lavoratori stremati dalla fame e dalla disoccupazione. Non era solo un segretario sindacale, ma un uomo che si rimboccava le maniche accanto ai suoi concittadini, lottando affinché la fine della guerra non fosse solo un silenzio delle armi, ma l'inizio di una vita più equa. Si è spento il 27 marzo 1996, lasciando l'immagine di un \"padre\" gentile e risoluto. Ricordarlo oggi significa onorare un uomo che ha saputo tradurre il coraggio della battaglia nella pazienza della ricostruzione, insegnandoci che la democrazia si cura ogni giorno, con la solidarietà e l'impegno verso gli ultimi.",
 
     "partigiani.clementi_petrucci.title": "Alfredo Clementi ed Enrico Petrucci",
-    "partigiani.clementi_petrucci.p1": "Nella geografia del dolore e del coraggio che disegna la Resistenza riminese, i nomi di Alfredo Clementi ed Enrico Petrucci brillano di una luce tragica e fraterna. La loro storia è quella di una giovinezza offerta con estrema generosità alla causa della libertà, stroncata barbaramente dai nazifascisti proprio mentre i cannoni alleati già annunciavano la fine dell'oppressione. Il loro sacrificio, avvenuto nel settembre del 1944.",
+    "partigiani.clementi_petrucci.p1": "Nella geografia del dolore e del coraggio che disegna la Resistenza riminese, i nomi di Alfredo Clementi ed Enrico Petrucci brillano di una luce tragica e fraterna. La loro storia è quella di una giovinezza offerta con estrema generosità alla causa della libertà, stroncata barbaramente dai nazifascisti proprio mentre i cannoni alleati già annunciavano la fine dell'oppressione. Il loro sacrificio avvenne nel settembre del 1944.",
 
     "partigiani.clementi.title": "Alfredo Clementi",
     "partigiani.clementi.p1": "La storia di Alfredo Clementi è il racconto di una scelta fatta col cuore, prima ancora che con la politica. Nato a Rimini il 1° giugno 1914, Alfredo era un uomo della terra, un agricoltore che conosceva il ritmo lento delle stagioni e la fatica che serve per far nascere la vita dal fango. La sua Resistenza non fu fatta di grandi proclami, ma di quella solidarietà contadina, silenziosa e istintiva, che non chiede il passaporto a chi ha bisogno di aiuto.",
@@ -200,14 +200,14 @@ const translations = {
 
     "partigiani.tre_martiri.label": "Mario Capelli - Luigi Nicolò - Adelio Pagliarani",
     "partigiani.tre_martiri.title": "L’Alba di un Sacrificio",
-    "partigiani.tre_martiri.p1": "Nel cuore di Rimini un’intera piazza e un’intera comunità onorano la memoria di tre giovani che il 16 agosto 1944 sacrificarono la propria vita per la libertà. La loro storia non è solo un atto di eroismo ma anche simbolo del dolore e dignità di una città ferita dalla guerra.",
-
+    "partigiani.tre_martiri.p1": "Nel cuore di Rimini, un’intera piazza e un’intera comunità onorano la memoria di tre giovani che il 16 agosto 1944 sacrificarono la propria vita per la libertà. La loro storia non è solo un atto di eroismo, ma anche simbolo del dolore e della dignità di una città ferita dalla guerra.",
+    
     "partigiani.capelli.title": "Mario Capelli",
     "partigiani.capelli.p1": "Per raccontare l'uomo dietro il partigiano, dobbiamo immaginare Mario Capelli non come una figura epica, ma come un ragazzo che amava l'odore del legno appena lavorato.",
-    "partigiani.capelli.p2": "Nato a Rimini il 21 aprile 1921,secondo di tre figli di una famiglia che conosceva bene il valore del sacrificio. Mario non era un teorico della politica; era un giovane, di 23 anni, che amava il suo mestiere di lucidatore.",
+    "partigiani.capelli.p2": "Nato a Rimini il 21 aprile 1921, secondo di tre figli di una famiglia che conosceva bene il valore del sacrificio, Mario non era un teorico della politica: era un giovane di 23 anni che amava il suo mestiere di lucidatore.",  
     "partigiani.capelli.p3": "L'11 novembre 1943 lasciò la sicurezza della bottega per unirsi alla Resistenza.",
     "partigiani.capelli.p4": "Capelli era un partigiano molto stimato, in lui risiedeva quella serietà, dai modi pacati, di chi sente il peso della responsabilità verso i compagni più giovani.",
-    "partigiani.capelli.p5": "L'estate del 1944 lo vide impegnato in azioni di sabotaggio cruciali per indebolire le linee di rifornimento tedesche lungo la via Emilia ed il 14 agosto, i soldati tedeschi fecero irruzione nel rifugio.",
+    "partigiani.capelli.p5": "L'estate del 1944 lo vide impegnato in azioni di sabotaggio cruciali per indebolire le linee di rifornimento tedesche lungo la via Emilia. Il 14 agosto i soldati tedeschi fecero irruzione nel rifugio.",   
     "partigiani.capelli.p6": "Quello che successe dopo è una cosa impensabile; Capelli con i suoi compagni venne torturato, ma essi non dissero nulla, proteggendo i propri compagni con il silenzio.",
     "partigiani.capelli.p7": "Negli ultimi istanti, la sua preoccupazione non era per la propria vita, ma per la madre e per il vuoto che avrebbe lasciato. Era il pilastro silenzioso, quello a cui tutti guardavano quando la paura si faceva troppo forte.",
     "partigiani.capelli.p8": "Oggi, quella piazza porta il suo nome insieme a quello dei suoi compagni, ma per chi lo ha conosciuto, Mario resta il ragazzo con le mani sporche di lucido per mobili che scelse di dare la vita affinché altri potessero respirare la libertà.",
@@ -227,12 +227,11 @@ const translations = {
     "partigiani.nicolo.p12": "Oggi, Luigi ci parla attraverso il silenzio della sua piazza, ricordandoci che non serve essere giganti per fare la storia: basta restare umani quando tutto intorno sembra sprofondare nell'orrore.",
 
     "partigiani.pagliarani.title": "Adelio Pagliarani",
-    "partigiani.pagliarani.p1": "Per raccontare davvero Adelio Pagliarani, immaginiamoci un ragazzo di diciannove anni che cammina per le strade di rimini.",
-    "partigiani.pagliarani.p2": "Nato a Rimini il 28 aprile 1925, Adelio era quello che oggi definiremmo \"uno di noi\": un giovane con la vita ancora tutta da scrivere.",
+    "partigiani.pagliarani.p1": "Per raccontare davvero Adelio Pagliarani, immaginiamoci un ragazzo di diciannove anni che cammina per le strade di Rimini.",    "partigiani.pagliarani.p2": "Nato a Rimini il 28 aprile 1925, Adelio era quello che oggi definiremmo \"uno di noi\": un giovane con la vita ancora tutta da scrivere.",
     "partigiani.pagliarani.p3": "La sua \"umanità\" stava nel contrasto tra la fragilità della sua età e la grandezza della sua scelta.",
     "partigiani.pagliarani.p4": "Non era un eroe d'acciaio; era un ragazzo che provava paura, che sentiva il peso del buio nelle celle del Convento delle Grazie, ma che trovava il coraggio nel non voler deludere gli amici, Mario e Luigi, che per lui erano diventati come fratelli.",
     "partigiani.pagliarani.p5": "La sua parabola si interruppe il 14 agosto 1944 nel rifugio in via Ducale 3 a San Vito, insieme ai suoi compagni venne trascinato al comando militare presso il convento delle Grazie.",
-    "partigiani.pagliarani.p6": "Fu condannato al patibolo il 16 agosto 1944 alle ore 7:00, scosse profondamente la popolazione vedere un ragazzo di diciannove anni affrontare la forca con tale dignità.Oggi, il suo nome è sinonimo di una giovinezza donata interamente alla causa della libertà.",
+    "partigiani.pagliarani.p6": "Fu condannato al patibolo il 16 agosto 1944 alle ore 7:00. Vedere un ragazzo di diciannove anni affrontare la forca con tale dignità scosse profondamente la popolazione. Oggi il suo nome è sinonimo di una giovinezza donata interamente alla causa della libertà.",
 
     "partigiani.adria.title": "Adria Neri <em>\"Marga\"</em>",
     "partigiani.adria.p1": "Dietro il nome di battaglia \"Marga\" c’era una donna animata da una forza straordinaria, capace di sfidare l'orrore della guerra con la sola forza di una bicicletta e di una determinazione incrollabile. Essere una staffetta significava viaggiare nell'ombra, nascondendo tra i vestiti i segreti di un'intera rivoluzione e affrontando i posti di blocco nemici con la calma di chi sa di essere dalla parte giusta della storia. Nata il 27 settembre 1917, Adria non cercava la gloria, ma agiva spinta da un profondo senso del dovere verso la propria comunità.",
@@ -241,15 +240,15 @@ const translations = {
 
     "partigiani.olga.title": "Olga Bondi",
     "partigiani.olga.subtitle": "Olga, vent’anni e un sogno di libertà",
-    "partigiani.olga.p1": "Nata a Rimini nel 1901, ragazza di vent’anni, fa la sarta e vive nel cuore del Borgo San Giovanni.",
+    "partigiani.olga.p1": "Nata a Rimini nel 1901, Olga è una giovane sarta e vive nel cuore del Borgo San Giovanni.",    
     "partigiani.olga.p2": "In quegli anni, Olga, oltre a fare la sarta, è una giovane donna che crede in un mondo più giusto.",
     "partigiani.olga.p3": "Insieme al fratello Alieto frequenta i circoli della gioventù comunista, in una città dove parlare di libertà sta diventando sempre più pericoloso.",
-    "partigiani.olga.p4": "La sera del 24 luglio 1922, Olga e il suo ragazzo Nello passeggia vicino al Palazzo Ghetti quando improvvisamente un gruppo di squadristi sbuca dal nulla: cercano Nello ma i proglietrili non guardano in faccia a nessuno. Olga crolla a terra. Muore poche ore dopo, il 25 luglio in ospedale.",
+    "partigiani.olga.p4": "La sera del 24 luglio 1922, Olga e il suo ragazzo Nello passeggiano vicino al Palazzo Ghetti quando, improvvisamente, un gruppo di squadristi sbuca dal nulla: cercano Nello, ma i proiettili non guardano in faccia nessuno. Olga crolla a terra e muore poche ore dopo, il 25 luglio, in ospedale.",   
     "partigiani.olga.p5": "Olga Bondi non è stata una soldatessa, ma una civile che ha pagato con la vita l'odio di quegli anni, ben prima che iniziasse la vera e propria Resistenza.",
     "partigiani.olga.p6": "Oggi Olga è diventata il primo, fragile e coraggioso argine contro la dittatura.",
 
     "partigiani.saponi.title": "Adolfo Saponi <em>\"Brasile\"</em>",
-    "partigiani.saponi.p1": "il nome di Adolfo Saponi \"Brasile\" risuona come quello di un eroe d'altri tempi, ma con radici profondissime nella nostra terra. Era l'uomo dei due mondi: un romagnolo che aveva imparato a difendere la libertà nelle trincee spagnole e nei boschi francesi, portando quella saggezza antica e ribelle tra i vicoli della nostra città e le pendenze delle nostre colline.",
+    "partigiani.saponi.p1": "Il nome di Adolfo Saponi \"Brasile\" risuona come quello di un eroe d'altri tempi, ma con radici profondissime nella nostra terra. Era l'uomo dei due mondi: un romagnolo che aveva imparato a difendere la libertà nelle trincee spagnole e nei boschi francesi, portando quella saggezza antica e ribelle tra i vicoli della nostra città e le pendenze delle nostre colline.",    
     "partigiani.saponi.p2": "Adolfo non era solo un combattente esperto; era la prova vivente che la libertà non ha confini e che vale la pena lottare per essa ovunque sia minacciata. La sua figura umanizza le mappe della Resistenza riminese, trasformando un semplice punto sulla carta in una storia di fratellanza e sacrificio. Ricordare \"Brasile\" oggi significa camminare per le vie di Rimini con una consapevolezza nuova, sentendo sotto i propri passi il peso e l'orgoglio di una storia che ha saputo guardare lontano senza mai dimenticare casa.",
 
     "partigiani.note.text": "Ricordare questi nomi significa dare valore alla memoria collettiva: ogni storia diventa una testimonianza di libertà, responsabilità e coraggio civile.",
@@ -342,8 +341,8 @@ const translations = {
     "mappa.detail1.label": "Monumento ai Caduti di Guerra di Miramare",
     "mappa.detail1.title": "Il monumento del parco Spina Verde",
     "mappa.detail1.text1": "Sito in viale Mosca all’interno del parco “Spina Verde” (il più grande parco pubblico di Rimini Sud, 17500 m2) è composto da un monolite in marmo cuneiforme preceduto da un libro stilizzato aperto nella pagina contenente l’elenco dei nomi delle persone commemorate.",
-    "mappa.detail1.text2": "I nomi sono stati proposti direttamente dai cittadini di Miramare che avevano un congiunto caduto al Comitato di Quartiere tramite un modulo. Vi troviamo diversi caduti o dispersi tra guerre mondiali e coloniali, tra cui militari, marinai, ma anche civili e partigiani, in particolare è presente Giosuè Frisoni , partigiano fucilato dalle truppe naziste.",
-
+    "mappa.detail1.text2": "I nomi sono stati proposti direttamente al Comitato di Quartiere dai cittadini di Miramare che avevano un congiunto caduto, tramite un modulo. Vi troviamo diversi caduti o dispersi tra guerre mondiali e coloniali, tra cui militari, marinai, civili e partigiani. In particolare, è presente Giosuè Frisoni, partigiano fucilato dalle truppe naziste.",
+    
     "mappa.detail2.label": "Parco Sandro Pertini",
     "mappa.detail2.title": "Il monumento al partigiano Presidente",
     "mappa.detail2.text1": "Il monumento a Sandro Pertini, il grande partigiano Presidente, è stato eretto l’8-5-2005 nella vasta area verde e attrezzata, divenuta un centro pulsante di attività sportive, ricreative, culturali. La cerimonia di inaugurazione vide la partecipazione della vedova di Sandro, Carla Voltolina, l’orazione fu tenuta da Veniero Accreman, bandiera dell’antifascismo e della Resistenza riminese. Sandro Pertini, socialista, è stato il settimo Presidente della Repubblica italiana, dal 1978 al 1985. Fin dal discorso di insediamento (si svuotino gli arsenali, si colmino i granai) seppe esprimere una carica straordinaria che gli valse l’ammirazione e l’affetto del popolo.",
@@ -379,13 +378,13 @@ const translations = {
 
     "mappa.detail9.label": "Sede CEIS",
     "mappa.detail9.title": "Il primo segno di rinascita di Rimini",
-    "mappa.detail9.text1": "Il CEIS (Centro Educativo Italo Svizzero)  è il primo, straordinario, segno di rinascita di Rimini sconvolta e massacrata dalla guerra. Sorge, per una decisione  della Giunta Comunale su un’area, quella dell’Anfiteatro Romano, non ingombra di macerie e con lo spazio per far nascere un giardino. Grazie a vari collaboratori qui i bambini più bisognosi   troveranno asilo e istruzione mentre le persone più povere potranno farsi la prima doccia o avere un vestito.",
-
+    "mappa.detail9.text1": "Il CEIS (Centro Educativo Italo Svizzero) è il primo, straordinario segno di rinascita di Rimini, sconvolta e massacrata dalla guerra. Sorge, per decisione della Giunta Comunale, in un’area dell’Anfiteatro Romano non ingombra di macerie e con lo spazio per far nascere un giardino. Grazie a vari collaboratori, qui i bambini più bisognosi trovarono asilo e istruzione, mentre le persone più povere poterono farsi la prima doccia o ricevere un vestito.",
+    
     "mappa.detail10.label": "Monumento alla Resistenza",
     "mappa.detail10.title": "Il monumento di Elio Morri nel Parco Cervi",
-    "mappa.detail10.text1": "Il monumento alla resistenza di Rimini, opera del famoso scultore Elio Morri, fu inaugurato con una grande manifestazione popolare il 21 ottobre 1973.",
-    "mappa.detail10.text2": "Il monumento si compone di tre parti: il Martirio, la Riscossa, la Liberazione definendo quest’opera come “l’intuizione dinamica delle incalzanti emozioni e sensazioni del mio tempo”.",
-
+    "mappa.detail10.text1": "Il monumento alla Resistenza di Rimini, opera del famoso scultore Elio Morri, fu inaugurato con una grande manifestazione popolare il 21 ottobre 1973.",   
+    "mappa.detail10.text2": "Il monumento si compone di tre parti: il Martirio, la Riscossa e la Liberazione. L’opera è stata definita come “l’intuizione dinamica delle incalzanti emozioni e sensazioni del mio tempo”.",
+    
     "mappa.detail11.label": "Elisa Mini Imola",
     "mappa.detail11.title": "Una partigiana combattente",
     "mappa.detail11.text1": "Elisa Mini fu una partigiana combattente della 29ª Brigata GAP a Forlì (1943-1944). Animata da un profondo ideale antifascista condiviso col marito Romeo Imola, scelse la lotta armata nonostante fosse rimasta vedova con tre figli. Per il suo coraggio ricevette la Croce al merito di guerra (1960) e il Diploma d'onore dal Presidente Pertini (1984).",
@@ -400,15 +399,15 @@ const translations = {
 
     "mappa.detail14.label": "Rosina Donini “Margherita”",
     "mappa.detail14.title": "Una staffetta essenziale per i collegamenti partigiani",
-    "mappa.detail14.text1": "Durante i duri bombardamenti su Rimini, le “staffette partigiane” furono essenziali per i collegamenti dei GAP tra Forlì e Cattolica. Tra loro spicca “Rosina Donini” (\"Margherita\"), che collaborò con i Tre Martiri e ospitò il comando delle staffette in via Lavatoio. Moglie del capo militare Attilio Venturi, ricevette la “Medaglia d'oro” dal Comune per il suo ruolo nella Liberazione e gli venne dedicato a suo nome un percorso ciclo-pedonale all’interno del Parco Cervi.",
-
+    "mappa.detail14.text1": "Durante i duri bombardamenti su Rimini, le staffette partigiane furono essenziali per i collegamenti dei GAP tra Forlì e Cattolica. Tra loro spicca Rosina Donini, detta \"Margherita\", che collaborò con i Tre Martiri e ospitò il comando delle staffette in via Lavatoio. Moglie del capo militare Attilio Venturi, ricevette la Medaglia d'oro dal Comune per il suo ruolo nella Liberazione e le venne dedicato un percorso ciclopedonale all’interno del Parco Cervi.",
+    
     "mappa.detail15.label": "Arco d’Augusto",
     "mappa.detail15.title": "Il luogo della morte di Silvio Cenci",
-    "mappa.detail15.text1": "Alle 6 del pomeriggio del 10 maggio 1944, vicino all'Arco d'Augusto, i giovani gappisti riminesi Silvio Cenci e Ivo Lotti, armati, attendevano un partigiano di Santarcangelo per stabilire un collegamento con l'Ottava Brigata Garibaldi. Intercettati e bloccati da una squadra repubblichina riescono a svincolarsi. Nel conflitto a fuoco che segue Silvio riesce a colpire mortalmente un militare fascista ma rimane ucciso dal fuoco dei servi degli occupanti nazisti, morendo a 19 per la nostra libertà, dedicandogli un cippo in quella zona.",
-
+    "mappa.detail15.text1": "Alle 6 del pomeriggio del 10 maggio 1944, vicino all'Arco d'Augusto, i giovani gappisti riminesi Silvio Cenci e Ivo Lotti, armati, attendevano un partigiano di Santarcangelo per stabilire un collegamento con l'Ottava Brigata Garibaldi. Intercettati e bloccati da una squadra repubblichina, riuscirono a svincolarsi. Nel conflitto a fuoco che seguì, Silvio riuscì a colpire mortalmente un militare fascista, ma rimase ucciso dal fuoco dei servi degli occupanti nazisti. Morì a 19 anni per la nostra libertà; a lui è dedicato un cippo in quella zona.",
+    
     "mappa.detail16.label": "Rifugi Antiaerei",
     "mappa.detail16.title": "La memoria dei bombardamenti",
-    "mappa.detail16.text1": "E’ il 28 dicembre 1943, il primo di tre giorni di incessanti bombardamenti. In vicolo S. Bernardino nei sotterranei dell’edificio accanto alla chiesa era allestito, già nel corso della Prima guerra mondiale, un rifugio paraschegge dove rimangono uccisi 56 civili schiacciati e soffocati dal crollo dei muri dei fabbricati laterali. Nello stesso giorno 30 furono le vittime nel rifugio Cecchi detto “Brutapela”, in via Montefeltro 55, una targa ne ricorda i nomi.",
+    "mappa.detail16.text1": "È il 28 dicembre 1943, il primo di tre giorni di incessanti bombardamenti. In vicolo San Bernardino, nei sotterranei dell’edificio accanto alla chiesa, era allestito già durante la Prima guerra mondiale un rifugio paraschegge, dove rimasero uccisi 56 civili, schiacciati e soffocati dal crollo dei muri dei fabbricati laterali. Nello stesso giorno furono 30 le vittime nel rifugio Cecchi, detto “Brutapela”, in via Montefeltro 55; una targa ne ricorda i nomi.",    
     "mappa.detail16.text2": "Un altro rifugio fu colpito durante il primo bombardamento l’1 novembre 1943, quello della Croce Verde, restano sepolte fra le macerie 97 persone.",
 
     "mappa.detail17.label": "Piazza Tre Martiri",
@@ -421,16 +420,16 @@ const translations = {
 
     "mappa.detail19.label": "Via Cairoli",
     "mappa.detail19.title": "La morte di Enrico Battarra e Igino Chesi",
-    "mappa.detail19.text1": "Sono trascorsi solo otto giorni dall'assassinio dei Tre Martiri. In via Cairoli sono appostati da due gappisti riminesi, Enrico Battarra, 52 anni, e Igino Chesi, 40 anni, secondo di tre fratelli militanti comunisti perseguitati dai fascisti (Giuseppe, il maggiore, fu catturato e torturato in un rastrellamento nazista a Forlì nel 1944; Mansueto, il più giovane, fu incarcerato più volte dal regime fascista). I due partigiani vengono intercettati da militi repubblichini e tedeschi e, dopo una colluttazione, cadono sotto il fuoco dei nazi-fascisti.",
-
+    "mappa.detail19.text1": "Sono trascorsi solo otto giorni dall'assassinio dei Tre Martiri. In via Cairoli sono appostati due gappisti riminesi: Enrico Battarra, 52 anni, e Igino Chesi, 40 anni, secondo di tre fratelli militanti comunisti perseguitati dai fascisti. I due partigiani vengono intercettati da militi repubblichini e tedeschi e, dopo una colluttazione, cadono sotto il fuoco dei nazifascisti.",
+    
     "mappa.detail20.label": "Via Ducale",
     "mappa.detail20.title": "La base partigiana dei Tre Martiri",
-    "mappa.detail20.text1": "La sera del 12 agosto, una trebbiatrice che era al servizio dei tedeschi viene incendiata da una squadra di partigiani, la cui sede logistica è l'ex caserma Ducale, nei pressi del ponte di Tiberio. Il giorno 13 agosto i militi fascisti, circondano la base partigiana, Mario Capelli, di 23 anni, di Luigi Nicolò, di 22, e Adelio Pagliarani, di 19, sorpresi nel nascondiglio, con armi e volantini, sono condotti nell'ex Caserma dei Carabinieri alle Grazie (Covignano) processandoli e dopo essere riconosciuti come partigiani, sono condannati a morte.",
-
+    "mappa.detail20.text1": "La sera del 12 agosto, una trebbiatrice al servizio dei tedeschi viene incendiata da una squadra di partigiani, la cui sede logistica è l'ex caserma Ducale, nei pressi del ponte di Tiberio. Il 13 agosto i militi fascisti circondano la base partigiana: Mario Capelli, di 23 anni, Luigi Nicolò, di 22, e Adelio Pagliarani, di 19, sorpresi nel nascondiglio con armi e volantini, vengono condotti nell'ex Caserma dei Carabinieri alle Grazie, a Covignano. Dopo essere stati processati e riconosciuti come partigiani, vengono condannati a morte.",
+    
     "mappa.detail21.label": "Piazza Cavour",
     "mappa.detail21.title": "La Medaglia d’oro al Valor Civile",
-    "mappa.detail21.text1": "Il teatro Amintore Galli, distrutto dai tremendi bombardamenti e ricostruito recente mente, rappresenta mirabilmente l'attaccamento della popolazione riminese alla cultura. all'arte, alla vita associativa e comunitaria. L'atrio del Teatro è dunque il luogo ideale per custodire la Medaglia d'oro al Valor Civile attribuita alla nostra città il 1 settembre 1962 dal ministro Giuseppe Medici. Al suo fianco la medaglia d'oro commemorativa consegnata dall'Amministrazione comunale di Rimini alle famiglie dei Tre Martiri e gentilmente concessa dai fratelli Pierpaolo e Gilberto Capelli, nipoti del martire Langi Nicolo, che con un nobile gesto hanno deciso di donarla alla cittadinanza.",
-
+    "mappa.detail21.text1": "Il Teatro Amintore Galli, distrutto dai tremendi bombardamenti e ricostruito recentemente, rappresenta l'attaccamento della popolazione riminese alla cultura, all'arte, alla vita associativa e comunitaria. L'atrio del teatro è dunque il luogo ideale per custodire la Medaglia d'oro al Valor Civile, attribuita alla città il 1° settembre 1962 dal ministro Giuseppe Medici. Al suo fianco si trova la medaglia d'oro commemorativa consegnata dall'Amministrazione comunale di Rimini alle famiglie dei Tre Martiri e gentilmente concessa dai fratelli Pierpaolo e Gilberto Capelli, nipoti del martire Luigi Nicolò, che con un nobile gesto hanno deciso di donarla alla cittadinanza.",
+    
     "mappa.detail22.label": "Rotonda Vito Nicoletti",
     "mappa.detail22.title": "Un antifascista e dirigente sindacale",
     "mappa.detail22.text1": "Vito Nicoletti (1909-1968), storico antifascista e dirigente sindacale, dedicò la vita alla causa dell’antifascismo e dell’emancipazione dei lavoratori. Dopo anni di confino e carcere, guidò la Resistenza a Fabriano e, dal 1956, la CGIL di Rimini, contribuendo allo sviluppo del turismo di massa e alla politica locale come consigliere.",
@@ -438,16 +437,16 @@ const translations = {
 
     "mappa.detail23.label": "Piazzale Caduti di Cefalonia",
     "mappa.detail23.title": "La memoria della Divisione Acqui",
-    "mappa.detail23.text1": "Il piazzale fu intitolato ai Caduti di Cefalonia il 28 settembre 2003, 60O anniversario della barbara strage nella quale i tedeschi si resero responsabili di un orrendo massacro fucilando militi inermi, abbandonati dai loro Comandi. Nella targa viene indicato il numero di 10.260 caduti della Divisione Acqui a Cefalonia e Corfù. Di questi una parte perirono in combattimento, mitragliati a freddo, oppure nei campi di concentramento. Il responsabile maggiore della strage fu Hubert Lanz, capo del XII Corpo d'armata truppe da montagna della Wehrmacht, ma l'ordine di fucilare i militari italiani pare sia stato dato direttamente da Hitler.",
-
+    "mappa.detail23.text1": "Il piazzale fu intitolato ai Caduti di Cefalonia il 28 settembre 2003, 60° anniversario della barbara strage nella quale i tedeschi si resero responsabili di un orrendo massacro, fucilando militari inermi abbandonati dai loro comandi. Nella targa viene indicato il numero di 10.260 caduti della Divisione Acqui a Cefalonia e Corfù. Di questi, una parte morì in combattimento, altri furono mitragliati a freddo oppure morirono nei campi di concentramento. Il principale responsabile della strage fu Hubert Lanz, capo del XII Corpo d'armata delle truppe da montagna della Wehrmacht, ma l'ordine di fucilare i militari italiani pare sia stato dato direttamente da Hitler.",
+    
     "mappa.detail24.label": "Giardino dei Giusti",
     "mappa.detail24.title": "Ezio Giorgetti e Osman Carugno",
     "mappa.detail24.text1": "Dopo l'11 settembre 1943, l'albergatore Ezio Giorgetti e il maresciallo Osman Carugno salvarono 38 profughi ebrei, nascondendoli tra Bellaria e i casolari di Madonna di Pugliano. Grazie a documenti falsi e alla protezione della comunità locale, il gruppo rimase incolume fino alla Liberazione. ​Per questo coraggio, Giorgetti fu il primo italiano nominato \"Giusto tra le Nazioni\". In loro memoria, oltre alla Medaglia d'Argento al Valor Civile al Comune di Montecopiolo, è stata dedicata una targa commemorativa proprio a Pugliano, nel luogo che offrì rifugio ai perseguitati.",
 
     "mappa.detail25.label": "Cappella dei Martiri per la Libertà",
     "mappa.detail25.title": "Il sepolcreto “Gloria ai Caduti”",
-    "mappa.detail25.text1": "Sono oltre 130 i nomi, alcuni ormai illeggibili, dei patrioti riportati su varie lapidi all'interno del sepolcreto titolato \"GLORIA AI CADUTI” nel Cimitero Monumentale di Rimini. Varie lapidi di epoche diverse ricordano Patrioti in vari modi connessi alla storia locale: da Giovanni Venerucci; ad alcuni Garibaldini, per passare poi Martiri della 1ª Guerra Mondiale, delle Guerre Coloniali, della 2ª Guerra Mondiale, ed infine un rappresentativo numero di Partigiani.",
-
+    "mappa.detail25.text1": "Sono oltre 130 i nomi, alcuni ormai illeggibili, dei patrioti riportati su varie lapidi all'interno del sepolcreto intitolato \"Gloria ai Caduti\" nel Cimitero Monumentale di Rimini. Varie lapidi di epoche diverse ricordano patrioti in modi diversi connessi alla storia locale: da Giovanni Venerucci ad alcuni garibaldini, dai martiri della Prima guerra mondiale a quelli delle guerre coloniali e della Seconda guerra mondiale, fino a un rappresentativo numero di partigiani.",
+    
     "mappa.detail26.label": "Guglielmo Marconi “Paolo”",
     "mappa.detail26.title": "Uno dei padri della Resistenza riminese",
     "mappa.detail26.text1": "Alessandro Marconi (\"Paolo\") (1903-1968), perseguitato e confinato, fu combattente in Spagna e vice comandante dell'8ª Brigata Garibaldi. Insignito della Medaglia d'argento al valor militare, è tra i padri della Resistenza riminese. Le sue spoglie riposano nel Cimitero Monumentale di Rimini, in un’area di grande importanza storica dedicata ai caduti e ai protagonisti dell'antifascismo riminese dove la sua memoria è solennemente onorata. Nel giugno del 1968, i suoi funerali videro una partecipazione popolare immensa, a testimonianza del profondo legame con la città.",
@@ -474,12 +473,12 @@ const translations = {
 
     "mappa.detail32.label": "Cimitero Gurkha e Indiano",
     "mappa.detail32.title": "Il cimitero di guerra sulla Superstrada di San Marino",
-    "mappa.detail32.text1": "Il Cimitero di guerra Gurkha e Indiano ospita le tombe di combattenti Indiani e Gurkha nepalesi. In un'area monumentale sono contenute le ceneri di militari Indiani, tra cui vari ufficiali. Il cimitero, che fa parte del circuito dei cimiteri britannici, fu realizzato nell'ottobre 1945, su un terreno, come ricorda una lapide, donato dal popolo italiano",
-
+    "mappa.detail32.text1": "Il Cimitero di guerra Gurkha e Indiano ospita le tombe di combattenti indiani e Gurkha nepalesi. In un'area monumentale sono contenute le ceneri di militari indiani, tra cui vari ufficiali. Il cimitero, che fa parte del circuito dei cimiteri britannici, fu realizzato nell'ottobre 1945 su un terreno che, come ricorda una lapide, fu donato dal popolo italiano.",
+    
     "mappa.detail33.label": "Monte Cieco",
     "mappa.detail33.title": "La battaglia del settembre 1944",
-    "mappa.detail33.text1": "II 19 e 20 settembre 1944 a Monte Cieco si svolse una tremenda battaglia tra la 1º Divisione Corazzata Britannica e la 90° Divisione Tedesca. L'esito fu disastroso per le truppe britanniche portando alla distruzione di carri armati e al massacro di 64 uomini degli equipaggi. Subito dopo la 1º Divisione Corazzata Britannica sarebbe stata sciolta portando i tedeschi a rioccupare l'importante posizione di Monte-cieco. Il 20 settembre le truppe canadesi e neozelandesi sfondarono le linee tedesche a Covignano ed il 21 settembre la III Brigata di Montagna Greca entrò a Rimini dall'Arco d'Augusto.",
-
+    "mappa.detail33.text1": "Il 19 e 20 settembre 1944 a Monte Cieco si svolse una tremenda battaglia tra la 1ª Divisione Corazzata Britannica e la 90ª Divisione Tedesca. L'esito fu disastroso per le truppe britanniche, con la distruzione di carri armati e la morte di 64 uomini degli equipaggi. Subito dopo, la 1ª Divisione Corazzata Britannica sarebbe stata sciolta, permettendo ai tedeschi di rioccupare l'importante posizione di Monte Cieco. Il 20 settembre le truppe canadesi e neozelandesi sfondarono le linee tedesche a Covignano e il 21 settembre la III Brigata di Montagna Greca entrò a Rimini dall'Arco d'Augusto.",
+    
     "mappa.detail34.label": "Cippo Aristodemo Ciavatti",
     "mappa.detail34.title": "Il giovane combattente ucciso a Cerasolo",
     "mappa.detail34.text1": "Il 3 settembre 1944 a Cerasolo (nel Comune di Coriano, fra Rimini e S. Marino) la piccola comunità che abitava le case del crinale assistette a una esecuzione senza processo, all'omicidio di un giovane combattente per la libertà che si chiamava Aristodemo Ciavatti.",
@@ -494,7 +493,7 @@ const translations = {
 
     /* GIOCO / QUIZ */
 
-    "gioco.page.title": "Gioco — Resistenza Rimini",
+    "gioco.page.title": "Quiz — Resistenza Rimini",
     "gioco.hero.label": "Escape room digitale",
     "gioco.hero.title": "<span class=\"hero-light\">La</span> <span class=\"hero-accent\">Chiave</span> <span class=\"hero-light\">della</span><br><span class=\"hero-accent\">Memoria</span>",
     "gioco.hero.text": "Supera gli enigmi sulla Resistenza riminese. Ogni sezione completata ti darà un frammento della frase finale.",
@@ -1107,7 +1106,7 @@ const translations = {
 
     /* GAME / QUIZ */
 
-    "gioco.page.title": "Game — Resistance Rimini",
+    "gioco.page.title": "Quiz — Resistance Rimini",
     "gioco.hero.label": "Digital escape room",
     "gioco.hero.title": "<span class=\"hero-light\">The</span> <span class=\"hero-accent\">Key</span> <span class=\"hero-light\">of</span><br><span class=\"hero-accent\">Memory</span>",
     "gioco.hero.text": "Solve the challenges about the Resistance in Rimini. Each completed section will give you a fragment of the final sentence.",

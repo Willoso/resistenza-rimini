@@ -1297,3 +1297,101 @@ footer,
     font-size: 0.72rem;
   }
 }
+
+/* FIX COLORI QUIZ - STESSO STILE DELLO SCREEN */
+
+body {
+  background: #1E1810 !important;
+}
+
+.fragments-box {
+  background: #111008 !important;
+  border: 1px solid rgba(139, 105, 20, 0.55) !important;
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.40) !important;
+}
+
+.game-card {
+  background: #1E1810 !important;
+  border: 1px solid rgba(139, 105, 20, 0.55) !important;
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.40) !important;
+}
+
+.final-box {
+  background:
+    radial-gradient(circle at 50% 20%, rgba(196, 168, 130, 0.10), transparent 34%),
+    #111008 !important;
+  border: 1px solid rgba(139, 105, 20, 0.55) !important;
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.40) !important;
+}
+
+.question-box {
+  background: #111008 !important;
+  border: 1px solid rgba(139, 105, 20, 0.45) !important;
+}
+
+.answer-btn,
+.timeline-card,
+.memory-card,
+.map-place,
+.name-tag {
+  background: #141008 !important;
+  border: 1px solid rgba(139, 105, 20, 0.55) !important;
+  color: #f4ead8 !important;
+}
+
+.answer-btn:hover,
+.timeline-card:hover,
+.memory-card:hover,
+.map-place:hover,
+.name-tag:hover {
+  background: #1f180d !important;
+  border-color: rgba(196, 168, 130, 0.75) !important;
+}
+
+.fragment {
+  background: #111008 !important;
+  border-color: rgba(139, 105, 20, 0.55) !important;
+}
+
+.timeline-slot,
+.face-card {
+  background: #111008 !important;
+  border-color: rgba(139, 105, 20, 0.45) !important;
+}
+
+.timeline-slot.filled {
+  background: #17120a !important;
+}
+
+.timeline-card.in-slot,
+.name-tag.in-slot {
+  background: #2a2110 !important;
+  border-color: rgba(196, 168, 130, 0.65) !important;
+}
+
+.timeline-card.selected,
+.name-tag.selected,
+.memory-card.selected {
+  background: #2a2110 !important;
+  border-color: #C4A882 !important;
+}
+
+.section-progress-track {
+  background: #111008 !important;
+  border-color: rgba(139, 105, 20, 0.55) !important;
+}
+
+.answer-btn.correct,
+.map-place.correct,
+.memory-card.matched {
+  border-color: rgba(80, 190, 120, 0.9) !important;
+  background: rgba(80, 190, 120, 0.18) !important;
+  color: #fff7e8 !important;
+}
+
+.answer-btn.wrong,
+.map-place.wrong,
+.memory-card.wrong {
+  border-color: rgba(201, 57, 44, 0.9) !important;
+  background: rgba(201, 57, 44, 0.18) !important;
+}
