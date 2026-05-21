@@ -511,5 +511,6 @@ footer {
     width: 42px;
     height: 42px;
     font-size: 1.2rem;
+    padding-bottom: 1px;
   }
 }
