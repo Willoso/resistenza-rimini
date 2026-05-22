@@ -553,6 +553,30 @@
     object-position: center 20%;
   }
 
+  .partigiano-row img[src*="VincenzoMascia.jpg"] {
+    object-position: center 38%;
+  }
+
+  .partigiano-row img[src*="AlfredoClementi_EnricoPetrucci.jpg"] {
+    object-position: center 50%;
+  }
+
+  .partigiano-row img[src*="Pietro_Barberini.jpg.jpeg"] {
+    object-position: center 27%;
+  }
+
+  .partigiano-row img[src*="TreMartiri.jpg"] {
+    object-position: center 20%;
+  }
+
+  .partigiano-row img[src*="OlgaBondi.jpg"] {
+    object-position: center 35%;
+  }
+
+  .partigiano-row img[src*="AdolfoSaponi.png"] {
+    object-position: center 22%;
+  }
+
   .partigiano-row:hover img {
     transform: scale(1.035);
   }
