@@ -514,3 +514,36 @@ footer {
     padding-bottom: 1px;
   }
 }
+
+/* FOOTER LOGO GRANDE */
+
+.footer-logo {
+  font-size: 2.6rem !important;
+  line-height: 1.05 !important;
+}
+
+.footer-logo em {
+  font-size: 2.7rem !important;
+}
+
+.footer-sub {
+  font-size: 1.15rem !important;
+  margin-top: 0.65rem !important;
+  color: rgba(196, 168, 130, 0.78) !important;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .footer-logo {
+    font-size: 1.55rem !important;
+  }
+
+  .footer-logo em {
+    font-size: 1.6rem !important;
+  }
+
+  .footer-sub {
+    font-size: 0.85rem !important;
+  }
+}
