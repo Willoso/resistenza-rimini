@@ -64,7 +64,7 @@ const translations = {
     
     "storia.event2.date": "Luglio 1943",
     "storia.event2.title": "Caduta della dittatura fascista",
-    "storia.event2.text": "Il 25 luglio ci fu la caduta della dittatura fascista, Mussolini viene arrestato (tagliatella antifascista in memoria dei Fratelli Cervi).",
+    "storia.event2.text": "Il 25 luglio ci fu la caduta della dittatura fascista; Mussolini venne arrestato (tagliatella antifascista in memoria dei Fratelli Cervi).",
 
     "storia.event3.date": "Settembre 1943",
     "storia.event3.title": "Annuncio dell’Armistizio",
@@ -102,7 +102,7 @@ const translations = {
 
     "storia.event11.date": "Settembre 1962",
     "storia.event11.title": "Medaglia d’oro al Valor Civile a Rimini",
-    "storia.event11.text": "Il 1° settembre viene consegnata alla Città di Rimini, tramite l’On. Giuseppe Medici, la Medaglia d’oro al Valor Civile.",
+    "storia.event11.text": "Il 1° settembre viene consegnata alla Città di Rimini, tramite l’Onorevole Giuseppe Medici, la Medaglia d’oro al Valor Civile.",
 
     "storia.event12.date": "Giugno 1968",
     "storia.event12.title": "Ricordo del partigiano Guglielmo Marconi",

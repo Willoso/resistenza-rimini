@@ -263,7 +263,8 @@
   overflow-y: auto;
   padding-right: 1rem;
   min-height: 0;
-  height: 100%;
+  flex: 1;
+  max-height: 100%;
   scrollbar-width: thin;
   scrollbar-color: #8B6914 rgba(30,24,16,0.4);
 }
@@ -724,4 +725,33 @@ footer,
 #vito-nicoletti,
 #olga-bondi {
   scroll-margin-top: 120px;
+}
+
+/* FIX SCROLL TESTO PARTIGIANI DESKTOP */
+
+@media (min-width: 769px) {
+  .partigiano-row,
+  .partigiano-row.reverse {
+    height: 520px !important;
+    align-items: stretch !important;
+  }
+
+  .partigiano-text {
+    height: 520px !important;
+    max-height: 520px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .partigiano-scroll {
+    flex: 1 1 0 !important;
+    height: auto !important;
+    max-height: none !important;
+    min-height: 0 !important;
+    overflow-y: auto !important;
+    padding-right: 1rem !important;
+    padding-bottom: 1.4rem !important;
+  }
 }
