@@ -18,11 +18,11 @@
 }
 
 .hero-left {
-  background-image: url('Immagini_Monumenti/Campanile.webp');
+  background-image: url('Immagini_Monumenti/Campanile.jpg');
 }
 
 .hero-right {
-  background-image: url('Immagini_Monumenti/GloriaAiCadutiPerLaLibertà.webp');
+  background-image: url('Immagini_Monumenti/GloriaAiCadutiPerLaLibertà.jpg');
 }
 
 .hero::after {
